@@ -1,0 +1,911 @@
+data_inicio,data_fim,id_evento,gravidade,descricao,latitude,longitude,tipo_ocorrencia
+2022-08-20 11:13:28.000000 UTC,2022-08-20 13:39:21.000000 UTC,79641,Baixo,Av. borges de medeiros - alt. r. j. j. seabra - lagoa - sent. rebouças,-22.964045,-43.2144711,Bolsão d'água em via
+2022-08-20 11:06:06.000000 UTC,2022-08-20 15:42:30.000000 UTC,79640,Baixo,Av. borges de medeiros - alt. nº 800 - lagoa - sent. corte do cantagalo.,-22.9792898,-43.2166899,Bolsão d'água em via
+2022-08-20 11:17:11.000000 UTC,2022-08-20 12:30:14.000000 UTC,79642,Baixo,"Rua professor abelardo lóbo, alt. praça marcos tamoyo - lagoa",-22.9614293,-43.2049368,Bolsão d'água em via
+2022-08-20 12:21:22.000000 UTC,2022-08-20 15:29:57.000000 UTC,79654,Baixo,Av. epitácio pessoa - alt. nº  1724 - lagoa,-22.9799591,-43.202917199999987,Bolsão d'água em via
+2022-08-20 11:40:01.000000 UTC,2022-08-20 15:43:10.000000 UTC,79645,Baixo,Av. epitácio pessoa - alt. nº 604 - ipanema - sent. copacabana,-22.9808051,-43.2129868,Bolsão d'água em via
+2022-08-20 11:26:15.000000 UTC,2022-08-20 13:42:50.000000 UTC,79644,Baixo,Av. epitácio pessoa - alt. r. maria quitéria - ipanema,-22.9742628,-43.2064953,Bolsão d'água em via
+2022-08-10 06:12:40.000000 UTC,2022-08-10 08:08:39.000000 UTC,79132,Baixo,"Av. das américas, alt. est. brt mato alto - guaratiba - em ambos os sentidos",-22.9953709,-43.595046,Bolsão d'água em via
+2022-08-10 06:16:04.000000 UTC,2022-08-10 06:42:04.000000 UTC,79133,Baixo,"Rua tonelero, alt. r. siqueira campos - copacabana",-22.9666427,-43.1852321,Bolsão d'água em via
+2022-08-20 11:21:55.000000 UTC,2022-08-20 13:48:22.000000 UTC,79643,Baixo,R. gen. olímpio mourão filho - são conrado,-22.9931215,-43.2534455,Bolsão d'água em via
+2023-07-28 23:09:06.000000 UTC,2023-07-28 23:48:21.000000 UTC,99995,Baixo,Av. teixeira de castro - alt. rua barreiros - ramos,-22.8552504,-43.252104,Bolsão d'água em via
+2023-07-28 23:05:53.000000 UTC,2023-07-28 23:46:11.000000 UTC,99994,Baixo,R. formosa do zumbí  - ilha do governador,-22.8196658,-43.1770586,Bolsão d'água em via
+2023-07-29 00:13:30.000000 UTC,2023-07-29 00:15:19.000000 UTC,100001,Baixo,Estrada da bica - jardim guanabara - ilha do governador,-22.8189087,-43.1882652,Bolsão d'água em via
+2022-01-09 06:46:33.000000 UTC,2022-01-09 11:52:55.000000 UTC,70011,Baixo,"Rua humaitá, alt. fonte da saudade - humaitá",-22.96694,-43.202914,Bolsão d'água em via
+2022-01-29 23:35:44.000000 UTC,2022-01-30 01:00:07.000000 UTC,70621,Baixo,"Rua epitácio pessoa, alt. r. vinícius de moraes - lagoa ",-22.9742628,-43.2064953,Bolsão d'água em via
+2022-01-16 19:51:31.000000 UTC,2022-01-16 20:48:45.000000 UTC,70217,Baixo,"Rua epitácio pessoa, alt. r. vinícius de moraes - lagoa ",-22.9742628,-43.2064953,Bolsão d'água em via
+2022-01-07 10:33:28.000000 UTC,2022-01-07 10:34:37.000000 UTC,69944,Baixo,R. eutíquio soledade - tauá - ilha do gov.,-22.7952234,-43.1851405,Bolsão d'água em via
+2022-01-16 19:58:34.000000 UTC,2022-01-16 23:17:21.000000 UTC,70218,Baixo,R. eutíquio soledade - tauá,-22.7952234,-43.1851405,Bolsão d'água em via
+2022-01-07 09:35:33.000000 UTC,2022-01-07 14:41:58.000000 UTC,69937,Baixo,"Rua soldado wandel sarmento, 61 - tauá - ilha do gov.",-22.792351,-43.183996000000008,Bolsão d'água em via
+2022-01-07 09:26:44.000000 UTC,2022-01-07 10:34:28.000000 UTC,69935,Baixo,"R. demétrio de tolêdo, 57 - tauá - ilha do gov.",-22.7926455,-43.183286,Bolsão d'água em via
+2022-01-11 17:21:44.000000 UTC,2022-01-11 18:59:07.000000 UTC,70095,Baixo,"R. praia da rosa, 1300 - tauá",-22.7921235,-43.1889038,Bolsão d'água em via
+2022-01-07 08:14:11.000000 UTC,2022-01-07 14:07:27.000000 UTC,69928,Baixo,R. pojuca 230 - zumbi,-22.8231212,-43.1751652,Bolsão d'água em via
+2022-01-30 20:38:08.000000 UTC,2022-01-31 01:08:01.000000 UTC,70653,Baixo,"Estr. do rio jequiá, 1276 - zumbi - ilha do governador.",-22.8187755,-43.1842413,Bolsão d'água em via
+2022-01-11 18:59:42.000000 UTC,2022-01-11 19:03:13.000000 UTC,70119,Baixo,"R. pojuca, 230 - zumbi",-22.8231822,-43.1751149,Bolsão d'água em via
+2022-01-07 08:18:00.000000 UTC,2022-01-07 10:06:15.000000 UTC,69929,Baixo,Estr. do rio jequiá - zumbi - ilha do gov.,-22.8205193,-43.1799963,Bolsão d'água em via
+2022-01-16 19:41:18.000000 UTC,2022-01-16 21:24:51.000000 UTC,70213,Baixo,Estr. do rio jequiá - (zumbi) - ilha do governador,-22.822336,-43.176917,Bolsão d'água em via
+2022-01-07 08:21:59.000000 UTC,2022-01-07 10:12:15.000000 UTC,69930,Baixo,Estrada da bica - cacuia - ilha do gov.,-22.8192327,-43.1884561,Bolsão d'água em via
+2022-01-11 17:05:23.000000 UTC,2022-01-11 18:57:32.000000 UTC,70087,Baixo,Estrada da bica próximo ao 327 - cacuia,-22.8192327,-43.1884561,Bolsão d'água em via
+2022-01-16 19:37:50.000000 UTC,2022-01-16 21:45:49.000000 UTC,70212,Baixo,"Rua pedro américo, alt. r. do catete - catete - sent. glória",-22.9234676,-43.1773358,Bolsão d'água em via
+2022-01-29 15:32:46.000000 UTC,2022-01-29 16:08:43.000000 UTC,70591,Baixo,"R. do catete, alt. r. silveira martins - catete",-22.9269656,-43.1766115,Bolsão d'água em via
+2022-01-16 20:07:46.000000 UTC,2022-01-16 20:59:53.000000 UTC,70220,Baixo,"Av. mem de sá, alt. r. dos inválidos - centro - sent. lapa",-22.912313,-43.1861477,Bolsão d'água em via
+2022-01-11 18:06:52.000000 UTC,2022-01-11 19:01:12.000000 UTC,70106,Baixo,"Rua da constituição, 10 - centro",-22.9066803,-43.1841751,Bolsão d'água em via
+2022-01-11 17:57:10.000000 UTC,2022-01-11 18:20:59.000000 UTC,70104,Baixo,"Av. rodrigo otávio, 260 - gávea",-22.9750828,-43.2261809,Bolsão d'água em via
+2022-01-11 17:19:23.000000 UTC,2022-01-11 18:14:40.000000 UTC,70094,Baixo,"R. mario ribeiro, alt. r. min. raul machado - gávea",-22.9778928,-43.2220873,Bolsão d'água em via
+2022-01-16 19:49:13.000000 UTC,2022-01-16 21:56:13.000000 UTC,70216,Baixo,"Rua mario ribeiro, alt. clube flamengo - leblon - sent. lagoa",-22.9776408,-43.2203293,Bolsão d'água em via
+2022-01-07 19:24:44.000000 UTC,2022-01-07 20:51:23.000000 UTC,69963,Baixo,"Rua mario ribeiro, alt. clube flamengo - leblon - sent. lagoa",-22.9776408,-43.2203293,Bolsão d'água em via
+2022-01-11 17:28:18.000000 UTC,2022-01-11 19:06:32.000000 UTC,70097,Baixo,R. silva rabêlo - méier,-22.8999136,-43.2814755,Bolsão d'água em via
+2022-01-11 16:56:32.000000 UTC,2022-01-11 18:11:45.000000 UTC,70083,Baixo,Av. brasil - alt. r. filomena nunes - olaria sent. centro ,-22.8379735,-43.259726000000008,Bolsão d'água em via
+2022-01-10 07:50:18.000000 UTC,2022-01-10 15:30:52.000000 UTC,70032,Baixo,"Av. chrisóstomo pimentel de oliveira,alt. via light - pavuna",-22.8158896,-43.3877139,Bolsão d'água em via
+2022-01-29 16:43:09.000000 UTC,2022-01-29 18:04:36.000000 UTC,70606,Baixo,"Av. heitor beltrão, alt. r. visconde de figueiredo - tijuca - ambos os sentidos",-22.9207824,-43.22422,Bolsão d'água em via
+2022-01-07 10:36:32.000000 UTC,2022-01-07 11:34:33.000000 UTC,69945,Baixo,"R. haddock lobo, 285 - tijuca",-22.9203506,-43.2156725,Bolsão d'água em via
+2022-01-16 20:46:04.000000 UTC,2022-01-16 21:26:01.000000 UTC,70224,Baixo,"Rua ten. cleto campelo, 871 - cocotá",-22.8083092,-43.1834453,Bolsão d'água em via
+2022-01-16 19:45:47.000000 UTC,2022-01-16 21:24:30.000000 UTC,70215,Baixo,"Rua grana, 1433 - cocotá",-22.8059197,-43.1842716,Bolsão d'água em via
+2022-01-29 15:18:08.000000 UTC,2022-01-29 17:36:26.000000 UTC,70585,Baixo,"Estr. do galeão, alt. base aérea - ilha do governador - sent. linha vermelha",-22.811957,-43.2181706,Bolsão d'água em via
+2022-01-30 21:13:35.000000 UTC,2022-01-30 23:49:04.000000 UTC,70658,Baixo,Estrada do galeão - alt restaurante siri da ilha - galeão,-22.8207517,-43.227208999999988,Bolsão d'água em via
+2022-01-17 06:46:46.000000 UTC,2022-01-17 11:12:33.000000 UTC,70240,Baixo,"Rua teixeira de freitas, alt. r. mte. valentim - glória - sent. flamengo",-22.9149843,-43.176116,Bolsão d'água em via
+2022-01-11 17:39:36.000000 UTC,2022-01-11 19:21:55.000000 UTC,70100,Baixo,"R. da glória, 148 - glória",-22.918393,-43.1771644,Bolsão d'água em via
+2022-01-30 21:28:54.000000 UTC,2022-01-30 21:53:14.000000 UTC,70660,Baixo,R. vinícius de moraes - alt. av. eptácio pessoa - ipanema,-22.9833705,-43.2027195,Bolsão d'água em via
+2022-01-11 17:04:29.000000 UTC,2022-01-11 19:13:34.000000 UTC,70086,Baixo,Av. epitácio pessoa - alt r. vinícius de moraes - ipanema,-22.9832664,-43.2027898,Bolsão d'água em via
+2022-01-08 01:30:46.000000 UTC,2022-01-08 02:43:34.000000 UTC,69970,Baixo,"Av. epitácio pessoa - alt. r. vinícius de moraes, 290 - ipanema",-22.9797488,-43.2024596,Bolsão d'água em via
+2022-01-29 15:53:58.000000 UTC,2022-01-29 17:36:21.000000 UTC,70596,Baixo,"R. ariperana, 150 - taquara",-22.9152066,-43.376088,Bolsão d'água em via
+2022-01-08 14:12:05.000000 UTC,2022-01-08 17:50:26.000000 UTC,69994,Baixo,Av. chrisóstomo pimentel de oliveira -alt. via light - anchieta,-22.8164293,-43.384932,Bolsão d'água em via
+2022-01-11 18:19:43.000000 UTC,2022-01-11 18:51:15.000000 UTC,70110,Baixo,"R. teodoro da silva, alt. alexandre calaza - andaraí",-22.9184206,-43.2500594,Bolsão d'água em via
+2022-01-11 17:00:47.000000 UTC,2022-01-11 18:49:20.000000 UTC,70085,Baixo,R. silveira martins - atlt. r. do catete,-22.92586,-43.176988,Bolsão d'água em via
+2022-01-08 01:27:19.000000 UTC,2022-01-08 05:05:22.000000 UTC,69969,Baixo,Rua humaitá - alt. r. fonte da saudade - humaitá,-22.9602307,-43.2031224,Bolsão d'água em via
+2022-01-07 11:31:27.000000 UTC,2022-01-07 11:33:47.000000 UTC,69949,Baixo,"Av. de santa cruz, 1475 - realengo",-22.8782754,-43.4377504,Bolsão d'água em via
+2022-01-03 18:48:09.000000 UTC,2022-01-03 19:30:53.000000 UTC,69832,Baixo,Av. dom joão vi - alt. acesso túnel da grota - sent. barra,-23.011313060701795,-43.534514957739255,Bolsão d'água em via
+2022-01-27 17:06:17.000000 UTC,2022-01-27 18:36:43.000000 UTC,70528,Baixo,R. conselheiro galvão - alt. av. min. edgar romero - madureira,-22.8724265,-43.3364431,Bolsão d'água em via
+2022-01-08 01:15:40.000000 UTC,2022-01-08 01:44:11.000000 UTC,69968,Baixo,"Av. min. edgard romero, alt. r. conselheiro galvão - madureira - sent. vaz lobo",-22.8661268,-43.3343465,Bolsão d'água em via
+2022-01-07 09:15:29.000000 UTC,2022-01-07 10:18:11.000000 UTC,69934,Baixo,R. max yantok - bancários - ilha do gov.,-22.7917275,-43.182906,Bolsão d'água em via
+2022-01-16 20:01:34.000000 UTC,2022-01-16 23:19:26.000000 UTC,70219,Baixo,"R. gipóia, alt. r. max yantok - bancários",-22.7908796,-43.1835052,Bolsão d'água em via
+2022-01-16 21:03:24.000000 UTC,2022-01-16 23:11:28.000000 UTC,70229,Baixo,"R. carice, alt. r. quatis - bancários",-22.7929809,-43.1856678,Bolsão d'água em via
+2022-01-16 20:53:45.000000 UTC,2022-01-16 23:12:25.000000 UTC,70225,Baixo,R. benedito patrício - bancários,-22.7910537,-43.181782,Bolsão d'água em via
+2022-01-11 17:39:59.000000 UTC,2022-01-11 19:18:35.000000 UTC,70099,Baixo,R. cardoso de morais - bonsucesso,-22.859998,-43.255895,Bolsão d'água em via
+2022-01-11 17:00:15.000000 UTC,2022-01-11 19:33:07.000000 UTC,70084,Baixo,"R. silva vale, alt. r. tumucumaque - cavalcante",-22.870391359296228,-43.312117242080696,Bolsão d'água em via
+2022-01-29 23:40:18.000000 UTC,2022-01-30 01:00:19.000000 UTC,70622,Baixo,"Rua tonelero, alt. r. siqueira campos - copacabana",-22.966589,-43.185360300000013,Bolsão d'água em via
+2022-01-08 01:53:33.000000 UTC,2022-01-08 02:34:40.000000 UTC,69971,Baixo,"R. tonelero, 216 - copacabana",-22.9671127,-43.1861562,Bolsão d'água em via
+2022-01-29 15:23:10.000000 UTC,2022-01-29 15:57:28.000000 UTC,70587,Baixo,"Av. brasil, alt. r. filomena nunes - olaria - sent. centro",-22.8382094,-43.2560382,Bolsão d'água em via
+2022-01-11 17:08:24.000000 UTC,2022-01-11 19:05:49.000000 UTC,70088,Baixo,Av. brasil - benfica - sent. zona oeste,-22.8850574,-43.2351722,Bolsão d'água em via
+2022-01-07 18:06:54.000000 UTC,2022-01-07 20:47:24.000000 UTC,69959,Baixo,Av. brasil - manguinhos - sent. z. oeste,-22.8790547,-43.2401616,Bolsão d'água em via
+2022-01-29 15:11:13.000000 UTC,2022-01-29 16:33:21.000000 UTC,70584,Baixo,"Av. brasil, alt. piscinão de ramos - sent. z. oeste",-22.8481099,-43.2467389,Bolsão d'água em via
+2022-01-16 19:42:17.000000 UTC,2022-01-16 20:30:11.000000 UTC,70214,Baixo,"Estrada do galeão, 1 - portuguesa",-22.816658,-43.187333,Bolsão d'água em via
+2022-01-16 17:01:28.000000 UTC,2022-01-16 18:09:43.000000 UTC,70209,Baixo,"R. felipe cardoso, alt. av. eng gastão rangel - santa cruz",-22.9277194,-43.6772512,Bolsão d'água em via
+2022-01-11 18:08:49.000000 UTC,2022-01-11 18:17:12.000000 UTC,70107,Baixo,"R. frei caneca, 414 - cidade nova",-22.9138664,-43.2003077,Bolsão d'água em via
+2022-01-11 17:37:29.000000 UTC,2022-01-11 18:43:38.000000 UTC,70098,Baixo,"Av. pres. vargas, alt. cidade nova - cidade nova",-22.9013228,-43.1790716,Bolsão d'água em via
+2022-01-29 15:19:52.000000 UTC,2022-01-29 16:07:14.000000 UTC,70586,Baixo,"Av. presidente vargas, alt. do cass – cidade nova - sent. av. brasil",-22.9098393,-43.206416399999988,Bolsão d'água em via
+2022-01-29 17:47:28.000000 UTC,2022-01-29 18:41:17.000000 UTC,70610,Baixo,"R. cândido benício, alt. vila olimpica  - praça seca - sent. tanque",-22.9051007,-43.3575012,Bolsão d'água em via
+2022-01-29 15:28:21.000000 UTC,2022-01-29 15:56:14.000000 UTC,70589,Baixo,"R. cândido benício, alt. r. godofredo viana - praça seca",-22.8989213,-43.3530551,Bolsão d'água em via
+2022-01-10 12:36:54.000000 UTC,2022-01-10 19:22:04.000000 UTC,70046,Baixo,Praça aquidauana - alt. do carioca shopping vila cosmos,-22.8505132,-43.309113,Bolsão d'água em via
+2022-01-11 16:52:11.000000 UTC,2022-01-11 17:35:52.000000 UTC,70082,Baixo,"R,. josé do patrocínio - alt. r. visc. de santa isabel - grajaú",-22.917311,-43.2629885,Bolsão d'água em via
+2022-01-11 17:15:01.000000 UTC,2022-01-11 17:47:36.000000 UTC,70091,Baixo,"Boulevard 28 de setembro, alt. uerj - vila isabel",-22.913516843728512,-43.235337235659777,Bolsão d'água em via
+2022-01-30 20:25:36.000000 UTC,2022-01-30 20:33:42.000000 UTC,70652,Baixo,Buraco do padre - engenho novo,-22.9020841,-43.2656087,Bolsão d'água em via
+2022-01-30 20:49:53.000000 UTC,2022-01-30 22:21:13.000000 UTC,70654,Baixo,Buraco do padre - engenho novo,-22.9020841,-43.2656087,Bolsão d'água em via
+2022-01-11 16:47:09.000000 UTC,2022-01-11 17:53:17.000000 UTC,70081,Baixo,R. vinte e quatro de maio - alt. r. cônego tobias - eng. novo,-22.9024799,-43.2777458,Bolsão d'água em via
+2022-01-07 10:32:33.000000 UTC,2022-01-07 10:34:58.000000 UTC,69943,Baixo,Rua ilha fiscal - ilha do governador,-22.8969444,-43.1669444,Bolsão d'água em via
+2022-01-06 20:24:17.000000 UTC,2022-01-07 00:23:12.000000 UTC,69917,Baixo,R. oscar alfredo sebastião cox - atras do sesc - jacarepaguá,-22.9624675,-43.3615562,Bolsão d'água em via
+2022-01-29 17:59:37.000000 UTC,2022-01-29 21:01:32.000000 UTC,70612,Baixo,"R. antônio cordeiro, 281 - jacarepaguá",-22.9427697,-43.3375179,Bolsão d'água em via
+2022-01-07 06:48:04.000000 UTC,2022-01-07 16:54:13.000000 UTC,69923,Baixo,Av. eng. souza filho - muzema - jacarepaguá,-22.9720927,-43.337000499999988,Bolsão d'água em via
+2022-01-29 16:21:40.000000 UTC,2022-01-29 20:44:00.000000 UTC,70601,Baixo,"R. duarte da costa, 103 - bento ribeiro",-22.8675544,-43.3670045,Bolsão d'água em via
+2022-01-07 11:15:40.000000 UTC,2022-01-07 16:47:25.000000 UTC,69947,Baixo,Av. albérico diniz - alt. r. pacifico pereira - jardim sulacap,-22.8871322,-43.3889652,Bolsão d'água em via
+2022-01-11 19:32:28.000000 UTC,2022-01-11 19:47:25.000000 UTC,70120,Baixo,Estr. do catonho - alt. estrada do cafundá  - jardim sulacap - ambos sentidos,-22.9046859,-43.3802044,Bolsão d'água em via
+2022-01-07 11:17:16.000000 UTC,2022-01-07 11:18:45.000000 UTC,69948,Baixo,Av. marechal fontenele - alt. museu aeroespacial - jardim sulacap,-22.8850331,-43.3905378,Bolsão d'água em via
+2022-01-28 21:21:27.000000 UTC,2022-01-28 22:18:46.000000 UTC,70570,Baixo,"Rua das tulípas, r. das camélias - vila valqueire",-22.883199,-43.3670766,Bolsão d'água em via
+2022-01-28 20:42:49.000000 UTC,2022-01-28 21:17:22.000000 UTC,70569,Baixo,Praça saiqui - vila valqueire,-22.8829334,-43.3678489,Bolsão d'água em via
+2022-01-07 08:24:28.000000 UTC,2022-01-07 08:27:06.000000 UTC,69931,Baixo,Av. das américas - alt. esplanada da barra - barra - sent. são conrado,-23.000707,-43.3523752,Bolsão d'água em via
+2022-01-07 08:02:06.000000 UTC,2022-01-07 09:07:14.000000 UTC,69927,Baixo,Av. das américas - alt. barra shopping - barra da tijuca - sent. são conrado,-23.0001865622728,-43.359371344982925,Bolsão d'água em via
+2022-01-03 20:13:25.000000 UTC,2022-01-03 21:29:55.000000 UTC,69836,Baixo,"Estr. roberto burle marx, 727 - barra guaratiba",-23.0114486,-43.541246400000013,Bolsão d'água em via
+2022-01-30 22:09:33.000000 UTC,2022-01-30 23:46:34.000000 UTC,70661,Baixo,Av. brasil - alt. garagem itapemirim - parada de lucas - sent. centro.,-22.8189943,-43.2849846,Bolsão d'água em via
+2022-01-11 17:54:08.000000 UTC,2022-01-11 19:27:18.000000 UTC,70103,Baixo,"R. getúlio, 13 - todos os santos",-22.8975996,-43.2819609,Bolsão d'água em via
+2022-01-11 17:13:19.000000 UTC,2022-01-11 18:58:41.000000 UTC,70090,Baixo,"Rua uçá, 472 - jardim guanabara",-22.8170464,-43.2016845,Bolsão d'água em via
+2022-01-16 20:56:20.000000 UTC,2022-01-16 21:34:32.000000 UTC,70226,Baixo,"Estrada da bica, 386 - jardim guanabara",-22.8189087,-43.1882652,Bolsão d'água em via
+2022-01-08 06:22:25.000000 UTC,2022-01-08 11:59:55.000000 UTC,69978,Baixo,Av. brasil - alt. rua são cristóvão - são cristóvão - sent. centro,-22.8930301,-43.215946500000008,Bolsão d'água em via
+2022-01-11 17:41:53.000000 UTC,2022-01-11 17:52:32.000000 UTC,70101,Baixo,"R. bela, alt. r. ricardo machado - são cristóvão",-22.8879608,-43.225295,Bolsão d'água em via
+2022-01-16 20:58:17.000000 UTC,2022-01-16 23:20:09.000000 UTC,70228,Baixo,"Av. paranapuã, alt. r. capanema - praia da bandeira",-22.7953868,-43.1821598,Bolsão d'água em via
+2022-01-16 20:40:22.000000 UTC,2022-01-16 21:35:27.000000 UTC,70223,Baixo,"Estr. do galeão, alt. praça do avião - sent. portuguesa",-22.815633,-43.2218415,Bolsão d'água em via
+2022-01-08 09:45:12.000000 UTC,2022-01-08 18:32:43.000000 UTC,69987,Baixo,Av. genaro de carvalho - alt. av. gilka machado - recreio,-23.0216036,-43.4781503,Bolsão d'água em via
+2022-01-06 15:20:52.000000 UTC,2022-01-06 15:28:55.000000 UTC,69902,Baixo,Rua tirol - alt. r. cmte. rubens silva- freguesia de jacarepaguá,-22.9394282,-43.3366942,Bolsão d'água em via
+2022-01-29 15:50:31.000000 UTC,2022-01-29 17:36:45.000000 UTC,70595,Baixo,"Rua geminiano góis, alt. r. três rios - freguesia de jacarepaguá",-22.9318561,-43.3366165,Bolsão d'água em via
+2022-01-29 15:47:48.000000 UTC,2022-01-29 16:46:21.000000 UTC,70594,Baixo,"R. tirol, alt. r. comandante rubens silva  - freguesia de jacarepaguá",-22.9399597,-43.3371493,Bolsão d'água em via
+2022-01-06 17:01:09.000000 UTC,2022-01-06 18:09:29.000000 UTC,69909,Baixo,"Estr. do gabinal, 1737 - freguesia de jacarepaguá",-22.9527561,-43.3530703,Bolsão d'água em via
+2022-01-11 17:09:22.000000 UTC,2022-01-11 18:58:03.000000 UTC,70089,Baixo,"R. juciape, alt. rua aruja - freguesia (ilha do governador)",-22.7934755,-43.1725348,Bolsão d'água em via
+2022-01-16 21:31:37.000000 UTC,2022-01-16 22:47:41.000000 UTC,70230,Baixo,"Av. dr. agenor de almeida loyola, 929 - freguesia (ilha do governador)",-22.788832,-43.1780844,Bolsão d'água em via
+2022-01-30 21:10:44.000000 UTC,2022-01-30 23:49:49.000000 UTC,70657,Baixo,R. pio dutra - freguesia (ilha do governador),-22.7927046,-43.1743914,Bolsão d'água em via
+2022-01-29 15:30:31.000000 UTC,2022-01-29 16:19:03.000000 UTC,70590,Baixo,"R. pio dutra, 440 - freguesia (ilha do governador)",-22.7927046,-43.1743914,Bolsão d'água em via
+2022-01-11 17:47:47.000000 UTC,2022-01-11 18:52:32.000000 UTC,70102,Baixo,R. aimoré - alt. mercado guanabara - penha,-22.8454793,-43.2861226,Alagamento
+2022-01-11 18:54:04.000000 UTC,2022-01-11 19:02:28.000000 UTC,70118,Baixo,"R. arriba, 370 - cacuia",-22.8194319,-43.1877906,Alagamento
+2022-01-11 18:13:07.000000 UTC,2022-01-11 18:59:34.000000 UTC,70108,Baixo,R. max yantok - bancários,-22.7917275,-43.182906,Alagamento
+2022-01-11 18:27:08.000000 UTC,2022-01-11 19:31:11.000000 UTC,70114,Baixo,R. 24 de fevereiro - bonsucesso,-22.8605819,-43.2500828,Alagamento
+2022-01-11 17:16:38.000000 UTC,2022-01-11 18:03:18.000000 UTC,70092,Baixo,Boulevard 28 de setembro - alt. r. felipe camarão - vila isabel,-22.9153377,-43.2426739,Alagamento
+2022-01-11 18:37:27.000000 UTC,2022-01-12 05:38:29.000000 UTC,70115,Baixo,"Av. eng. souza filho, 1188 - jacarepaguá",-22.9748397,-43.3357246,Alagamento
+2022-01-11 18:47:34.000000 UTC,2022-01-11 18:55:44.000000 UTC,70117,Baixo,"Rua uçá, 742 - jardim guanabara",-22.8183744,-43.2016314,Alagamento
+2022-01-11 18:19:47.000000 UTC,2022-01-11 19:01:55.000000 UTC,70111,Baixo,R. mangalô - jardim guanabara,-22.8161252,-43.196527499999988,Alagamento
+2022-01-11 18:17:11.000000 UTC,2022-01-11 19:00:18.000000 UTC,70109,Baixo,Av. cel. luís oliveira sampaio - jardim guanabara,-22.8156252,-43.1887789,Alagamento
+2022-01-11 18:41:16.000000 UTC,2022-01-11 18:56:19.000000 UTC,70116,Baixo,R. arujá - freguesia (ilha do governador),-22.7932597,-43.1736173,Alagamento
+2022-01-11 18:23:40.000000 UTC,2022-01-11 19:01:00.000000 UTC,70112,Baixo,"R. pio dutra, 532 - freguesia (ilha do governador)",-22.7929607,-43.1752092,Alagamento
+2022-01-11 17:24:03.000000 UTC,2022-01-11 17:52:03.000000 UTC,70096,Baixo,"Av. das américas, alt. downtown, sent centro - barra da tijuca",-23.0076006,-43.4381311,Bolsão d'água em via
+2022-01-11 17:18:02.000000 UTC,2022-01-11 18:56:58.000000 UTC,70093,Baixo,"R. tonelero, alt. r. siqueira campos - copacabana",-22.9666427,-43.1852321,Bolsão d'água em via
+2022-01-16 20:35:34.000000 UTC,2022-01-16 20:55:53.000000 UTC,70222,Baixo,"R. tonelero, alt. r. siqueira campos - copacabana",-22.9666427,-43.1852321,Bolsão d'água em via
+2022-01-08 17:32:28.000000 UTC,2022-01-08 19:39:42.000000 UTC,69998,Baixo,R. tonelero -alt. r. siqueira campos - copacabana,-22.9666427,-43.1852321,Bolsão d'água em via
+2022-01-29 16:37:06.000000 UTC,2022-01-29 16:58:45.000000 UTC,70604,Baixo,"Trevo das magaridas, alt. av. brasil - irajá - ambos os sentidos",-22.8204814,-43.3204012,Bolsão d'água em via
+2022-01-11 16:12:26.000000 UTC,2022-01-11 18:00:46.000000 UTC,70080,Baixo,Av. brasil - alt. trevo das margaridas - irajá - sent. centro,-22.8204814,-43.3204012,Bolsão d'água em via
+2022-01-29 15:01:23.000000 UTC,2022-01-29 16:35:52.000000 UTC,70583,Baixo,"Trevo das magaridas, alt. av. brasil - irajá - ambos os sentidos",-22.8204814,-43.3204012,Bolsão d'água em via
+2022-01-06 20:31:24.000000 UTC,2022-01-07 00:21:40.000000 UTC,69918,Baixo,Av. ayrton senna - alt. ponte santos dumond - barra da tijuca - sent. av. abelardo bueno.,-22.9829359,-43.365378,Bolsão d'água em via
+2022-01-16 19:26:38.000000 UTC,2022-01-16 21:28:23.000000 UTC,70211,Medio,"Rua do cadete, alt. r. silveira martins - catete - sent. glória",-22.9270219,-43.1766223,Bolsão d'água em via
+2022-01-16 20:17:17.000000 UTC,2022-01-16 21:19:47.000000 UTC,70221,Medio,"Rua do lavradio, alt. r. do rezende - centro",-22.9107432,-43.182767899999988,Bolsão d'água em via
+2022-01-29 15:45:51.000000 UTC,2022-01-30 07:48:09.000000 UTC,70593,Medio,"Av. chrisóstomo pimentel de oliveira, 1073 (via light) - anchieta",-22.8171132,-43.3905401,Bolsão d'água em via
+2022-01-29 15:38:29.000000 UTC,2022-01-29 17:39:47.000000 UTC,70592,Medio,"Av brasil, alt. atacadão - sent. z. oeste",-22.886501,-43.233363300000008,Bolsão d'água em via
+2022-01-07 08:40:43.000000 UTC,2022-01-07 09:06:56.000000 UTC,69932,Medio,Estr. do catonho - alt. estr. cafundá - jardim sulacap,-22.906854778632962,-43.379890772152713,Bolsão d'água em via
+2022-01-29 16:09:47.000000 UTC,2022-01-29 17:27:14.000000 UTC,70599,Medio,"Estr. do catonho, alt. estr. do cafundá - jardim sulacap",-22.898978,-43.3891283,Bolsão d'água em via
+2022-01-07 07:47:21.000000 UTC,2022-01-07 14:10:37.000000 UTC,69926,Medio,R. pio dutra - freguesia (ilha do governador),-22.7927046,-43.1743914,Bolsão d'água em via
+2023-04-08 12:52:54.000000 UTC,2023-04-08 15:17:07.000000 UTC,94445,Baixo,Pça general tibúrcio - urca,-22.9552043,-43.1663915,Bolsão d'água em via
+2023-04-08 09:22:58.000000 UTC,2023-04-08 16:52:39.000000 UTC,94430,Baixo,Av. borges de medeiros - alt. r. batista da costa - lagoa,-22.9769764,-43.2179514,Bolsão d'água em via
+2023-04-14 17:06:21.000000 UTC,2023-04-14 18:32:42.000000 UTC,94818,Baixo,R. ibiapina - alt. r. monsenhor alves rocha - penha,-22.8426708,-43.2721271,Bolsão d'água em via
+2023-04-14 17:10:38.000000 UTC,2023-04-14 18:23:31.000000 UTC,94819,Baixo,Av. brasil - alt. ramos - sent. centro,-22.8510278,-43.2477585,Bolsão d'água em via
+2023-04-14 17:34:53.000000 UTC,2023-04-14 18:21:14.000000 UTC,94822,Baixo,R. leopoldina rego - alt. viaduto de ramos - ramos,-22.8467963,-43.2663986,Bolsão d'água em via
+2023-04-08 06:58:07.000000 UTC,2023-04-08 10:42:48.000000 UTC,94411,Baixo,R. de santana x r. frei caneca - centro,-22.9081212,-43.1939546,Bolsão d'água em via
+2023-04-28 18:17:22.000000 UTC,2023-04-28 18:19:00.000000 UTC,95600,Baixo,Av. passos x r. buenos aires - centro,-22.9040087,-43.1834202,Bolsão d'água em via
+2023-04-08 22:13:28.000000 UTC,2023-04-08 22:58:59.000000 UTC,94468,Baixo,Praça da república - alt. rua vinte de abril - centro,-22.9068124,-43.1889597,Bolsão d'água em via
+2023-04-09 18:11:22.000000 UTC,2023-04-09 18:56:18.000000 UTC,94523,Baixo,Praça marechal âncora - centro,-22.9049078,-43.1704191,Bolsão d'água em via
+2023-04-08 03:42:14.000000 UTC,2023-04-08 04:11:57.000000 UTC,94393,Baixo,R. dias da cruz - alt. rua vilela tavares  - méier,-22.9045871,-43.2882233,Bolsão d'água em via
+2023-04-08 04:30:36.000000 UTC,2023-04-08 06:02:18.000000 UTC,94403,Baixo,R. do catete - alt. rua rua correia dutra - glória,-22.9269656,-43.1766115,Bolsão d'água em via
+2023-04-08 04:37:40.000000 UTC,2023-04-08 06:02:01.000000 UTC,94405,Baixo,R. do catete - alt. rua silveira martins - glória,-22.9269656,-43.1766115,Bolsão d'água em via
+2023-04-08 07:31:35.000000 UTC,2023-04-08 10:52:38.000000 UTC,94414,Baixo,R. do catete - alt. r. silveira martins - catete,-22.9269656,-43.1766115,Bolsão d'água em via
+2023-04-08 07:44:16.000000 UTC,2023-04-08 11:30:47.000000 UTC,94418,Baixo,R. vinícius de moraes x av. eptácio pessoa - ipanema,-22.9832664,-43.2027898,Bolsão d'água em via
+2023-04-28 11:42:07.000000 UTC,2023-04-28 15:00:11.000000 UTC,95585,Baixo,Av. vieira souto x  av. henrique dumont - ipanema,-22.9865649,-43.2049704,Bolsão d'água em via
+2023-04-08 03:49:42.000000 UTC,2023-04-08 04:09:01.000000 UTC,94395,Baixo,R. goiás - alt. rua silvana - piedade,-22.8892726,-43.3105029,Bolsão d'água em via
+2023-04-08 04:22:56.000000 UTC,2023-04-08 06:42:26.000000 UTC,94401,Baixo,Praia de botafogo - alt. rua visconde de ouro preto - botafogo - sent. copadabana,-22.9521886,-43.181076,Bolsão d'água em via
+2023-04-08 08:54:50.000000 UTC,2023-04-08 16:54:01.000000 UTC,94426,Baixo,R. marquês de olinda x praia de botafogo - botafogo,-22.9437967,-43.1839729,Bolsão d'água em via
+2023-04-08 09:18:26.000000 UTC,2023-04-08 11:29:50.000000 UTC,94429,Baixo,Av. infante dom henrique - alt. campo de futebol - flamengo - sent. z. sul,-22.9303189,-43.1730561,Bolsão d'água em via
+2023-04-09 14:53:07.000000 UTC,2023-04-09 17:51:11.000000 UTC,94514,Baixo,R. bernardo de vasconcelos - alt. r. dr. lessa - realengo,-22.876013,-43.4340806,Bolsão d'água em via
+2023-04-09 13:19:37.000000 UTC,2023-04-09 13:20:32.000000 UTC,94507,Baixo,Av. ernani cardoso x r. padre telemaco- cascadura,-22.8824192,-43.3354398,Bolsão d'água em via
+2023-04-28 05:57:37.000000 UTC,2023-04-28 08:18:49.000000 UTC,95553,Baixo,Estrada da pedra - entre as estações brt venda de varandas e santa veridiana - guaratiba - sent. santa cruz,-22.9686009,-43.6478678,Bolsão d'água em via
+2023-04-28 06:38:22.000000 UTC,2023-04-28 17:46:25.000000 UTC,95557,Baixo,Av dom joão vi - alt. estação brt mato alto - guaratiba - sent. santa cruz,-22.9942823,-43.5962884,Bolsão d'água em via
+2023-04-09 10:15:37.000000 UTC,2023-04-09 11:26:01.000000 UTC,94493,Baixo,Av. min. edgard romero - alt. rua conselheiro galvão - madureira,-22.8661268,-43.3343465,Bolsão d'água em via
+2023-04-09 13:29:52.000000 UTC,2023-04-09 17:51:02.000000 UTC,94509,Baixo,R. padre manso - madureira,-22.8797586,-43.3373623,Bolsão d'água em via
+2023-04-08 07:40:50.000000 UTC,2023-04-08 10:39:12.000000 UTC,94417,Baixo,R. morais e silva x r. ibituruna - maracanã,-22.9143473,-43.2237356,Bolsão d'água em via
+2023-04-08 07:25:09.000000 UTC,2023-04-08 14:00:27.000000 UTC,94413,Baixo,R. tonelero x r. siqueira campos - copacabana,-22.966589,-43.185360300000013,Bolsão d'água em via
+2023-04-02 01:33:56.000000 UTC,2023-04-02 02:17:08.000000 UTC,94048,Baixo,"Rua tonelero, alt. r. siqueira campos - copacabana",-22.9664282,-43.1870582,Bolsão d'água em via
+2023-04-08 06:53:29.000000 UTC,2023-04-08 15:22:13.000000 UTC,94410,Baixo,Estr. da barra da tijuca - alt. n° 1636 - itanhangá - sent. tijuca,-22.9983192,-43.3044309,Bolsão d'água em via
+2023-04-28 04:58:49.000000 UTC,2023-04-28 07:08:39.000000 UTC,95548,Baixo,Av. presidente vargas - alt. cass - cidade nova - sent. av. francisco bicalho.,-22.9092224,-43.2026754,Bolsão d'água em via
+2023-04-08 22:09:54.000000 UTC,2023-04-08 22:54:18.000000 UTC,94467,Baixo,Rua do santana - alt. rua frei caneca - cidade nova,-22.9128425,-43.1955186,Bolsão d'água em via
+2023-04-08 04:55:20.000000 UTC,2023-04-08 06:45:22.000000 UTC,94406,Baixo,Estrada do bandeirantes - alt. estação brt arroio pavuna - jacarepaguá - sent. taquara,-22.9602998,-43.3789659,Bolsão d'água em via
+2023-04-08 10:59:37.000000 UTC,2023-04-08 17:06:42.000000 UTC,94438,Baixo,R. benedito hipólito - alt. viaduto são sebastião - santa teresa,-22.9083653,-43.197354,Bolsão d'água em via
+2023-04-28 09:07:10.000000 UTC,2023-04-28 17:48:04.000000 UTC,95572,Baixo,Estr. do catonho - alt. n° 1900 - jardim sulacap - sent. malé,-22.896515,-43.3977534,Bolsão d'água em via
+2023-04-08 04:27:59.000000 UTC,2023-04-08 14:06:01.000000 UTC,94402,Baixo,Av. das américas - alt. estação brt bosque marapendi - barra da tijuca - sent. recreio.,-23.0034077,-43.323717599999988,Bolsão d'água em via
+2023-04-08 08:22:04.000000 UTC,2023-04-08 10:40:50.000000 UTC,94421,Baixo,R. jardim botânico x r. pacheco leão - jardim botânico,-22.9642239,-43.2174748,Bolsão d'água em via
+2023-04-14 16:58:30.000000 UTC,2023-04-14 18:12:29.000000 UTC,94817,Baixo,Rua cambaúba - alt. nº 1664 - jardim guanabara,-22.8171114,-43.2033873,Bolsão d'água em via
+2023-04-14 17:45:25.000000 UTC,2023-04-14 18:10:15.000000 UTC,94827,Baixo,R. pio dutra -  freguesia (ilha do governador),-22.7927046,-43.1743914,Bolsão d'água em via
+2023-04-26 20:51:55.000000 UTC,2023-04-27 01:01:12.000000 UTC,95448,Baixo,"Rua pio dutra, alt. n° 300 - freguesia (ilha do governador)",-22.7920755,-43.1735243,Bolsão d'água em via
+2023-04-14 17:27:50.000000 UTC,2023-04-14 18:39:44.000000 UTC,94821,Medio,Av. teixeira de castro - alt. brt santa luzia - bonsucesso,-22.8552504,-43.252104,Alagamento
+2023-04-26 21:16:45.000000 UTC,2023-04-27 00:23:36.000000 UTC,95450,Baixo,"Rua demétrio de tolêdo, alt. r. capanema - tauá (ilha do governador)",-22.793402,-43.1843797,Alagamento
+2023-04-26 21:32:21.000000 UTC,2023-04-27 00:44:01.000000 UTC,95452,Baixo,"Rua max yantok, alt. ilha fiscal - bancários",-22.7917275,-43.182906,Alagamento
+2023-04-28 05:38:15.000000 UTC,2023-04-28 13:11:37.000000 UTC,95550,Baixo,Av. francisco bicalho - alt. usina de asfalto - santo cristo - sent. centro,-22.9046586,-43.2097136,Bolsão d'água em via
+2023-04-08 04:35:00.000000 UTC,2023-04-08 06:07:47.000000 UTC,94404,Baixo,Av. pres. vargas - alt. cass - cidade nova - sent. av francisco bicalho,-22.9101004,-43.205493,Bolsão d'água em via
+2023-04-08 07:34:38.000000 UTC,2023-04-08 10:39:35.000000 UTC,94415,Baixo,Av. ayrton senna - alt. uptown - barra da tijuca - ambos os sentidos,-22.9828496,-43.3653116,Bolsão d'água em via
+2023-04-01 22:59:51.000000 UTC,2023-04-02 00:36:10.000000 UTC,94045,Baixo,"Av. ayrton senna, alt. uptown barra - barra da tijuca - em ambos os sentidos",-22.9828496,-43.3653116,Bolsão d'água em via
+2022-02-17 21:39:01.000000 UTC,2022-02-17 22:31:54.000000 UTC,71255,Baixo,"Rua da feira, alt. r. dos açudes - bangu - sent. padre miguel",-22.8826752,-43.4688412,Bolsão d'água em via
+2022-02-07 15:35:07.000000 UTC,2022-02-07 16:28:03.000000 UTC,70899,Baixo,R. da feira - alt. r. dos açudes - bangu,-22.8804744,-43.4691468,Bolsão d'água em via
+2022-02-21 19:09:36.000000 UTC,2022-02-21 20:03:15.000000 UTC,71370,Baixo,"Rua da feira, alt. r. dos açudes - bangu - sent. padre miguel",-22.8826752,-43.4688412,Bolsão d'água em via
+2022-02-17 18:14:58.000000 UTC,2022-02-17 19:45:19.000000 UTC,71239,Baixo,R. demétrio de tolêdo - tauá,-22.7932988,-43.1841183,Bolsão d'água em via
+2022-02-17 18:16:50.000000 UTC,2022-02-17 19:45:30.000000 UTC,71240,Baixo,R. prof hilárião da rocha - tauá,-22.7964058,-43.1848533,Bolsão d'água em via
+2022-02-17 21:30:05.000000 UTC,2022-02-17 22:31:39.000000 UTC,71253,Baixo,"Rua tupitinga, alt. av. bacaxa - cosmos",-22.8913545,-43.6086877,Bolsão d'água em via
+2022-02-07 15:40:53.000000 UTC,2022-02-07 15:49:26.000000 UTC,70900,Baixo,Rua barão do bom retiro - alt. av. eng. richard - vila isabel,-22.92053863012071,-43.259396760713187,Bolsão d'água em via
+2022-02-07 15:12:03.000000 UTC,2022-02-07 15:38:58.000000 UTC,70896,Baixo,R. josé do patrocínio  - alt. r. mal. jofre - grajau,-22.9190938,-43.266166299999988,Bolsão d'água em via
+2022-02-07 15:45:43.000000 UTC,2022-02-07 15:49:01.000000 UTC,70901,Baixo,R. nossa sra. de lourdes - alt. r. barão do bom retiro - grajau,-22.9211029,-43.2546746,Bolsão d'água em via
+2022-02-17 17:54:06.000000 UTC,2022-02-17 18:52:11.000000 UTC,71236,Baixo,Av. brasil - alt. trevo das margaridas - irajá - sent. centro,-22.8204814,-43.3204012,Bolsão d'água em via
+2022-02-21 16:54:50.000000 UTC,2022-02-21 20:43:42.000000 UTC,71369,Baixo,Trevo das margaridas - alt. av. brasil - irajá - sent. rod. pres. dutra,-22.8204814,-43.3204012,Bolsão d'água em via
+2022-02-06 15:42:06.000000 UTC,2022-02-06 17:15:09.000000 UTC,70865,Baixo,"Av. brasil ,alt. trevo das margaridas - sent. centro",-22.8199503,-43.3163704,Bolsão d'água em via
+2022-02-09 02:22:41.000000 UTC,2022-02-09 02:33:41.000000 UTC,70968,Baixo,"Rua mario ribeiro, 201 - leblon - sent. lagoa",-22.9776408,-43.2203293,Bolsão d'água em via
+2022-02-07 16:18:23.000000 UTC,2022-02-07 17:36:27.000000 UTC,70906,Baixo,Av. prof. bernardino rocha - pavuna,-22.8130674,-43.3736976,Bolsão d'água em via
+2022-02-07 17:38:54.000000 UTC,2022-02-07 18:38:57.000000 UTC,70916,Baixo,Av. prof. bernardino rocha - pavuna,-22.8130674,-43.3736976,Bolsão d'água em via
+2022-02-17 19:30:36.000000 UTC,2022-02-17 20:24:42.000000 UTC,71247,Baixo,"Av. braz crispino, alt. estr. das canárias - ilha do governador - sent. estr. do galeão",-22.8126375,-43.2273617,Bolsão d'água em via
+2022-02-18 06:22:07.000000 UTC,2022-02-18 17:18:07.000000 UTC,71261,Baixo,"Av. epitácio pessoa, alt. r. redentor - ipanema",-22.973035,-43.2078636,Bolsão d'água em via
+2022-02-07 17:33:21.000000 UTC,2022-02-07 18:07:25.000000 UTC,70914,Baixo,R. vinícius de moraes - alt. av. epitácio pessoa - ipanema,-22.980085913960771,-43.202489392590323,Bolsão d'água em via
+2022-02-07 20:25:12.000000 UTC,2022-02-07 21:57:26.000000 UTC,70934,Baixo,"R. mapendi, 970 - taquara",-22.9302209,-43.3757111,Bolsão d'água em via
+2022-02-07 16:14:52.000000 UTC,2022-02-07 17:08:56.000000 UTC,70905,Baixo,"R. da reverência, 48 - curicica",-22.9593738,-43.3910008,Bolsão d'água em via
+2022-02-07 16:19:57.000000 UTC,2022-02-07 17:36:41.000000 UTC,70907,Baixo,Rua da ventura - curicica,-22.9530675,-43.3896884,Bolsão d'água em via
+2022-02-18 20:38:21.000000 UTC,2022-02-18 22:30:44.000000 UTC,71292,Baixo,"Rua do catete, alt. r. silveira martins - catete",-22.9258769,-43.178293,Bolsão d'água em via
+2022-02-21 21:18:45.000000 UTC,2022-02-21 21:22:17.000000 UTC,71376,Baixo,"Rua bernardo de vasconcelos, 1746 - realengo",-22.87555,-43.4382519,Bolsão d'água em via
+2022-02-07 06:00:24.000000 UTC,2022-02-07 07:32:11.000000 UTC,70869,Baixo,"Estr. da pedra, alt. est. brt santa veridiana - guaratiba - sent. av. dom joão vi",-22.9942823,-43.5962884,Bolsão d'água em via
+2022-02-21 19:41:15.000000 UTC,2022-02-21 20:03:38.000000 UTC,71372,Baixo,"Av. cesário de melo, alt. r aurélio de figueiredo - campo grande",-22.9094738,-43.5807627,Bolsão d'água em via
+2022-02-07 20:12:29.000000 UTC,2022-02-07 20:55:56.000000 UTC,70933,Baixo,Av. cesário de melo - alt. estação brt inhoaíba - sent. paciênca.,-22.9150716,-43.6057638,Bolsão d'água em via
+2022-02-21 19:25:40.000000 UTC,2022-02-21 22:05:06.000000 UTC,71371,Baixo,"Av. cesário de melo, alt. r. moranga - inhoaíba - sent. campo grande",-22.9120765,-43.593072799999987,Bolsão d'água em via
+2022-02-17 21:24:38.000000 UTC,2022-02-17 23:49:35.000000 UTC,71251,Baixo,"Av. cesário de melo, alt. r. moranga - inhoaíba - sent. campo grande",-22.9121472,-43.5930144,Bolsão d'água em via
+2022-02-07 15:58:42.000000 UTC,2022-02-07 18:16:42.000000 UTC,70902,Baixo,Av. min. edgard romero - alt. r. conselheiro galvão - madureira - sent. vicente de carvalho,-22.8724265,-43.3364431,Bolsão d'água em via
+2022-02-17 18:12:52.000000 UTC,2022-02-17 19:45:08.000000 UTC,71238,Baixo,R. max yantok - bancários,-22.7917275,-43.182906,Bolsão d'água em via
+2022-02-17 18:18:29.000000 UTC,2022-02-17 19:45:42.000000 UTC,71241,Baixo,Rua ilha fiscal - bancários,-22.788895,-43.183477,Bolsão d'água em via
+2022-02-18 18:31:11.000000 UTC,2022-02-18 21:34:19.000000 UTC,71283,Baixo,R. tonelero - alt. r. siqueira campos - copacabana,-22.9671127,-43.1861562,Bolsão d'água em via
+2022-02-07 16:48:58.000000 UTC,2022-02-08 22:00:43.000000 UTC,70911,Baixo,Av. eng. souza filho - muzema ,-22.9786046,-43.3336748,Bolsão d'água em via
+2022-02-09 20:59:46.000000 UTC,2022-02-09 23:10:15.000000 UTC,70994,Baixo,"Av. eng. souza filho, 613 - itanhangá - sent. estr. da barra da tijuca",-22.9887556,-43.323884,Bolsão d'água em via
+2022-02-17 23:04:44.000000 UTC,2022-02-18 00:45:42.000000 UTC,71257,Baixo,"Estr. do itanhangá, 1020 - itanhangá - sent. rio das pedras",-22.995249,-43.311421,Bolsão d'água em via
+2022-02-09 18:19:20.000000 UTC,2022-02-09 20:38:49.000000 UTC,70988,Baixo,"Estr. do itanhangá, 1020 - itanhangá - sent. rio das pedras",-22.995249,-43.311421,Bolsão d'água em via
+2022-02-21 15:42:24.000000 UTC,2022-02-21 17:40:47.000000 UTC,71366,Baixo,Av. brasil - alt. viaduto ataulfo alves - benfica - sent. zona oeste,-22.8790547,-43.2401616,Bolsão d'água em via
+2022-02-17 18:31:03.000000 UTC,2022-02-17 19:15:35.000000 UTC,71243,Baixo,R. eduardo nadruz - portuguesa,-22.8001606,-43.210776,Bolsão d'água em via
+2022-02-17 18:33:17.000000 UTC,2022-02-17 19:46:03.000000 UTC,71244,Baixo,Rua manoel antônio sendas - portuguesa,-22.8001044,-43.2111635,Bolsão d'água em via
+2022-02-07 21:32:37.000000 UTC,2022-02-08 06:56:01.000000 UTC,70939,Baixo,Estrada da pedra - alt. estação brt santa veridiana - santa cruz - sent. guaratiba,-22.94048,-43.66514,Bolsão d'água em via
+2022-02-17 18:43:26.000000 UTC,2022-02-17 19:46:35.000000 UTC,71246,Baixo,"Estr. de tubiacanga, 131 - ilha do governador",-22.7840631,-43.2279984,Bolsão d'água em via
+2022-02-07 16:27:16.000000 UTC,2022-02-07 20:47:45.000000 UTC,70910,Baixo,Av. pastor m. l. king júnior - alt. hosp. ronaldo gazolla - acari,-22.825436694402281,-43.347424435581971,Bolsão d'água em via
+2022-02-07 15:04:59.000000 UTC,2022-02-07 15:23:43.000000 UTC,70895,Baixo,R. teodoro da silva - alt. r. sousa franco - vila isabel,-22.9175689,-43.2454703,Bolsão d'água em via
+2022-02-21 21:11:02.000000 UTC,2022-02-21 21:17:05.000000 UTC,71375,Baixo,"Estr. da caroba, 685 (alt. da feuc) campo grande ",-22.8988927,-43.554047999999987,Bolsão d'água em via
+2022-02-21 22:06:54.000000 UTC,2022-02-21 22:07:52.000000 UTC,71379,Baixo,"Estr. do mendanha, 1161 - campo grande - em ambos os sentidos",-22.8711864,-43.554676699999987,Bolsão d'água em via
+2022-02-21 20:32:52.000000 UTC,2022-02-21 20:44:46.000000 UTC,71373,Baixo,"Av. cesário de melo, 4351 (alt. cemitério) - campo grande",-22.9068941,-43.573388,Bolsão d'água em via
+2022-02-17 21:27:25.000000 UTC,2022-02-17 22:36:13.000000 UTC,71252,Baixo,Rua armando amaral rebello - campo grande,-22.8861057,-43.5748127,Bolsão d'água em via
+2022-02-17 21:10:29.000000 UTC,2022-02-17 21:16:48.000000 UTC,71248,Baixo,"Estr. rio do a, alt. estr. rio são paulo - campo grande",-22.8968106,-43.5636889,Bolsão d'água em via
+2022-02-12 22:52:49.000000 UTC,2022-02-13 00:03:00.000000 UTC,71099,Baixo,"R. silva freire, 22 - engenho novo - sent. r. 24 de maio",-22.9024462,-43.2687688,Bolsão d'água em via
+2022-02-10 11:22:33.000000 UTC,2022-02-10 18:12:07.000000 UTC,71013,Baixo,Rua antônio cordeiro - freguesia,-22.9427697,-43.3375179,Bolsão d'água em via
+2022-02-07 17:35:00.000000 UTC,2022-02-07 20:06:17.000000 UTC,70915,Baixo,Estr. do catonho - alt. estr. do cafundá - taquara,-22.906765903133035,-43.379954660990911,Bolsão d'água em via
+2022-02-07 18:27:41.000000 UTC,2022-02-07 20:49:08.000000 UTC,70924,Baixo,Estr. da pedra - alt. brt pingo d´agua - guaratiba ,-22.9652037,-43.6469919,Bolsão d'água em via
+2022-02-17 21:33:24.000000 UTC,2022-02-17 22:15:46.000000 UTC,71254,Baixo,"Av. ayrton senna, alt. ponte nova brt - barra da tijuca - sent. orla",-22.9860018,-43.3654065,Bolsão d'água em via
+2022-02-22 07:26:28.000000 UTC,2022-02-22 10:00:46.000000 UTC,71386,Baixo,Mergulhinho - alt. jardim oceânico - barra - ambos os sentidos,-23.0110064,-43.3091914,Bolsão d'água em via
+2022-02-18 19:02:23.000000 UTC,2022-02-18 19:50:11.000000 UTC,71285,Baixo,R. pacheco leão - alt. r. jardim botânico,-22.9663775,-43.229963,Bolsão d'água em via
+2022-02-18 18:50:19.000000 UTC,2022-02-18 22:18:09.000000 UTC,71284,Baixo,R. jardim botânico - alt. r. prof. saldanha,-22.9603817,-43.2050687,Bolsão d'água em via
+2022-02-18 19:51:59.000000 UTC,2022-02-18 22:31:59.000000 UTC,71286,Baixo,"Rua jardim botânico, alt. parque lage - jardim botânico",-22.9636733,-43.2166721,Bolsão d'água em via
+2022-02-17 18:39:33.000000 UTC,2022-02-17 19:46:20.000000 UTC,71245,Baixo,Rua uçá - jardim guanabara,-22.8170464,-43.2016845,Bolsão d'água em via
+2022-02-21 21:35:36.000000 UTC,2022-02-21 21:36:13.000000 UTC,71377,Baixo,"Av. de santa cruz, 11930 - sen. vasconcelos",-22.8922333,-43.5289064,Bolsão d'água em via
+2022-02-07 17:10:13.000000 UTC,2022-02-07 22:22:36.000000 UTC,70913,Baixo,Av. gilka machado - alt. av. genaro de carvalho - recreio,-23.0217233,-43.4767081,Bolsão d'água em via
+2022-02-10 12:02:02.000000 UTC,2022-02-10 18:11:58.000000 UTC,71014,Baixo,R. júlio pôrto carrero - alt. r. orizona - freguesia ,-22.9445325,-43.3429197,Bolsão d'água em via
+2022-02-17 18:20:28.000000 UTC,2022-02-17 19:45:52.000000 UTC,71242,Baixo,"R. pio dutra, 513 - freguesia (ilha do governador)",-22.7932202,-43.175099499999988,Bolsão d'água em via
+2022-02-18 20:29:08.000000 UTC,2022-02-18 23:49:44.000000 UTC,71291,Baixo,"Rua professor abelardo lóbo, alt. praça marcos tamoyo - lagoa",-22.9614293,-43.2049368,Alagamento
+2022-02-18 20:03:09.000000 UTC,2022-02-19 07:36:16.000000 UTC,71288,Baixo,"Rua são zózimo, 57 - taquara",-22.9469412,-43.3750926,Alagamento
+2022-02-18 20:00:05.000000 UTC,2022-02-19 07:36:04.000000 UTC,71287,Baixo,"Rua são zacarias, 26 - taquara",-22.9474698,-43.3744302,Alagamento
+2022-02-18 20:55:21.000000 UTC,2022-02-19 07:36:21.000000 UTC,71293,Baixo,"Rua do castor, 127 - curicica",-22.9538206,-43.3781657,Alagamento
+2022-02-18 20:16:37.000000 UTC,2022-02-19 01:25:57.000000 UTC,71289,Baixo,"Rua vila aurora, 170 - curicica",-22.9380362,-43.3802712,Alagamento
+2022-02-07 18:42:49.000000 UTC,2022-02-07 21:08:49.000000 UTC,70927,Baixo,Av. campo mourão / av. pilar do sul / rua ronda alves - jardim maravilha - guaratiba,-22.9622272,-43.6050691,Alagamento
+2022-02-07 17:41:00.000000 UTC,2022-02-07 20:56:20.000000 UTC,70918,Baixo,Av. cesário de melo - alt. r. adolfo lemos - inhoaíba,-22.9137419,-43.5973936,Alagamento
+2022-02-17 22:06:56.000000 UTC,2022-02-18 00:16:53.000000 UTC,71256,Baixo,"Estrada do tingui, alt. estr. carvalho ramos - inhoaíba",-22.8908804,-43.5896978,Alagamento
+2022-02-17 21:14:51.000000 UTC,2022-02-17 23:06:48.000000 UTC,71249,Baixo,"Av. cesário de melo, alt. r. aurélio de figueiredo - campo grande",-22.9094738,-43.5807627,Alagamento
+2022-02-18 20:59:18.000000 UTC,2022-02-19 07:36:29.000000 UTC,71294,Baixo,"Rua gambia, 26 - jacarepaguá",-22.950304,-43.3762943,Alagamento
+2022-02-18 21:23:26.000000 UTC,2022-02-19 07:36:39.000000 UTC,71295,Baixo,"Rua são longino, alt. r. são turíbio - taquara",-22.947011,-43.3739006,Alagamento
+2022-11-16 08:51:57.000000 UTC,2022-11-16 09:48:29.000000 UTC,84478,Baixo,Av. emb. abelardo bueno - alt. brt arroio pavuna - jacarepaguá - ambos os sentidos,-22.9730632,-43.3785277,Bolsão d'água em via
+2022-11-01 15:53:41.000000 UTC,2022-11-01 19:10:01.000000 UTC,83612,Baixo,Av. borges de medeiros - alt. nº 3525 - lagoa,-22.9627385,-43.2080876,Bolsão d'água em via
+2022-11-02 00:00:22.000000 UTC,2022-11-02 03:15:51.000000 UTC,83631,Baixo,"Av. borges de medeiros, alt. paróquia são josé da lagoa - lagoa - sent. túnel rebouças",-22.9625962,-43.2080331,Bolsão d'água em via
+2022-11-01 15:50:35.000000 UTC,2022-11-01 18:33:39.000000 UTC,83611,Baixo,Praça marcos tamoio - lagoa,-22.9617351,-43.2047325,Bolsão d'água em via
+2022-11-28 13:39:14.000000 UTC,2022-11-28 14:25:29.000000 UTC,85188,Baixo,Rua bento lisboa - largo do machado,-22.9311212,-43.1785245,Bolsão d'água em via
+2022-11-28 14:29:06.000000 UTC,2022-11-28 17:05:36.000000 UTC,85200,Baixo,"Av. mem de sá, 99 - centro",-22.9129654,-43.1833295,Bolsão d'água em via
+2022-11-28 13:35:11.000000 UTC,2022-11-28 14:20:01.000000 UTC,85187,Baixo,R. riachuelo - alt. monte alegre - centro,-22.9151765,-43.187511099999988,Bolsão d'água em via
+2022-11-21 17:26:38.000000 UTC,2022-11-21 18:51:41.000000 UTC,84777,Baixo,Av. mal. floriano - alt. nº 80 - centro,-22.901635,-43.184202,Bolsão d'água em via
+2022-11-09 15:33:55.000000 UTC,2022-11-09 16:02:44.000000 UTC,84100,Baixo,"R. haddock lobo , alt. av. paulo de frontin - estácio",-22.9189372,-43.213431,Bolsão d'água em via
+2022-11-02 15:55:40.000000 UTC,2022-11-02 16:02:18.000000 UTC,83678,Baixo,Estrada do galeão - alt. restaurante siri da ilha - ilha do governador - sent. jardim guanabara,-22.811957,-43.2181706,Bolsão d'água em via
+2022-11-28 13:40:46.000000 UTC,2022-11-28 15:15:56.000000 UTC,85189,Baixo,R. do catete - largo do machado,-22.9269656,-43.1766115,Bolsão d'água em via
+2022-11-01 16:34:31.000000 UTC,2022-11-01 18:32:05.000000 UTC,83617,Baixo,"R. vinícius de moraes, alt. av. epitacio pessoa - lagoa",-22.9797488,-43.2024596,Bolsão d'água em via
+2022-11-11 21:53:20.000000 UTC,2022-11-11 22:36:26.000000 UTC,84264,Baixo,R. alcobaça - anchieta,-22.8270004,-43.3921766,Bolsão d'água em via
+2022-11-28 13:46:30.000000 UTC,2022-11-28 15:16:03.000000 UTC,85191,Baixo,R. muniz barreto - alt. r. marques de olinda - botafogo,-22.943933141778736,-43.183729819573983,Bolsão d'água em via
+2022-11-28 13:54:48.000000 UTC,2022-11-28 15:16:06.000000 UTC,85194,Baixo,R. são clemente - alt. r. guilhermina guinle - botafogo,-22.949537,-43.1888472,Bolsão d'água em via
+2022-11-01 14:02:37.000000 UTC,2022-11-01 16:48:53.000000 UTC,83595,Baixo,R. da reverência - curicica,-22.9574839,-43.3906536,Bolsão d'água em via
+2022-11-01 14:03:32.000000 UTC,2022-11-01 16:15:43.000000 UTC,83596,Baixo,R. da ventura - alt. r. aurelino ferreira - curicica,-22.9530675,-43.3896884,Bolsão d'água em via
+2022-11-28 14:21:31.000000 UTC,2022-11-28 16:32:27.000000 UTC,85198,Baixo,Rua haddock lobo - alt. r. sampaio ferraz - estácio,-22.9159689,-43.2069107,Bolsão d'água em via
+2022-11-28 14:16:27.000000 UTC,2022-11-28 18:12:48.000000 UTC,85197,Baixo,R. alm. tamandaré - flamengo,-22.9321124,-43.1758483,Bolsão d'água em via
+2022-11-28 15:31:30.000000 UTC,2022-11-28 18:12:53.000000 UTC,85206,Baixo,Av. infante dom henrique - flamengo ,-22.9303189,-43.1730561,Bolsão d'água em via
+2022-11-09 15:37:09.000000 UTC,2022-11-09 16:05:08.000000 UTC,84101,Baixo,Praia de sepetiba - alt. nº 1886 - sepetiba,-22.9764534,-43.7053197,Bolsão d'água em via
+2022-11-01 16:32:09.000000 UTC,2022-11-01 18:36:58.000000 UTC,83616,Baixo,R. tonelero - alt. rua siqueira campos - copacabana,-22.9663745,-43.185085699999988,Bolsão d'água em via
+2022-11-28 14:03:23.000000 UTC,2022-11-28 14:45:02.000000 UTC,85196,Baixo,R. tonelero - alt. r. siqueira campos - copacabana,-22.9666427,-43.1852321,Bolsão d'água em via
+2022-11-16 10:09:30.000000 UTC,2022-11-16 10:11:00.000000 UTC,84505,Baixo,Rua jose do patrocínio - vila isabel ,-22.9173363,-43.2628811,Bolsão d'água em via
+2022-11-02 22:59:20.000000 UTC,2022-11-02 23:08:02.000000 UTC,83698,Baixo,Rua piza e almeida - alt. extra - vila isabel,-22.9189848,-43.2442451,Bolsão d'água em via
+2022-11-11 21:52:01.000000 UTC,2022-11-11 22:40:37.000000 UTC,84263,Baixo,Buraco do padre - engenho novo,-22.9020841,-43.2656087,Bolsão d'água em via
+2022-11-08 17:12:34.000000 UTC,2022-11-08 17:27:48.000000 UTC,84035,Baixo,Estr. fernando macdowell - alt. gávea golf club - são conrado - sent. lagoa,-22.99727,-43.2628978,Bolsão d'água em via
+2022-11-16 08:59:21.000000 UTC,2022-11-16 09:49:14.000000 UTC,84480,Baixo,Av. ayrton senna - alt. aeroporto de jacarepaguá - barra - sent. orla,-22.9826906,-43.3641911,Bolsão d'água em via
+2022-11-03 01:56:06.000000 UTC,2022-11-03 05:16:01.000000 UTC,83701,Baixo,Av. armando lombardi - alt. estação brt jardim oceânico - n° 800 - sent. av. ayrton senna.,-23.0066958,-43.310663,Bolsão d'água em via
+2022-11-08 17:09:18.000000 UTC,2022-11-08 17:27:44.000000 UTC,84034,Baixo,"Av. armando lombardi, 188 - barra da tijuca - sent. recreio",-23.0066958,-43.310663,Bolsão d'água em via
+2022-11-11 22:51:02.000000 UTC,2022-11-11 22:52:05.000000 UTC,84278,Baixo,Avenida amaro cavalcanti - alt. rua cruz e souza  - todos os santos,-22.8964563,-43.2891662,Bolsão d'água em via
+2022-11-16 10:52:04.000000 UTC,2022-11-16 11:13:06.000000 UTC,84516,Baixo,R. monsenhor jerônimo - engenho de dentro,-22.8999084,-43.2947993,Bolsão d'água em via
+2022-11-28 13:33:46.000000 UTC,2022-11-28 16:17:42.000000 UTC,85186,Medio,"Rua do catete, alt. r. silveira martins - catete",-22.9256951,-43.1761985,Alagamento
+2022-11-28 14:49:24.000000 UTC,2022-11-28 18:13:40.000000 UTC,85203,Baixo,Tv. dos tamoios - flamengo,-22.9345507,-43.176537,Alagamento
+2022-11-28 13:43:24.000000 UTC,2022-11-28 14:25:33.000000 UTC,85190,Medio,Rua pinheiro machado - alt.  palácio guanabara - laranjeiras - ambos os sentidos,0.0,0.0,Bolsão d'água em via
+2022-11-08 17:13:26.000000 UTC,2022-11-08 17:27:52.000000 UTC,84036,Baixo,Estr. fernando macdowell - alt. passarela de são conrado - sent. barra,0.0,0.0,Bolsão d'água em via
+2022-11-16 09:07:08.000000 UTC,2022-11-16 09:48:52.000000 UTC,84482,Baixo,Av. min. ivan lins - alt. da ponte da joatinga - barra da tijuca - ambos os sentidos,-22.9211046,-43.2850245,Bolsão d'água em via
+2022-11-16 08:56:03.000000 UTC,2022-11-16 09:48:33.000000 UTC,84479,Baixo,Av. ayrton senna - alt. av. emb. abelardo bueno - jacarepaguá - sent. orla,-22.9829359,-43.365378,Bolsão d'água em via
+2022-11-09 16:36:26.000000 UTC,2022-11-09 16:40:10.000000 UTC,84109,Baixo,Av. ayrton senna - alt. uptow barra - barra da tijca - sent. linha amarela,-22.9829359,-43.365378,Bolsão d'água em via
+2022-11-01 18:11:26.000000 UTC,2022-11-01 19:37:27.000000 UTC,83622,Baixo,Saida do túnel santa barbara - sent. centro,-22.9256072,-43.1899768,Bolsão d'água em via
+2023-05-10 10:28:28.000000 UTC,2023-05-10 10:50:08.000000 UTC,96149,Baixo,R. medina x r. silva rabelo - méier,-22.9002635,-43.2815886,Bolsão d'água em via
+2023-05-29 07:03:07.000000 UTC,2023-05-29 07:22:37.000000 UTC,97070,Baixo,R. haddock lobo - alt. mercado prix - tijuca,-22.9212968,-43.218647,Bolsão d'água em via
+2023-05-10 12:09:03.000000 UTC,2023-05-10 18:36:34.000000 UTC,96161,Baixo,Estr. do campinho - alt. da dancor - inhoaíba - sent. av. brasil,-22.8901842,-43.5954023,Bolsão d'água em via
+2023-05-29 04:52:13.000000 UTC,2023-05-29 05:42:49.000000 UTC,97057,Baixo,"Rua do catete, alt. r. das laranjeiras - catete",-22.9322049,-43.1817493,Bolsão d'água em via
+2023-11-03 20:40:08.000000 UTC,2023-11-03 20:58:13.000000 UTC,105478,Baixo,R. candido benício - alt. est. brt ipase - praça seca,-22.904698,-43.3570479,Bolsão d'água em via
+2023-03-05 17:16:15.000000 UTC,2023-03-05 17:46:14.000000 UTC,92243,Baixo,"Rua itacuruçá, - alt. nº 99 - tijuca",-22.9329391,-43.2391714,Bolsão d'água em via
+2023-03-07 15:25:40.000000 UTC,2023-03-07 16:11:30.000000 UTC,92397,Baixo,Av. min. edgard romero x r. conselheiro galvão - madureira,-22.8661268,-43.3343465,Bolsão d'água em via
+2023-03-30 21:05:58.000000 UTC,2023-03-30 21:07:33.000000 UTC,93916,Baixo,Rua cardoso de morais - bonsucesso,-22.859936,-43.255883999999988,Bolsão d'água em via
+2023-03-27 05:12:22.000000 UTC,2023-03-27 06:18:50.000000 UTC,93672,Baixo,R. tonelero - alt. rua siqueira campos - copacabana,-22.9666427,-43.1852321,Bolsão d'água em via
+2023-03-30 22:40:10.000000 UTC,2023-03-30 22:41:32.000000 UTC,93934,Baixo,R. piracaia - mal. hermes,-22.8529269,-43.3649973,Bolsão d'água em via
+2023-03-09 16:59:08.000000 UTC,2023-03-09 17:01:51.000000 UTC,92504,Baixo,Estr. do mendanha - alt. n° 1161 - campo grande,-22.8711864,-43.554676699999987,Bolsão d'água em via
+2023-03-11 19:36:25.000000 UTC,2023-03-11 20:45:41.000000 UTC,92652,Baixo,R. camaipi - campo grande,-22.9067958,-43.5462301,Bolsão d'água em via
+2023-03-11 19:35:33.000000 UTC,2023-03-11 20:54:44.000000 UTC,92651,Baixo,Av. dom sebastião primeiro - campo grande,-22.9053972,-43.5512447,Bolsão d'água em via
+2023-03-27 06:29:59.000000 UTC,2023-03-27 07:32:53.000000 UTC,93680,Baixo,Av. ayrton senna - alt. mercado assaí - jacarepaguá,-22.9583956,-43.3567922,Bolsão d'água em via
+2023-03-12 07:41:43.000000 UTC,2023-03-12 08:31:22.000000 UTC,92681,Baixo,Av. das américas - alt. nº 3434 - barra da tijuca - sent. são conrado,-22.9978686,-43.3462685,Bolsão d'água em via
+2023-03-11 19:43:04.000000 UTC,2023-03-11 20:55:41.000000 UTC,92658,Baixo,R. artur rios - campo grande,-22.8998612,-43.5426268,Bolsão d'água em via
+2023-03-30 19:44:17.000000 UTC,2023-03-30 20:35:02.000000 UTC,93897,Baixo,Largo da cancela - r. são luiz gonzaga - são cristóvão,-22.9003568,-43.2247522,Bolsão d'água em via
+2023-03-07 15:28:17.000000 UTC,2023-03-07 16:07:02.000000 UTC,92398,Baixo,Rua almirante milanêz - alt. transolímpica - magalhães bastos,-22.8731129,-43.4094974,Bolsão d'água em via
+2023-03-30 21:55:29.000000 UTC,2023-03-30 21:56:36.000000 UTC,93930,Baixo,Av. itaóca  - bonsucesso,-22.8688193,-43.2674209,Alagamento
+2023-03-10 16:31:18.000000 UTC,2023-03-10 16:48:01.000000 UTC,92569,Baixo,Av. brasil - alt. estr. do campinho - campo grande - sent. centro,-22.8506857,-43.2478996,Bolsão d'água em via
+2023-03-07 15:33:21.000000 UTC,2023-03-07 16:12:22.000000 UTC,92400,Medio,Av. brasil - alt. de guadalupe - sent. centro,-22.8506857,-43.2478996,Bolsão d'água em via
+2023-02-07 23:25:02.000000 UTC,2023-02-07 23:52:57.000000 UTC,90514,Baixo,R. demétrio de tolêdo - tauá,-22.793402,-43.1843797,Bolsão d'água em via
+2023-02-07 17:35:34.000000 UTC,2023-02-07 18:22:14.000000 UTC,90398,Baixo,Largo do machado - alt. r. bento lisboa - catete,-22.9311212,-43.1785245,Bolsão d'água em via
+2023-02-07 19:06:56.000000 UTC,2023-02-07 19:08:01.000000 UTC,90440,Baixo,R. bento lisboa - catete,-22.9276896,-43.1793534,Bolsão d'água em via
+2023-02-03 15:44:10.000000 UTC,2023-02-03 15:57:32.000000 UTC,90043,Baixo,R. da carioca - alt. praça tiradentes - centro,-22.9074045,-43.1825751,Bolsão d'água em via
+2023-02-07 17:22:28.000000 UTC,2023-02-07 17:23:11.000000 UTC,90393,Baixo,Estr. da água grande - irajá,-22.8279509,-43.3205408,Bolsão d'água em via
+2023-02-13 20:30:12.000000 UTC,2023-02-13 20:41:38.000000 UTC,90932,Baixo,"Av. heitor beltrão, alt. r. visconde de figueiredo - tijuca",-22.9208335,-43.2258006,Bolsão d'água em via
+2023-02-10 18:22:23.000000 UTC,2023-02-10 18:26:04.000000 UTC,90738,Baixo,R. haddock lobo - alt. mercado prix - tijuca,-22.9212968,-43.218647,Bolsão d'água em via
+2023-02-13 21:10:44.000000 UTC,2023-02-13 21:27:40.000000 UTC,90944,Baixo,"Rua gen. gustavo cordeiro de farias, alt. nº 545 - benfica",-22.8971468,-43.2377778,Bolsão d'água em via
+2023-02-03 16:13:47.000000 UTC,2023-02-03 16:15:14.000000 UTC,90047,Baixo,R. moravia - cocotá,-22.8078151,-43.1827563,Bolsão d'água em via
+2023-02-07 19:08:02.000000 UTC,2023-02-07 19:09:10.000000 UTC,90441,Baixo,R. barão de são francisco - r. visconde de santa isabel - andaraí,-22.9195696,-43.2507852,Bolsão d'água em via
+2023-02-07 19:10:02.000000 UTC,2023-02-07 19:11:04.000000 UTC,90442,Baixo," r. marquês de olinda, 61 - botafogo",-22.9439185,-43.184410199999988,Bolsão d'água em via
+2023-02-08 15:07:04.000000 UTC,2023-02-08 16:23:05.000000 UTC,90557,Baixo,R. muniz barreto - alt. rua marques de olinda - botafogo,-22.9454349,-43.1840946,Bolsão d'água em via
+2023-02-01 22:14:14.000000 UTC,2023-02-01 23:22:42.000000 UTC,89844,Baixo,"Av. brasil, alt. estr. do campinho - jardim palmares - sent. centro",-22.8901842,-43.5954023,Bolsão d'água em via
+2023-02-10 19:08:20.000000 UTC,2023-02-10 19:50:15.000000 UTC,90747,Baixo,Av. cesário de melo - alt. estação brt júlia de melo - inhoaíba,-22.9142551,-43.5994866,Bolsão d'água em via
+2023-02-07 15:15:34.000000 UTC,2023-02-07 15:31:18.000000 UTC,90367,Baixo,"Av. min. edgard romero, alt. r. conselheiro galvão - madureira",-22.8661268,-43.3343465,Bolsão d'água em via
+2023-02-07 18:51:16.000000 UTC,2023-02-07 18:52:32.000000 UTC,90428,Baixo,R. sen. furtado - alt. r. teixeira soares - maracanã,-22.9102583,-43.2203923,Bolsão d'água em via
+2023-02-10 17:37:54.000000 UTC,2023-02-10 18:09:16.000000 UTC,90725,Baixo,R. são francisco xavier x r. luiz de matos - maracanã,-22.9153419,-43.2326888,Bolsão d'água em via
+2023-02-07 23:19:49.000000 UTC,2023-02-07 23:58:37.000000 UTC,90511,Baixo,R. max yantok - bancários,-22.7917275,-43.182906,Bolsão d'água em via
+2023-02-03 15:38:25.000000 UTC,2023-02-03 15:52:37.000000 UTC,90041,Baixo,Av. salvador de sá - alt. do bpchq - cidade nova,-22.9123991,-43.1994263,Bolsão d'água em via
+2023-02-07 18:56:30.000000 UTC,2023-02-07 18:58:12.000000 UTC,90431,Baixo,Av salvador de sá - alt. rua aníbal benévolo - centro,-22.9122894,-43.1988464,Bolsão d'água em via
+2023-02-10 19:11:11.000000 UTC,2023-02-10 19:44:53.000000 UTC,90748,Baixo,R. cândido benício - acesso av ernani cardoso - praça seca,-22.8988689,-43.3530072,Bolsão d'água em via
+2023-02-08 20:02:07.000000 UTC,2023-02-08 20:29:32.000000 UTC,90567,Baixo,"Rua josé do patrocínio, alt. r. barão do bom retiro - grajaú",-22.9173363,-43.2628811,Bolsão d'água em via
+2023-02-10 18:21:10.000000 UTC,2023-02-10 18:39:23.000000 UTC,90737,Baixo,R. visconde de santa isabel x barão de são francisco - maracanã,-22.9161802,-43.2515323,Bolsão d'água em via
+2023-02-13 20:03:50.000000 UTC,2023-02-13 21:02:53.000000 UTC,90926,Baixo,"Boulevard 28 de setembro, alt. r. felipe camarão - vila isabel",-22.9159472,-43.2352587,Bolsão d'água em via
+2023-02-10 18:24:14.000000 UTC,2023-02-10 18:37:01.000000 UTC,90739,Baixo,"Estr. do mendanha, 555 - campo grande",-22.884864,-43.5572605,Bolsão d'água em via
+2023-02-07 18:59:27.000000 UTC,2023-02-07 19:00:13.000000 UTC,90433,Baixo,Rua açaituba - jardim carioca,-22.8067019,-43.1971436,Bolsão d'água em via
+2023-02-07 19:00:51.000000 UTC,2023-02-07 19:01:37.000000 UTC,90434,Baixo,R. muiatuca - jardim carioca,-22.8050854,-43.1971236,Bolsão d'água em via
+2023-02-07 20:42:01.000000 UTC,2023-02-07 20:42:59.000000 UTC,90493,Baixo,Praça saiqui - vila valqueire,-22.8829334,-43.3678489,Bolsão d'água em via
+2023-02-02 18:56:58.000000 UTC,2023-02-02 20:13:54.000000 UTC,89966,Baixo,Av. de santa cruz - alt. rua silva cardoso - senador camará,-22.8821374,-43.4825034,Bolsão d'água em via
+2023-02-15 20:19:15.000000 UTC,2023-02-15 20:22:46.000000 UTC,91122,Baixo,R. campo de são cristóvão - alt. praça padre cícero - são cristóvão,-22.8964816,-43.2213218,Bolsão d'água em via
+2023-02-15 20:23:30.000000 UTC,2023-02-15 21:08:29.000000 UTC,91124,Baixo,R. benedito otoni - alt. r. santos lima - são cristóvão,-22.8980382,-43.2157193,Bolsão d'água em via
+2023-02-15 21:11:15.000000 UTC,2023-02-15 21:30:27.000000 UTC,91138,Baixo,R. ricardo machado - são cristóvão,-22.8891807,-43.2279882,Bolsão d'água em via
+2023-02-15 20:19:58.000000 UTC,2023-02-15 21:07:08.000000 UTC,91123,Baixo,Praça padre cícero - alt. rua campo de são cristóvão - são cristóvão,-22.8964816,-43.2213218,Bolsão d'água em via
+2023-02-05 16:41:01.000000 UTC,2023-02-05 17:18:54.000000 UTC,90168,Medio,Estr. do rio jequiá - alt nº  1000 - ilha do governador,-22.8192322,-43.1826972,Bolsão d'água em via
+2023-02-05 15:44:17.000000 UTC,2023-02-05 16:19:04.000000 UTC,90159,Baixo,Av. pastor martin luther king junior - alt. qradra da vicente de carvalho - vicente de carvalho,-22.8489819,-43.3212603,Bolsão d'água em via
+2023-02-07 22:25:32.000000 UTC,2023-02-07 23:32:33.000000 UTC,90506,Baixo,Praça frei paulo - tauá,-22.7945526,-43.1852397,Alagamento
+2023-02-22 02:56:35.000000 UTC,2023-02-22 04:58:27.000000 UTC,91539,Baixo,"Rua argemiro bulcão, alt. prainha - saúde",-22.8974783,-43.1852605,Alagamento
+2023-02-10 21:20:23.000000 UTC,2023-02-10 23:12:25.000000 UTC,90768,Baixo,Estr. do campinho - alt. dancor - inhoaíba - sent. av. brasil,-22.8901842,-43.5954023,Alagamento
+2023-02-10 20:00:45.000000 UTC,2023-02-10 20:49:31.000000 UTC,90756,Baixo,Rua simonésia - paciência,-22.9259755,-43.6349714,Alagamento
+2023-02-10 20:03:26.000000 UTC,2023-02-10 20:42:19.000000 UTC,90757,Baixo,Estr. do camboatá - alt. n° 4040 - costa barros,-22.8287741,-43.3709649,Alagamento
+2023-02-07 21:23:41.000000 UTC,2023-02-07 21:24:50.000000 UTC,90501,Baixo,Buraco do padre - engenho novo,-22.9020841,-43.2656087,Alagamento
+2023-02-22 00:56:31.000000 UTC,2023-02-22 01:38:59.000000 UTC,91536,Baixo,"Rua miguel burnier, alt. r. manuel de morais - higienópolis",-22.8696792,-43.2595773,Alagamento
+2023-02-15 20:28:03.000000 UTC,2023-02-15 21:10:15.000000 UTC,91127,Baixo,Rua bela - alt. n° 909,0.0,0.0,Bolsão d'água em via
+2023-02-07 18:41:29.000000 UTC,2023-02-07 18:59:09.000000 UTC,90424,Baixo,R. moravia - cocotá,0.0,0.0,Bolsão d'água em via
+2023-02-12 05:21:00.000000 UTC,2023-02-12 06:34:14.000000 UTC,90856,Baixo,Elevado professor engenheiro rufino de almeida pizarro - são cristóvão - sent. centro.,-22.9062703,-43.2136104,Bolsão d'água em via
+2023-02-10 17:12:18.000000 UTC,2023-02-10 17:28:45.000000 UTC,90721,Baixo,Estr. do galeão - alt. r. vinte de janeiro - ilha do governador - sent. cacuia,-22.811957,-43.2181706,Bolsão d'água em via
+2023-02-05 16:46:08.000000 UTC,2023-02-05 17:05:36.000000 UTC,90171,Baixo,Estrada do galeão - alt. r. iaco - ilha do governador,-22.811957,-43.2181706,Bolsão d'água em via
+2023-02-28 23:08:16.000000 UTC,2023-02-28 23:52:54.000000 UTC,91952,Baixo,"Av. brasil, alt. fiocruz - manguinhos - sent. centro",-22.8790547,-43.2401616,Bolsão d'água em via
+2023-02-15 20:23:30.000000 UTC,2023-02-15 21:07:11.000000 UTC,91125,Baixo,Av. brasil - alt. viaduto ataulfo alves - manguinhos - sent. z. oeste,-22.8850574,-43.2351722,Bolsão d'água em via
+2023-02-11 20:58:10.000000 UTC,2023-02-11 21:52:35.000000 UTC,90832,Baixo,Av. brasil - alt. viaduto ataulfo alves - manguinhos - sent. centro.,-22.8850574,-43.2351722,Bolsão d'água em via
+2023-02-21 22:41:30.000000 UTC,2023-02-22 00:28:58.000000 UTC,91528,Baixo,"Linha vermelha, alt. km 4 - sent. centro",-22.8278692,-43.2503136,Bolsão d'água em via
+2023-02-15 20:25:45.000000 UTC,2023-02-15 21:21:06.000000 UTC,91126,Baixo,"Linha vermelha, km 1 - são cristóvão - sent.. baixada",-22.8278692,-43.2503136,Bolsão d'água em via
+2023-02-13 20:12:07.000000 UTC,2023-02-13 21:02:04.000000 UTC,90927,Baixo,"Av. brasil, alt. viaduto ataulfo alves - benfica - sent. centro",-22.8612166,-43.4522323,Bolsão d'água em via
+2023-02-21 22:51:49.000000 UTC,2023-02-22 00:26:23.000000 UTC,91530,Baixo,"Av. brasil, alt. de ramos - sent. centro",-22.8612166,-43.4522323,Bolsão d'água em via
+2023-09-05 12:25:31.000000 UTC,2023-09-05 13:42:23.000000 UTC,101989,Baixo,R. mercúrio - alt. nº 1545 - pavuna,-22.8053885,-43.3561198,Bolsão d'água em via
+2022-12-21 21:28:17.000000 UTC,2022-12-21 22:49:53.000000 UTC,86809,Baixo,Rua araticum - alt. n° 807 - jacarepaguá - anil,-22.9575246,-43.3299993,Bolsão d'água em via
+2022-12-16 19:01:24.000000 UTC,2022-12-16 19:03:03.000000 UTC,86403,Baixo,Av. brasil - alt. passarela 5 - benfica - sent. z. oeste,-22.8876743,-43.2241663,Bolsão d'água em via
+2022-12-18 04:56:00.000000 UTC,2022-12-18 05:25:14.000000 UTC,86493,Baixo,R. de santana - alt. rua frei caneca  - centro,-22.9081212,-43.1939546,Bolsão d'água em via
+2022-12-21 20:34:10.000000 UTC,2022-12-21 23:24:46.000000 UTC,86805,Baixo,Estrada do galeão - alt. canárias - galeão - sent. linha vermelha,-22.8212872,-43.2282535,Bolsão d'água em via
+2022-12-30 19:06:06.000000 UTC,2022-12-30 20:08:26.000000 UTC,87326,Baixo,"Av. infante dom henrique, alt. marina da glória - flamengo - em ambos os sentidos",-22.9198897,-43.1700842,Bolsão d'água em via
+2022-12-30 11:58:11.000000 UTC,2022-12-30 12:58:30.000000 UTC,87299,Baixo,Estr. do cafundá - alt. nº 2162 - taquara,-22.9125537,-43.3766502,Bolsão d'água em via
+2022-12-30 18:46:34.000000 UTC,2022-12-30 20:11:54.000000 UTC,87325,Baixo,R. são longino - alt. nº 21 - taquara,-22.947014,-43.3730813,Bolsão d'água em via
+2022-12-07 15:44:39.000000 UTC,2022-12-07 16:06:46.000000 UTC,85769,Baixo,R. barão de são francisco - alt da r. visconde de santa isabel - vila isabel,-22.919543,-43.250827,Bolsão d'água em via
+2022-12-21 20:42:47.000000 UTC,2022-12-21 22:55:24.000000 UTC,86806,Baixo,R. da ventura - curicica,-22.9530675,-43.3896884,Bolsão d'água em via
+2022-12-27 16:14:17.000000 UTC,2022-12-27 16:49:57.000000 UTC,87112,Baixo,Av. dom hélder câmara - alt. r. padre manuel da nóbrega - cascadura,-22.886543,-43.2841786,Bolsão d'água em via
+2022-12-27 17:39:19.000000 UTC,2022-12-27 18:36:13.000000 UTC,87117,Baixo,Av. brasil - alt. barros filho - sent. centro,-22.8390379,-43.3671864,Bolsão d'água em via
+2022-12-27 19:58:05.000000 UTC,2022-12-27 21:16:07.000000 UTC,87127,Baixo,"Estr. do mato alto, alt. r. ibema - guaratiba",-22.961589,-43.5829739,Bolsão d'água em via
+2022-12-30 12:05:08.000000 UTC,2022-12-30 13:46:50.000000 UTC,87301,Baixo,Av cesario de melo - alt. estr. de santa eugenia,-22.9143564,-43.6024511,Bolsão d'água em via
+2022-12-27 18:40:56.000000 UTC,2022-12-27 18:44:19.000000 UTC,87122,Baixo,Rua cardoso de morais - bonsucesso,-22.8598403,-43.2560922,Bolsão d'água em via
+2022-12-30 15:41:58.000000 UTC,2022-12-30 16:32:40.000000 UTC,87312,Baixo,Estr. do campinho - alt. estr. de paciência,-22.8833949,-43.6288132,Bolsão d'água em via
+2022-12-20 13:15:06.000000 UTC,2022-12-20 14:13:00.000000 UTC,86651,Baixo,R. pinheiro machado - alt. do fluminense - laranjeiras - sent. centro,-22.9364,-43.18398,Bolsão d'água em via
+2022-12-27 18:00:45.000000 UTC,2022-12-27 18:28:23.000000 UTC,87120,Baixo,R. cândido benício - alt. brt ipase - praça seca - sent. alvorada,-22.8988689,-43.3530072,Bolsão d'água em via
+2022-12-30 12:59:53.000000 UTC,2022-12-30 13:48:34.000000 UTC,87306,Baixo,Estr. rio são paulo - alt. n° 5799 - campo grande,-22.8695133,-43.5825235,Bolsão d'água em via
+2022-12-22 00:52:29.000000 UTC,2022-12-22 00:54:04.000000 UTC,86815,Baixo,Estr. do catonho - alt.  jardim sulacap - ambos sentidos,-22.898978,-43.3891283,Bolsão d'água em via
+2022-12-21 21:47:29.000000 UTC,2022-12-22 03:20:21.000000 UTC,86811,Baixo,Subida viaduto santos dumont - av. ayrton senna - barra da tijuca - sent. linha amarela.,-22.9829359,-43.365378,Bolsão d'água em via
+2022-12-27 19:36:30.000000 UTC,2022-12-27 21:46:07.000000 UTC,87125,Baixo,"Rua clarimundo de melo, alt. cf carlos nery da costa filho - quintino bocaiuva - sent. méier",-22.8915538,-43.3248263,Bolsão d'água em via
+2022-12-07 15:48:19.000000 UTC,2022-12-07 16:13:33.000000 UTC,85770,Baixo,R. são francisco xavier - alt. r. luiz de matos - maracanã,-22.9043747,-43.2436871,Bolsão d'água em via
+2022-12-27 15:16:21.000000 UTC,2022-12-27 15:33:58.000000 UTC,87106,Baixo,R. tirol - alt. r. cmte. rubens silva - freguesia de jacarepaguá,-22.9395372,-43.3293578,Bolsão d'água em via
+2022-12-27 15:11:00.000000 UTC,2022-12-27 15:33:48.000000 UTC,87105,Baixo,Estrada dos três rios - alt. r. xingu - freguesia de jacarepaguá,-22.9334901,-43.3278345,Bolsão d'água em via
+2023-01-20 21:50:15.000000 UTC,2023-01-20 21:52:28.000000 UTC,88954,Baixo,"Av brasil, alt. do gasômetro - são cristóvão - sent. centro",-22.8888475,-43.2225506,Bolsão d'água em via
+2023-01-28 17:20:46.000000 UTC,2023-01-28 18:40:24.000000 UTC,89552,Baixo,Av. min. ary franco - alt. r. sul america - bangu,-22.866788,-43.4650595,Bolsão d'água em via
+2023-01-20 22:31:45.000000 UTC,2023-01-20 22:33:26.000000 UTC,88955,Baixo,"Estr. josé rucas, alt. r. plínio de oliveira - penha",-22.8473512,-43.284074400000009,Bolsão d'água em via
+2023-01-20 19:26:29.000000 UTC,2023-01-20 20:28:22.000000 UTC,88947,Baixo,"Rua aimoré, alt. nº 45 - penha",-22.8454793,-43.2861226,Bolsão d'água em via
+2023-01-11 17:09:35.000000 UTC,2023-01-12 02:47:41.000000 UTC,88129,Baixo,Rua soldado wandel sarmento - alt. n° 1 - tauá - ilha do governador,-22.7918986,-43.1836403,Bolsão d'água em via
+2023-01-03 17:41:08.000000 UTC,2023-01-03 18:22:45.000000 UTC,87502,Baixo,R. de santana - alt. rua frei caneca  - centro,-22.9081212,-43.1939546,Bolsão d'água em via
+2023-01-03 17:18:41.000000 UTC,2023-01-03 18:22:05.000000 UTC,87496,Baixo,R. do lavradio - alt. r dos arcos - centro,-22.910697,-43.182607999999988,Bolsão d'água em via
+2023-01-03 17:24:30.000000 UTC,2023-01-03 18:30:28.000000 UTC,87498,Baixo,Av. mem de sá - centro,-22.912313,-43.1861477,Bolsão d'água em via
+2023-01-23 15:14:06.000000 UTC,2023-01-23 15:49:42.000000 UTC,89189,Baixo,R. srg. antônio ernesto - pavuna,-22.8096611,-43.3572055,Bolsão d'água em via
+2023-01-12 22:52:08.000000 UTC,2023-01-12 22:54:06.000000 UTC,88223,Baixo,"Rua jurupari, alt. r. conde de bonfim - tijuca",-22.9239978,-43.2304603,Bolsão d'água em via
+2023-01-12 21:37:00.000000 UTC,2023-01-12 22:24:19.000000 UTC,88216,Baixo,"Rua eng. adel, alt. r. haddock lobo - tijuca",-22.9212017,-43.2162514,Bolsão d'água em via
+2023-01-29 16:05:46.000000 UTC,2023-01-29 17:32:36.000000 UTC,89611,Baixo,Av. pastor martin luther king junior - alt. largo de vicente de carvalho - vicente de carvalho,-22.8754248,-43.2811562,Bolsão d'água em via
+2023-01-02 17:23:39.000000 UTC,2023-01-02 17:53:57.000000 UTC,87424,Baixo,Rua capitão mário barbedo - alt. n° 460 - anchieta,-22.8355524,-43.399097,Bolsão d'água em via
+2023-01-12 22:01:51.000000 UTC,2023-01-12 22:21:52.000000 UTC,88220,Baixo,"Rua muniz barreto, alt. r. marquês de olinda - botafogo",-22.9437967,-43.1839729,Bolsão d'água em via
+2023-01-23 16:13:53.000000 UTC,2023-01-23 16:54:44.000000 UTC,89206,Baixo,"Rua maria lopes alt. r. padre manso, - madureira",-22.87971549166534,-43.337266226983637,Bolsão d'água em via
+2023-01-23 14:32:53.000000 UTC,2023-01-23 14:53:58.000000 UTC,89173,Baixo,Av. geremário dantas - alt. estr. dos três rios - pechincha,-22.9290527,-43.3540077,Bolsão d'água em via
+2023-01-11 17:13:19.000000 UTC,2023-01-12 02:48:00.000000 UTC,88130,Baixo,Rua ilha fiscal - alt. nº 187 - bancários - ilha do governador,-22.7894733,-43.1838716,Bolsão d'água em via
+2023-01-03 19:01:19.000000 UTC,2023-01-03 19:44:52.000000 UTC,87522,Baixo,Rua uranos - alt. rua delfim carlos - bonsucesso,-22.8612703,-43.2575934,Bolsão d'água em via
+2023-01-03 18:52:17.000000 UTC,2023-01-03 19:30:44.000000 UTC,87520,Baixo,Rua uranos - alt. estaçao de ramos,-22.8612703,-43.2575934,Bolsão d'água em via
+2023-01-12 21:52:21.000000 UTC,2023-01-12 22:22:19.000000 UTC,88218,Baixo,"Rua tonelero, alt. r. siqueira campos - copacabana",-22.9663745,-43.185085699999988,Bolsão d'água em via
+2023-01-12 22:17:17.000000 UTC,2023-01-12 22:25:32.000000 UTC,88222,Baixo,"Av. atlântica, alt. r. rep. do peru - copacabana - sent. ipanema",-22.9686599,-43.1814133,Bolsão d'água em via
+2023-01-13 00:27:03.000000 UTC,2023-01-13 01:56:43.000000 UTC,88224,Baixo,"Av. rainha elisabeth, alt. r. bulhões carvalho - copacabana",-22.9854942,-43.1928888,Bolsão d'água em via
+2023-01-03 17:42:57.000000 UTC,2023-01-03 18:16:41.000000 UTC,87503,Baixo,Av. salvador de sá - alt. batalhão de choque - cidade nova,-22.9123991,-43.1994263,Bolsão d'água em via
+2023-01-30 18:59:57.000000 UTC,2023-01-30 19:27:04.000000 UTC,89739,Baixo,R. josé do patrocínio - alt. n° 318 - grajau,-22.9173363,-43.2628811,Bolsão d'água em via
+2023-01-30 17:39:49.000000 UTC,2023-01-30 18:19:23.000000 UTC,89726,Baixo,Estr. do pedregoso - campo grande,-22.8689355,-43.5606477,Bolsão d'água em via
+2023-01-29 17:54:17.000000 UTC,2023-01-29 17:57:02.000000 UTC,89642,Baixo,Av. dos italianos - alt. viaduto de rocha miranda - rocha miranda,-22.8465105,-43.3494385,Bolsão d'água em via
+2023-01-30 18:32:25.000000 UTC,2023-01-30 19:27:23.000000 UTC,89736,Baixo,Av. ministro ivan lins - alt. ponte da joatinga - barra - sent. são conrado ,-23.0128976,-43.2978054,Bolsão d'água em via
+2023-01-29 18:44:39.000000 UTC,2023-01-29 18:45:55.000000 UTC,89653,Baixo,R. cordovil - parada de lucas,-22.8209993,-43.3066061,Bolsão d'água em via
+2023-01-03 17:12:05.000000 UTC,2023-01-03 18:35:22.000000 UTC,87494,Baixo,R. campo de são cristóvão - alt. praça padre cicero,-22.8981031,-43.2225616,Bolsão d'água em via
+2023-01-03 19:50:52.000000 UTC,2023-01-03 19:53:02.000000 UTC,87529,Baixo,Av. marechal fontenele - alt. lona cultural de realengo,-22.878046,-43.415713,Bolsão d'água em via
+2023-01-29 17:55:13.000000 UTC,2023-01-29 17:57:04.000000 UTC,89643,Baixo,R. dos diamantes - alt. n° 133 - rocha miranda,-22.8525633,-43.3520849,Alagamento
+2023-10-26 07:25:15.000000 UTC,2023-10-26 08:08:17.000000 UTC,104947,Baixo,Av. brasil - alt. santíssimo - sent. centro,-22.8605042,-43.5234381,Bolsão d'água em via
+2023-10-09 14:48:23.000000 UTC,2023-10-09 15:21:13.000000 UTC,103948,Baixo,R. piraí do sul - alt. r. buritizal - sepetiba,-22.9625178,-43.7066858,Bolsão d'água em via
+2023-10-05 20:11:58.000000 UTC,2023-10-05 20:46:17.000000 UTC,103720,Baixo,R. comte. vergueiro da cruz - alt. rua claudionor jordan - olaria,-22.8367601,-43.2649135,Bolsão d'água em via
+2023-10-05 19:25:41.000000 UTC,2023-10-05 19:48:36.000000 UTC,103702,Baixo,"Av. vicente de carvalho, alt. r. sd. servino mengarda - vila kosmos - sent. av. braz de pina",-22.8475611,-43.304834,Bolsão d'água em via
+2023-10-07 22:48:58.000000 UTC,2023-10-08 00:10:00.000000 UTC,103832,Baixo,"Rua do catete, alt. r. silveira martins - catete",-22.9270219,-43.1766223,Bolsão d'água em via
+2023-10-08 13:07:37.000000 UTC,2023-10-08 15:46:43.000000 UTC,103860,Baixo,Av. emb. abelardo bueno - alt. brt centro metropolitano - barra da tijuca - sent. transolimpica,-22.972990532488577,-43.366204968664547,Bolsão d'água em via
+2023-10-07 22:21:50.000000 UTC,2023-10-08 00:50:22.000000 UTC,103829,Baixo,"Rua teixeira de freitas, alt. av. augusto severo - centro",-22.9142033,-43.1766675,Bolsão d'água em via
+2023-10-05 19:21:56.000000 UTC,2023-10-05 19:56:07.000000 UTC,103701,Baixo,Avenida pastor martin luther king junior - alr. largo de vicente de carvalho - irajá,-22.8489819,-43.3212603,Bolsão d'água em via
+2023-10-07 21:59:27.000000 UTC,2023-10-08 00:49:33.000000 UTC,103825,Baixo,"Av. visconde de albuquerque, alt. praça baden-powell - leblon - sent. gávea",-22.981782,-43.2263914,Bolsão d'água em via
+2023-10-26 07:35:41.000000 UTC,2023-10-26 08:08:21.000000 UTC,104951,Baixo,R. dias da cruz - alt. r. magualhaes couto,-22.9045871,-43.2882233,Bolsão d'água em via
+2023-10-08 00:39:21.000000 UTC,2023-10-08 05:22:57.000000 UTC,103839,Baixo,"Av. epitácio pessoa, alt. r. vinícius de moraes - ipanema ",-22.9696881,-43.2054789,Bolsão d'água em via
+2023-10-26 09:49:06.000000 UTC,2023-10-26 09:49:59.000000 UTC,104978,Baixo,"Av. epitácio pessoa, alt. r. vinícius de moraes - ipanema ",-22.979986,-43.203731,Bolsão d'água em via
+2023-10-07 22:25:42.000000 UTC,2023-10-08 00:23:42.000000 UTC,103830,Baixo,"Rua praia de botafogo, alt. viaduto santiago dantas - botafogo",-22.9454948,-43.1821807,Bolsão d'água em via
+2023-10-07 22:44:16.000000 UTC,2023-10-08 00:25:14.000000 UTC,103831,Baixo,"Av. venceslau brás, alt. alt. gmar - botafogo",-22.9545319,-43.1773419,Bolsão d'água em via
+2023-10-02 20:55:23.000000 UTC,2023-10-02 22:12:20.000000 UTC,103511,Baixo,"Av. infante dom henrique, alt. hotel glória - glória - em ambos os sentidos",-22.9257029,-43.1707997,Bolsão d'água em via
+2023-10-08 00:27:06.000000 UTC,2023-10-08 05:07:44.000000 UTC,103838,Baixo,"Av. pres. vargas, alt. cass - cidade nova - sent. av. francisco bicalho",-22.909449,-43.2038313,Bolsão d'água em via
+2023-10-26 07:09:18.000000 UTC,2023-10-26 08:08:00.000000 UTC,104943,Baixo,Av. cesário de melo - alt. av. maria tereza - campo grande - sent. bangu,-22.908004,-43.5650874,Bolsão d'água em via
+2023-10-07 22:07:17.000000 UTC,2023-10-08 00:49:24.000000 UTC,103826,Baixo,"Rua riachuelo, alt. r. costa bastos - santa teresa",-22.9159535,-43.1899669,Bolsão d'água em via
+2023-10-07 23:05:07.000000 UTC,2023-10-08 00:33:14.000000 UTC,103833,Baixo,"Rua francisco palheta, alt. r. ricardo machado - são cristóvão",-22.8905307,-43.2272207,Bolsão d'água em via
+2023-10-26 08:05:14.000000 UTC,2023-10-26 08:13:51.000000 UTC,104964,Baixo,R. campo de são cristóvão - alt. feira de são cristóvão - sent. benfica,-22.8964816,-43.2213218,Bolsão d'água em via
+2023-10-26 07:17:23.000000 UTC,2023-10-26 08:08:59.000000 UTC,104944,Baixo,Av. das américas - alt. estr. benvindo de novaes - sent. são conrado,-23.0135893,-43.4632586,Bolsão d'água em via
+2023-10-05 19:28:15.000000 UTC,2023-10-05 20:00:57.000000 UTC,103705,Baixo,"Av. ernani cardoso, alt. r .padre telemaco - cascadura",-22.8824192,-43.3354398,Bolsão d'água em via
+2023-10-08 04:36:27.000000 UTC,2023-10-08 09:52:34.000000 UTC,103846,Baixo,"Av. ernani cardoso, alt. r. padre telemaco - cascadura",-22.8824192,-43.3354398,Bolsão d'água em via
+2023-10-29 23:47:58.000000 UTC,2023-10-29 23:50:13.000000 UTC,105172,Baixo,Av. epitácio pessoa - alt. rua vinícius de moraes - lagoa,-22.9742628,-43.2064953,Bolsão d'água em via
+2023-10-29 22:15:20.000000 UTC,2023-10-29 23:04:36.000000 UTC,105163,Baixo,Av. min. edgard romero - alt. rua conselheiro galvão - madureira,-22.8661268,-43.3343465,Bolsão d'água em via
+2023-10-29 18:23:00.000000 UTC,2023-10-29 19:01:40.000000 UTC,105155,Baixo,R. da feira - alt. r. dos açudes - bangu,-22.8801501,-43.471784199999988,Bolsão d'água em via
+2023-10-13 00:52:24.000000 UTC,2023-10-13 03:54:34.000000 UTC,104115,Baixo,Av. brasil - caju - sent. centro,-22.8876032,-43.2240622,Bolsão d'água em via
+2023-10-07 22:12:58.000000 UTC,2023-10-08 00:03:26.000000 UTC,103827,Baixo,"Av. mem de sá, alt. r. de santana - centro",-22.912313,-43.1861477,Bolsão d'água em via
+2023-10-05 19:35:33.000000 UTC,2023-10-05 20:01:50.000000 UTC,103706,Baixo,Av. mem de sá - alt. rua dos inválidos - centro,-22.912313,-43.1861477,Bolsão d'água em via
+2023-10-07 22:19:17.000000 UTC,2023-10-07 23:54:27.000000 UTC,103828,Baixo,"Av. mem de sá, alt. r. dos inválidos - centro",-22.912313,-43.1861477,Bolsão d'água em via
+2023-10-07 23:18:24.000000 UTC,2023-10-08 00:31:31.000000 UTC,103835,Baixo,"Av. padre leonel franca, alt. praça sibelius - gávea - sent. são conrado",-22.9805752,-43.2324053,Bolsão d'água em via
+2023-10-07 23:14:46.000000 UTC,2023-10-08 00:49:14.000000 UTC,103834,Baixo,"Av. borges de medeiros, alt. r. josé joaquim seabra - jardim botânico",-22.9728162,-43.2176378,Bolsão d'água em via
+2022-10-28 16:36:56.000000 UTC,2022-10-28 17:12:57.000000 UTC,83355,Baixo,R. srg. antônio ernesto - pavuna,-22.8098525,-43.3571677,Bolsão d'água em via
+2022-10-28 16:43:56.000000 UTC,2022-10-28 17:49:55.000000 UTC,83357,Baixo,Av. automóvel clube - alt nº 41 - pavuna,-22.8046932,-43.366833199999988,Bolsão d'água em via
+2022-10-31 19:05:50.000000 UTC,2022-10-31 19:07:08.000000 UTC,83545,Baixo,R. cruz e souza - alt r clarimundo de melo - madureira,-22.8997086,-43.3061933,Bolsão d'água em via
+2022-10-31 16:35:00.000000 UTC,2022-10-31 17:22:24.000000 UTC,83526,Baixo,R. felipe cardoso - alt. av. cesário de mello - santa cruz,-22.9357601,-43.6672604,Bolsão d'água em via
+2022-10-11 22:06:57.000000 UTC,2022-10-11 22:16:35.000000 UTC,82379,Baixo,"Rua cândido benício, alt. est. brt praça seca - praça seca - sent. taquara",-22.8972505,-43.3516889,Bolsão d'água em via
+2022-10-28 18:04:36.000000 UTC,2022-10-28 18:47:28.000000 UTC,83364,Baixo,R. japuanga - alt. rua cordovil - parada de lucas,-22.8201509,-43.3080282,Bolsão d'água em via
+2022-10-31 18:04:44.000000 UTC,2022-10-31 18:38:24.000000 UTC,83541,Baixo,R. goiás - alt. nº 1448 - quintino bocaiuva,-22.8842727,-43.3259482,Bolsão d'água em via
+2023-08-13 19:51:23.000000 UTC,2023-08-14 00:46:22.000000 UTC,100741,Baixo,"Estr. da gávea, 800 - alt. golf club - sent. barra da tijuca.",-22.998319,-43.2677017,Bolsão d'água em via
+2023-08-29 20:21:04.000000 UTC,2023-08-29 21:07:06.000000 UTC,101638,Baixo,"Rua doutor satamini, alt. r.campos sales - tijuca",-22.9184846,-43.217888,Bolsão d'água em via
+2023-08-20 13:56:26.000000 UTC,2023-08-20 14:08:14.000000 UTC,101095,Baixo,"R. barão de são francisco, alt. r. torres homem - vila isabel",-22.9151275,-43.251669000000007,Bolsão d'água em via
+2023-08-27 04:09:43.000000 UTC,2023-08-27 05:28:21.000000 UTC,101482,Baixo,"Av. armando lombardi, alt. est. brt jardim oceânico - barra da tijuca - sent. recreio",-23.0067108,-43.3124895,Bolsão d'água em via
+2022-03-31 23:03:06.000000 UTC,2022-04-01 02:46:30.000000 UTC,72763,Alto,Av. epitácio pessoa - alt. rua vinícius de morais- lagoa,-22.9742628,-43.2064953,Bolsão d'água em via
+2022-03-31 22:29:23.000000 UTC,2022-04-01 02:34:12.000000 UTC,72745,Alto,R. do catete - alt. rua silveira martins - catete,-22.9268156,-43.1767777,Bolsão d'água em via
+2022-03-31 22:39:37.000000 UTC,2022-04-01 01:06:52.000000 UTC,72749,Alto,"Rua pedro ii - alt. r. são cristóvão, 425 - são cristóvão",-22.9013134,-43.2169224,Bolsão d'água em via
+2022-03-31 22:47:26.000000 UTC,2022-04-01 00:51:22.000000 UTC,72755,Alto,R. rad. waldir amaral - alt. rua eurico rabelo - maracanã,-22.9126422,-43.2350113,Bolsão d'água em via
+2022-03-31 22:51:16.000000 UTC,2022-04-01 00:49:22.000000 UTC,72757,Alto,Av. prof° manuel de abreu - r. felipe camarão- vila isabel,-22.9159472,-43.2352587,Bolsão d'água em via
+2022-03-31 23:52:42.000000 UTC,2022-04-01 01:01:14.000000 UTC,72783,Alto,R. barão de são francisco - alt. rua teodoro da silva  - vila isabel,-22.9195696,-43.2507852,Bolsão d'água em via
+2022-03-31 23:48:40.000000 UTC,2022-04-01 00:50:11.000000 UTC,72780,Alto,"R. teodoro da silva, x barão de são francisco- vila isabel",-22.9187158,-43.2511415,Bolsão d'água em via
+2022-03-31 22:30:22.000000 UTC,2022-04-01 01:59:56.000000 UTC,72746,Alto,"Rua bela, 588 - são cristóvão",-22.8901444,-43.2232587,Bolsão d'água em via
+2022-03-31 22:32:17.000000 UTC,2022-04-01 01:59:35.000000 UTC,72747,Alto,Rua bela - alt. rua newton prado - são cristóvão,-22.8895567,-43.2238795,Bolsão d'água em via
+2022-03-31 22:46:30.000000 UTC,2022-04-01 02:31:59.000000 UTC,72754,Baixo, r. monsenhor manuel gomes - caju,-22.888164,-43.2192856,Bolsão d'água em via
+2022-03-31 23:46:15.000000 UTC,2022-04-01 03:28:27.000000 UTC,72778,Baixo,Av. brasil - alt. into  - caju - sent. centro,-22.8934145,-43.2148592,Bolsão d'água em via
+2022-03-20 18:28:56.000000 UTC,2022-03-20 22:58:40.000000 UTC,72314,Baixo,Praça roberto carlis - acari,-22.8228393,-43.3417452,Bolsão d'água em via
+2022-03-20 21:20:42.000000 UTC,2022-03-20 22:57:09.000000 UTC,72333,Baixo,R. guaiuba - acari,-22.8229507,-43.3453471,Bolsão d'água em via
+2022-03-20 17:27:56.000000 UTC,2022-03-20 19:07:08.000000 UTC,72304,Baixo,R. francisco real - alt. julio cesar - piscina do clube bangu - bangu,-22.8795405,-43.4556663,Bolsão d'água em via
+2022-03-20 16:47:35.000000 UTC,2022-03-20 23:42:58.000000 UTC,72296,Baixo,Av. santa cruz - alt. r. ribeiro de andrade - bangu,-22.876145674435502,-43.456038869311527,Bolsão d'água em via
+2022-03-20 22:50:45.000000 UTC,2022-03-20 23:26:41.000000 UTC,72339,Baixo,R. da feira - alt. av. barão de capanema - bangu,-22.8802756,-43.4725686,Bolsão d'água em via
+2022-03-20 16:15:51.000000 UTC,2022-03-20 19:08:59.000000 UTC,72291,Baixo,R. da feira - alt. r. dos açudes - bangu,-22.8802756,-43.4725686,Bolsão d'água em via
+2022-03-20 19:53:04.000000 UTC,2022-03-20 22:05:13.000000 UTC,72327,Baixo,Linha vermelha - alt. fundão - sent. baixada,-22.8548414,-43.2387201,Bolsão d'água em via
+2022-03-31 23:17:11.000000 UTC,2022-04-01 01:49:21.000000 UTC,72766,Baixo,R. aimoré - penha,-22.8454793,-43.2861226,Bolsão d'água em via
+2022-03-31 23:37:32.000000 UTC,2022-04-01 01:22:27.000000 UTC,72773,Baixo,R. barreiros - alt. n° 21 - ramos,-22.8508497,-43.2561086,Bolsão d'água em via
+2022-03-31 23:24:38.000000 UTC,2022-04-01 00:52:18.000000 UTC,72768,Baixo,R. antônio basílio - alt. rua major ávila - tijuca,-22.927094,-43.238377799999988,Bolsão d'água em via
+2022-03-20 16:12:49.000000 UTC,2022-03-20 17:38:05.000000 UTC,72290,Baixo,Rua haddock lobo - alt. r. eng. adel - tijuca,-22.9203696,-43.2166298,Bolsão d'água em via
+2022-03-21 02:19:11.000000 UTC,2022-03-21 04:36:03.000000 UTC,72349,Baixo,Rua baltazar lisboa - alt. r. pereira nunes - tijuca,-22.9221815,-43.2373049,Bolsão d'água em via
+2022-03-20 16:23:02.000000 UTC,2022-03-20 18:22:22.000000 UTC,72294,Baixo,Av. duque de caxias - alt. av. gal. gomes carneiro - deodoro,-22.8621979,-43.394335299999987,Bolsão d'água em via
+2022-03-31 22:26:19.000000 UTC,2022-04-01 00:46:32.000000 UTC,72744,Baixo,Rua lino teixeira - alt. rua carlos costa  - jacaré,-22.8944935,-43.2569284,Bolsão d'água em via
+2022-03-20 19:57:52.000000 UTC,2022-03-20 21:59:15.000000 UTC,72328,Baixo,R. do engenho novo - alt. n° 333 - sampaio,-22.9013488,-43.2642928,Bolsão d'água em via
+2022-03-20 18:19:34.000000 UTC,2022-03-20 20:30:38.000000 UTC,72313,Baixo,"R. alcobaça, 1814 - anchieta",-22.8198034,-43.3923788,Bolsão d'água em via
+2022-03-20 18:06:26.000000 UTC,2022-03-20 20:56:57.000000 UTC,72311,Baixo,R. coroaci - anchieta,-22.8176989,-43.3969013,Bolsão d'água em via
+2022-03-20 17:03:46.000000 UTC,2022-03-20 20:58:23.000000 UTC,72298,Baixo,Rua edgard barbosa - anchieta,-22.8213215,-43.3956196,Bolsão d'água em via
+2022-03-20 18:17:59.000000 UTC,2022-03-20 20:46:21.000000 UTC,72312,Baixo,R. itajace - anchieta,-22.8180601,-43.401736,Bolsão d'água em via
+2022-03-20 17:11:51.000000 UTC,2022-03-20 20:26:58.000000 UTC,72300,Baixo,Rua cardoso de castro - alt. supermarket - anchieta,-22.8224459,-43.4074055,Bolsão d'água em via
+2022-03-31 23:54:35.000000 UTC,2022-04-01 01:01:56.000000 UTC,72784,Baixo,R. são clemente - alt. rua guilhermina guinle -  botafogo,-22.9497298,-43.1897674,Bolsão d'água em via
+2022-03-31 23:43:32.000000 UTC,2022-04-01 01:04:40.000000 UTC,72777,Baixo,"R. são clemente, 188b - botafogo",-22.9494156,-43.1887411,Bolsão d'água em via
+2022-03-20 21:01:09.000000 UTC,2022-03-20 21:28:05.000000 UTC,72332,Baixo,"Estr. da água branca, 525 - realengo",-22.8688072,-43.4208845,Bolsão d'água em via
+2022-03-20 16:28:29.000000 UTC,2022-03-20 22:10:31.000000 UTC,72295,Baixo,Av. santa cruz - alt. r. gen. sezefredo - realengo,-22.8781756198596,-43.434652669836417,Bolsão d'água em via
+2022-03-20 17:18:37.000000 UTC,2022-03-20 20:45:58.000000 UTC,72302,Baixo,Av de santa cruz - alt. universidade castelo branco - realengo,-22.8781274,-43.4393649,Bolsão d'água em via
+2022-03-20 17:22:25.000000 UTC,2022-03-20 19:48:06.000000 UTC,72303,Baixo,Rua bernardo de vasconcelos - alt. pça. do canhão - realengo,-22.8759488,-43.431633,Bolsão d'água em via
+2022-03-20 17:31:55.000000 UTC,2022-03-20 21:56:54.000000 UTC,72305,Baixo,Av. de santa cruz - alt. viaduto padre miguel,-22.8790179,-43.418471,Bolsão d'água em via
+2022-03-20 18:56:37.000000 UTC,2022-03-20 20:11:34.000000 UTC,72318,Baixo,Av. são francisco xavier - alt. manoel de abreu - tijuca,-22.9623424,-43.692051,Bolsão d'água em via
+2022-03-31 21:52:02.000000 UTC,2022-03-31 22:07:14.000000 UTC,72741,Baixo,Av. ernani cardoso - alt. rua padre telêmaco- cascadura,-22.8824192,-43.3354398,Bolsão d'água em via
+2022-03-20 17:08:16.000000 UTC,2022-03-20 20:04:11.000000 UTC,72299,Baixo,Av. brasil - guadalupe - sent. santa cruz,-22.844155333385839,-43.375973632788096,Bolsão d'água em via
+2022-03-31 21:33:14.000000 UTC,2022-03-31 22:08:26.000000 UTC,72740,Baixo,Av. min. edgard romero - alt. rua conselheiro galvão - madureira - sent. mercadão,-22.8661268,-43.3343465,Bolsão d'água em via
+2022-03-20 18:58:12.000000 UTC,2022-03-20 20:12:53.000000 UTC,72319,Baixo,Av. maracanã - alt. r. prof. euríco rabêlo - maracanã,-22.9152552,-43.2288072,Bolsão d'água em via
+2022-03-31 22:54:59.000000 UTC,2022-04-01 00:09:40.000000 UTC,72760,Baixo,Rua edgard werneck - alt. 1211 - pechincha,-22.9456388,-43.3578723,Bolsão d'água em via
+2022-03-20 20:33:41.000000 UTC,2022-03-20 22:22:33.000000 UTC,72330,Baixo,Av. brasil - alt. passarela 09  - bonsucesso - sent. centro.,-22.8662059,-43.2464138,Bolsão d'água em via
+2022-03-20 21:26:31.000000 UTC,2022-03-20 21:27:41.000000 UTC,72334,Baixo,Rua siqueira campos - alt. toneleiros - copacabana,-22.9664282,-43.1870582,Bolsão d'água em via
+2022-03-31 23:15:18.000000 UTC,2022-04-01 03:24:42.000000 UTC,72765,Baixo,Av. eng. souza filho - muzema ,-22.984028,-43.331287,Bolsão d'água em via
+2022-03-31 06:04:31.000000 UTC,2022-03-31 12:43:46.000000 UTC,72688,Baixo,Av. engenheiro souza filho - muzema - em ambos os sentidos,-22.978626,-43.3336711,Bolsão d'água em via
+2022-03-20 19:05:45.000000 UTC,2022-03-20 21:29:23.000000 UTC,72321,Baixo,Av. brasil - alt. viaduto ataulfo alves - manguinhos - sent. centro.,-22.8850574,-43.2351722,Bolsão d'água em via
+2022-03-31 22:48:54.000000 UTC,2022-04-01 02:44:58.000000 UTC,72756,Baixo,Av. brasil - alt. viaduto ataulfo alves - manguinhos - sent. centro.,-22.879316,-43.239797499999987,Bolsão d'água em via
+2022-03-21 10:36:56.000000 UTC,2022-03-21 16:29:36.000000 UTC,72372,Baixo,"Estr. do campinho, 6891 - paciência",-22.8836945,-43.6268132,Bolsão d'água em via
+2022-03-31 22:15:50.000000 UTC,2022-04-01 00:52:58.000000 UTC,72742,Baixo,Rua ulysses guimarães - alt. n° 300 - cidade nova,-22.9121511,-43.2039632,Bolsão d'água em via
+2022-03-20 19:23:23.000000 UTC,2022-03-20 20:59:02.000000 UTC,72324,Baixo,R. ouseley - coelho neto,-22.8268576,-43.3500085,Bolsão d'água em via
+2022-03-31 22:45:22.000000 UTC,2022-04-01 00:42:16.000000 UTC,72753,Baixo,R. das laranjeiras - laranjeiras,-22.9357579,-43.1895506,Bolsão d'água em via
+2022-03-20 18:33:17.000000 UTC,2022-03-20 22:46:13.000000 UTC,72315,Baixo,Estr. são pedro de alcântara - brt vila militar ,-22.8640859,-43.4055206,Bolsão d'água em via
+2022-03-21 05:51:03.000000 UTC,2022-03-21 08:37:02.000000 UTC,72353,Baixo,Estr. do catonho - alt . n° 2447 - jardim sulacap - sent. vila valqueire,-22.8962808,-43.3985224,Bolsão d'água em via
+2022-03-29 00:21:03.000000 UTC,2022-03-29 01:51:59.000000 UTC,72625,Baixo,Av. ayrton senna - alt. cidade das artes  - barra da tijuca - sent. alvorada,-22.9901139,-43.3652706,Bolsão d'água em via
+2022-03-31 23:51:55.000000 UTC,2022-04-01 00:28:18.000000 UTC,72782,Baixo,"Av. armando lombardi, altura do mergulinho sentido são conrado -barra da tijuca",-23.0070404,-43.3097149,Bolsão d'água em via
+2022-03-31 06:42:29.000000 UTC,2022-03-31 08:59:27.000000 UTC,72690,Baixo,"Av. das américas, alt. av. luís carlos prestes - barra da tijuca - sent. recreio",-22.9953823,-43.3601044,Bolsão d'água em via
+2022-03-25 04:56:49.000000 UTC,2022-03-25 13:29:31.000000 UTC,72519,Baixo,Mergulhinho u - av. armando lombardi - barra da tijuca.,-23.0062307,-43.3091106,Bolsão d'água em via
+2022-03-31 06:48:07.000000 UTC,2022-03-31 07:20:23.000000 UTC,72691,Baixo,"Av. das américas, 3959 - barra da tijuca - sent. são conrado",-23.0179571,-43.4813761,Bolsão d'água em via
+2022-03-31 03:45:07.000000 UTC,2022-03-31 08:07:30.000000 UTC,72684,Baixo,"Av. das américas, alt. barra shopping - barra da tijuca - sent. são conrado",-22.9976583,-43.3581268,Bolsão d'água em via
+2022-03-20 16:53:30.000000 UTC,2022-03-20 21:10:30.000000 UTC,72297,Baixo,Estr. mal. alencastro - parque anchieta,-22.8377423,-43.397517,Bolsão d'água em via
+2022-03-20 16:19:09.000000 UTC,2022-03-20 18:25:15.000000 UTC,72292,Baixo,Av. de santa cruz - alt. estr. do realengo - padre miguel,-22.8821374,-43.4825034,Bolsão d'água em via
+2022-03-31 22:44:06.000000 UTC,2022-04-01 02:11:26.000000 UTC,72752,Baixo,Rua pacheco leão - alt. rua jardim botânico,-22.9663775,-43.229963,Bolsão d'água em via
+2022-03-31 22:43:00.000000 UTC,2022-04-01 00:55:52.000000 UTC,72751,Baixo,Largo da cancela - são cristóvão,-22.9003568,-43.2247522,Bolsão d'água em via
+2022-03-20 19:11:20.000000 UTC,2022-03-20 20:09:04.000000 UTC,72323,Baixo,Rua bela - alt. campo de são cristóvão  - são cristóvão,-22.8895567,-43.2238795,Bolsão d'água em via
+2022-03-31 22:53:41.000000 UTC,2022-04-01 03:36:13.000000 UTC,72759,Baixo,Rua general bruce - são cristóvão,-22.8954007,-43.2222082,Bolsão d'água em via
+2022-03-31 22:52:41.000000 UTC,2022-04-01 01:51:19.000000 UTC,72758,Baixo,R. são januário - são cristóvão,-22.8957753,-43.2268066,Bolsão d'água em via
+2022-03-20 16:21:38.000000 UTC,2022-03-20 18:24:19.000000 UTC,72293,Baixo,Rua almirante milanêz - magalhães bastos,-22.8731129,-43.4094974,Bolsão d'água em via
+2022-03-20 17:46:15.000000 UTC,2022-03-20 19:50:52.000000 UTC,72307,Baixo,Praça de ricardo de albuquerque,-22.8358488,-43.3920928,Bolsão d'água em via
+2022-03-20 17:47:49.000000 UTC,2022-03-20 20:58:39.000000 UTC,72308,Baixo,R. araçá - ricardo de albuquerque,-22.8397731,-43.4054321,Bolsão d'água em via
+2022-03-20 19:24:47.000000 UTC,2022-03-20 20:20:45.000000 UTC,72326,Baixo,"R. moraes pinheiro, 1125 - ricardo de albuquerque",-22.8339248,-43.3899873,Bolsão d'água em via
+2022-03-31 03:36:27.000000 UTC,2022-03-31 04:43:56.000000 UTC,72683,Baixo,"Av. da américas, alt. cond. nova barra - recreio dos bandeirantes - sent. barra",-23.0144369,-43.4717105,Bolsão d'água em via
+2022-03-28 23:55:01.000000 UTC,2022-03-29 06:07:26.000000 UTC,72623,Baixo,Av. genaro de carvalho - alt. rua joaquim jose couto - recreio dos bandeirantes,-23.017998,-43.4642937,Bolsão d'água em via
+2022-03-20 21:32:56.000000 UTC,2022-03-20 22:51:33.000000 UTC,72335,Baixo,R. união - acari,-22.9252752,-43.196799,Alagamento
+2022-03-27 05:58:22.000000 UTC,2022-03-27 14:49:04.000000 UTC,72565,Baixo,"Av. armando lombardi, (mergulhão) - barra da tijuca - em ambos os sentidos",-23.0068307,-43.3107119,Alagamento
+2022-03-20 17:16:59.000000 UTC,2022-03-20 19:07:40.000000 UTC,72301,Baixo,R. da feira - alt. r. barão de capanema - bangu,0.0,0.0,Bolsão d'água em via
+2022-03-31 23:50:46.000000 UTC,2022-04-01 00:22:46.000000 UTC,72781,Baixo,Av. brasil - alt. passarela 05 - manguinhos - sent. z. oeste,-22.8790547,-43.2401616,Bolsão d'água em via
+2022-03-20 19:23:59.000000 UTC,2022-03-20 22:19:29.000000 UTC,72325,Baixo,Av. brasil - alt. canal do cunha - manguinhos - sent. z. oeste.,-22.8790547,-43.2401616,Bolsão d'água em via
+2022-03-31 23:41:20.000000 UTC,2022-04-01 01:57:38.000000 UTC,72775,Baixo,Av. brasil - alt. fio cruz- manguinhos - sent. centro.,-22.8790547,-43.2401616,Bolsão d'água em via
+2022-03-20 20:27:29.000000 UTC,2022-03-20 22:12:46.000000 UTC,72329,Baixo,"Av. brasil, alt. caju - sent. z. oeste ",-22.8876032,-43.2240622,Bolsão d'água em via
+2022-03-31 23:48:18.000000 UTC,2022-04-01 03:27:52.000000 UTC,72779,Baixo,Av. brasil - alt. descida viaduto do gasômetro - caju - sent. z. oeste,-22.8876032,-43.2240622,Bolsão d'água em via
+2022-03-31 23:29:49.000000 UTC,2022-04-01 00:20:55.000000 UTC,72770,Baixo,Av. brasil  - alt. caju - sent. centro,-22.8876032,-43.2240622,Bolsão d'água em via
+2022-03-31 23:32:16.000000 UTC,2022-04-01 00:20:25.000000 UTC,72771,Baixo,Av. brasil  - alt. caju - sent. z. oeste,-22.8876032,-43.2240622,Bolsão d'água em via
+2022-03-31 23:44:39.000000 UTC,2022-04-01 03:25:04.000000 UTC,72776,Baixo,Av. brasil - alt. rua josé clemente - caju - sent. centro,-22.8876032,-43.2240622,Bolsão d'água em via
+2022-03-31 23:21:09.000000 UTC,2022-04-01 01:46:50.000000 UTC,72767,Baixo,Av. armando lombardi - alt. estação brt jardim oceanico - barra da tijuca - sent. são conrado.,-23.0066958,-43.310663,Bolsão d'água em via
+2022-03-31 23:26:39.000000 UTC,2022-04-01 01:06:25.000000 UTC,72769,Baixo,Av. armando lombardi - barra da tijuca,-23.0066958,-43.310663,Bolsão d'água em via
+2022-03-31 23:35:11.000000 UTC,2022-04-01 01:24:11.000000 UTC,72772,Baixo,Av. lúcio costa - alt. hotel windsor - barra da tijuca,-23.012325,-43.3852963,Bolsão d'água em via
+2022-03-29 00:04:42.000000 UTC,2022-03-29 03:57:36.000000 UTC,72624,Baixo,Av. ayrton senna - alt. ponte santos dumont - barra da tijuca - sent. orla ,-22.9829359,-43.365378,Bolsão d'água em via
+2022-03-31 23:39:29.000000 UTC,2022-04-01 02:02:30.000000 UTC,72774,Baixo,Av. brasil - alt. passarela 13  - ramos - sent. centro,-22.8510278,-43.2477585,Bolsão d'água em via
+2022-03-21 01:52:19.000000 UTC,2022-03-21 05:27:09.000000 UTC,72346,Baixo,Av. heitor beltrão - alt. rua são francisco xavier - tijuca,-22.9208335,-43.2258006,Bolsão d'água em via
+2022-03-20 18:55:07.000000 UTC,2022-03-20 20:17:22.000000 UTC,72317,Baixo,Av. heitor beltrão - alt. são francisco xavier  - tijuca,-22.9208335,-43.2258006,Bolsão d'água em via
+2022-03-20 20:53:03.000000 UTC,2022-03-20 21:05:49.000000 UTC,72331,Baixo,Av. heitor beltrão - alt. rua carmela dutra - tijuca,-22.9208335,-43.2258006,Bolsão d'água em via
+2022-03-21 01:44:53.000000 UTC,2022-03-21 04:48:14.000000 UTC,72345,Baixo,Av. heitor beltrão - alt. rua pareto - tijuca,-22.9208335,-43.2258006,Bolsão d'água em via
+2022-03-21 02:11:43.000000 UTC,2022-03-21 06:38:25.000000 UTC,72348,Baixo,Av. heitor beltrão - rua fernandes figueira - tijuca,-22.9208335,-43.2258006,Bolsão d'água em via
+2022-03-20 18:04:07.000000 UTC,2022-03-23 17:45:17.000000 UTC,72310,Medio,Av. chrisóstomo pimentel de oliveira - pavuna,-22.8164293,-43.384932,Bolsão d'água em via
+2022-03-31 22:35:54.000000 UTC,2022-04-01 01:00:05.000000 UTC,72748,Medio,R. haddock lobo - alt. rua engenheiro abdel - tijuca,-22.9189372,-43.213431,Bolsão d'água em via
+2022-03-31 22:41:18.000000 UTC,2022-04-01 01:21:44.000000 UTC,72750,Medio,R. voluntários da pátria - alt. rua dona mariana - botafogo,-22.9534272,-43.1900588,Bolsão d'água em via
+2022-03-31 22:58:00.000000 UTC,2022-04-01 01:30:30.000000 UTC,72762,Medio,R. tonelero - alt. rua siqueira campos - copacabana,-22.9666427,-43.1852321,Bolsão d'água em via
+2022-03-31 22:56:29.000000 UTC,2022-04-01 01:13:56.000000 UTC,72761,Medio,R. barata ribeiro - alt. rua santa clara - copacabana,-22.9686451,-43.1858006,Bolsão d'água em via
+2022-09-28 15:58:58.000000 UTC,2022-09-28 23:34:54.000000 UTC,81341,Baixo,Av. borges de medeiros - alt. praça marcos tamoyo - lagoa - sent. gávea,-22.961738321255854,-43.204614672737129,Bolsão d'água em via
+2022-09-29 15:38:34.000000 UTC,2022-09-29 17:12:47.000000 UTC,81436,Baixo,Av. epitácio pessoa - alt. r. vinicius de moraes - lagoa,-22.979728,-43.202388,Bolsão d'água em via
+2022-09-16 05:08:09.000000 UTC,2022-09-16 06:56:15.000000 UTC,80689,Baixo,Av. borges de medeiros - alt. rua  general garzon - lagoa - sent. tunel rebouças.,-22.967479,-43.2175111,Bolsão d'água em via
+2022-09-30 04:59:23.000000 UTC,2022-09-30 07:15:53.000000 UTC,81477,Baixo,Av. borges de medeiros - alt. parque dos patins - lagoa - sent. tunel rebouças ,-22.9722713,-43.216449,Bolsão d'água em via
+2022-09-04 00:37:13.000000 UTC,2022-09-04 04:00:35.000000 UTC,80227,Baixo,Av. borges de medeiros - alt. praça ricardo palma - lagoa,-22.9626355,-43.2059975,Bolsão d'água em via
+2022-09-16 05:38:40.000000 UTC,2022-09-16 06:35:51.000000 UTC,80691,Baixo,Rua vinícius de morais - alt. av. epitácio pessoa - lagoa.,-22.9742628,-43.2064953,Bolsão d'água em via
+2022-09-16 04:57:48.000000 UTC,2022-09-16 06:56:38.000000 UTC,80685,Baixo,Av. borges de medeiros - alt. praça marcos tamoyo  - lagoa,-22.9617525,-43.203954499999988,Bolsão d'água em via
+2022-09-04 00:59:11.000000 UTC,2022-09-04 03:59:56.000000 UTC,80229,Baixo,Av. borgues de medeiros - alt. rua batista da costa - lagoa,-22.9728162,-43.2176378,Bolsão d'água em via
+2022-09-16 05:00:49.000000 UTC,2022-09-16 06:55:51.000000 UTC,80686,Baixo,Av. borges de medeiros - alt. clube do vasco  - lagoa - sent. gávea,-22.9728162,-43.2176378,Bolsão d'água em via
+2022-09-16 05:06:00.000000 UTC,2022-09-16 06:56:07.000000 UTC,80688,Baixo,Av. borges de medeiros - alt. parque dos patins - lagoa - sent. tunel rebouças.,-22.9728162,-43.2176378,Bolsão d'água em via
+2022-09-16 05:03:38.000000 UTC,2022-09-16 06:56:00.000000 UTC,80687,Baixo,Av. borges de medeiros - alt. rua jj seabra - lagoa - sent. gávea.,-22.9728162,-43.2176378,Bolsão d'água em via
+2022-09-04 00:50:33.000000 UTC,2022-09-04 04:12:52.000000 UTC,80228,Baixo,Av. borgues de medeiros - alt. j.j. seabra - lagoa,-22.9728162,-43.2176378,Bolsão d'água em via
+2022-09-29 11:32:19.000000 UTC,2022-09-29 16:12:07.000000 UTC,81396,Baixo,Praça marcos tamoio - lagoa,-22.9617351,-43.2047325,Bolsão d'água em via
+2022-09-29 16:45:25.000000 UTC,2022-09-29 17:14:43.000000 UTC,81444,Baixo,Av. pres. vargas - alt. nº 3186 - cidade nova - sent. candelária.,-22.9052054,-43.192679899999987,Bolsão d'água em via
+2022-09-03 11:44:58.000000 UTC,2022-09-03 11:47:14.000000 UTC,80209,Baixo,Rua quitanda - alt. r. sete de setembro - centro,-22.9022615,-43.1775797,Bolsão d'água em via
+2022-09-28 20:56:45.000000 UTC,2022-09-28 22:14:18.000000 UTC,81349,Baixo,Av. epitácio pessoa - alt. rua vinicius de morais - ipanema,-22.9810186,-43.2070009,Bolsão d'água em via
+2022-09-16 09:57:09.000000 UTC,2022-09-16 13:53:10.000000 UTC,80711,Baixo,Av. epitácio pessoa - alt. r. vinicius de moraes - lagoa,-22.979458437517216,-43.202632919018562,Bolsão d'água em via
+2022-09-29 07:12:40.000000 UTC,2022-09-29 07:50:23.000000 UTC,81361,Baixo,Avenida epitácio pessoa - alt. r. vinicius de morais,-22.9806684,-43.211237399999987,Bolsão d'água em via
+2022-09-29 11:07:58.000000 UTC,2022-09-29 12:32:19.000000 UTC,81392,Baixo,Rua humaitá - alt. vto. saint hilaire - humaitá,-22.9579921,-43.1996709,Bolsão d'água em via
+2022-09-29 18:46:03.000000 UTC,2022-09-30 09:30:40.000000 UTC,81466,Baixo,Pça. marcos tamoio - humaitá,-22.9621875,-43.2045625,Bolsão d'água em via
+2022-09-16 07:52:35.000000 UTC,2022-09-16 08:38:29.000000 UTC,80700,Baixo,Rua siqueira campos - alt. r. tonelero - copacabana,-22.9664282,-43.1870582,Bolsão d'água em via
+2022-09-28 20:51:03.000000 UTC,2022-09-28 22:07:46.000000 UTC,81348,Baixo,R. tonelero - alt. rua siqueira campos - copacabana,-22.9666427,-43.1852321,Bolsão d'água em via
+2022-09-16 13:12:41.000000 UTC,2022-09-16 16:28:16.000000 UTC,80720,Baixo,Av. brasil - alt. passarela 18 - irajá - sent. z. oeste   ,-22.8618923,-43.5494151,Bolsão d'água em via
+2022-09-16 11:14:54.000000 UTC,2022-09-16 16:04:03.000000 UTC,80714,Baixo,R. olimpo mourão filho - são conrado,-22.9931215,-43.2534455,Bolsão d'água em via
+2022-09-29 04:56:01.000000 UTC,2022-09-29 08:09:34.000000 UTC,81357,Baixo,Av armando lombardi - alt. estação brt jardim oceanico - barra da tijuca - sent. recreio.,-23.0066958,-43.310663,Bolsão d'água em via
+2022-09-29 08:37:52.000000 UTC,2022-09-29 08:40:53.000000 UTC,81372,Baixo,R. jardim botânico - alt. r. prof. saldanha - jardim botânico,-22.9640572,-43.2174343,Bolsão d'água em via
+2022-09-29 13:07:39.000000 UTC,2022-09-29 15:56:16.000000 UTC,81405,Baixo,Av. genaro de carvalho - alt. av. gilka machado - recreio,-23.0180128,-43.4640783,Bolsão d'água em via
+2022-09-16 11:46:48.000000 UTC,2022-09-16 16:01:14.000000 UTC,80715,Baixo,R. dr. raimundo véras - recreio dos bandeirantes,-23.0293962,-43.4778347,Bolsão d'água em via
+2022-09-29 13:27:30.000000 UTC,2022-09-30 04:56:16.000000 UTC,81409,Baixo,R. dr. raimundo véras - alt. nº 100 - recreio,-23.0304898,-43.4829358,Bolsão d'água em via
+2022-04-01 00:27:23.000000 UTC,2022-04-01 02:32:27.000000 UTC,72788,Alto,Av. pres. vargas - alt. cass - cidade nova - sent. av. francisco bicalho.,-22.9090779,-43.2045086,Bolsão d'água em via
+2022-04-01 04:39:15.000000 UTC,2022-04-01 06:17:11.000000 UTC,72801,Alto,Estr. da gávea - alt. golf club - são conrado - sent. gávea,-22.9965695,-43.2596527,Bolsão d'água em via
+2022-04-01 02:08:56.000000 UTC,2022-04-01 03:29:36.000000 UTC,72794,Alto,Rua bela  - são cristóvão,-22.8895567,-43.2238795,Bolsão d'água em via
+2022-04-01 17:52:25.000000 UTC,2022-04-01 23:49:57.000000 UTC,72851,Alto,Av. borges de medeiros - alt. av. lineu de paula machado - lagoa ,-22.9637973,-43.2141556,Alagamento
+2022-04-01 18:34:14.000000 UTC,2022-04-01 20:23:56.000000 UTC,72865,Alto,"R. haddock lobo, alt. rua são francisco xavier - tijuca",-22.9181142,-43.2119265,Alagamento
+2022-04-01 18:20:42.000000 UTC,2022-04-01 21:57:12.000000 UTC,72864,Alto,"R. do matoso, alt. da praça da bandeira - praca da bandeira",-22.9112036,-43.2136935,Alagamento
+2022-04-02 09:58:41.000000 UTC,2022-04-02 10:00:45.000000 UTC,72959,Baixo,Av. epitácio pessoa - alt. parque da catacumba,-22.9622272,-43.197368399999988,Bolsão d'água em via
+2022-04-01 23:33:42.000000 UTC,2022-04-02 19:10:09.000000 UTC,72913,Baixo,Estr. de jacarepaguá - alt. n° 5420 - anil - ambos sentidos,-22.9610383,-43.3347091,Bolsão d'água em via
+2022-04-01 10:03:04.000000 UTC,2022-04-02 17:27:56.000000 UTC,72818,Baixo,Av. brasil - alt. into - sent. rodoviária,-22.8934145,-43.2148592,Bolsão d'água em via
+2022-04-30 08:59:53.000000 UTC,2022-04-30 09:47:24.000000 UTC,73819,Baixo,R. da feira - alt. rua do açudes- bangu,-22.8802756,-43.4725686,Bolsão d'água em via
+2022-04-02 01:06:36.000000 UTC,2022-04-02 01:08:32.000000 UTC,72919,Baixo,"R. da feira, 540 - bangu",-22.8801501,-43.471784199999988,Bolsão d'água em via
+2022-04-30 01:31:47.000000 UTC,2022-04-30 06:27:34.000000 UTC,73773,Baixo,R. da feira - alt. rua dos açudes - bangu,-22.8802756,-43.4725686,Bolsão d'água em via
+2022-04-01 07:37:07.000000 UTC,2022-04-01 09:33:53.000000 UTC,72813,Baixo,Av. lineu de paula machado - alt. r. alexandre ferreira - lagoa,-22.962809437142365,-43.212535545755,Bolsão d'água em via
+2022-04-01 00:48:22.000000 UTC,2022-04-01 02:16:28.000000 UTC,72789,Baixo,Av. epitácio pessoa - alt. rua carvalho de azevedo - lagoa - sent. tunel rebouças,-22.9743299,-43.206438899999988,Bolsão d'água em via
+2022-04-01 16:01:40.000000 UTC,2022-04-01 17:07:40.000000 UTC,72829,Baixo,Av. borges de medeiros - alt. r. j. j. seabra - lagoa - sent. rebouças,-22.964742262756737,-43.21554008518067,Bolsão d'água em via
+2022-04-01 05:18:01.000000 UTC,2022-04-01 07:32:04.000000 UTC,72803,Baixo,Av. epitácio pessoa - alt rua vinicius de morais - lagoa,-22.9742628,-43.2064953,Bolsão d'água em via
+2022-04-01 06:20:06.000000 UTC,2022-04-01 07:10:01.000000 UTC,72806,Baixo,Av. epitácio pessoa - alt. curva do calombo - lagoa,-22.9688237,-43.2047642,Bolsão d'água em via
+2022-04-14 20:11:00.000000 UTC,2022-04-14 22:31:41.000000 UTC,73345,Baixo,"Rua vinícius de moraes, alt. av. epitacio pessoa - lagoa",-22.9863851,-43.202863,Bolsão d'água em via
+2022-04-03 11:00:52.000000 UTC,2022-04-04 06:07:35.000000 UTC,73006,Baixo,Av. epitácio pessoa - alt. corte do cantagalo - sent. leblon,-22.976811255530876,-43.1997575909546,Bolsão d'água em via
+2022-04-14 22:22:47.000000 UTC,2022-04-15 00:53:39.000000 UTC,73364,Baixo,"R. tancredo neves, alt. vila olímpica  maré",-22.8579294,-43.2398478,Bolsão d'água em via
+2022-04-14 20:06:54.000000 UTC,2022-04-14 21:46:53.000000 UTC,73344,Baixo,"Rua do catete, alt. r. silveira martins - catete",-22.9258769,-43.178293,Bolsão d'água em via
+2022-04-01 16:40:50.000000 UTC,2022-04-01 20:54:28.000000 UTC,72836,Baixo,"Rua do catete, alt. r. silveira martins - catete",-22.9308225,-43.1773649,Bolsão d'água em via
+2022-04-09 02:30:29.000000 UTC,2022-04-09 03:35:37.000000 UTC,73200,Baixo,R. do catete - alt rua silveira martins - catete,-22.9269656,-43.1766115,Bolsão d'água em via
+2022-04-14 20:01:10.000000 UTC,2022-04-14 21:47:39.000000 UTC,73343,Baixo,"Rua do catete, alt. r. pedro américo- catete",-22.9194822,-43.1760821,Bolsão d'água em via
+2022-04-14 20:44:23.000000 UTC,2022-04-14 21:11:30.000000 UTC,73352,Baixo,"Rua do passeio, alt. lapa - centro",-22.9123948,-43.1766811,Bolsão d'água em via
+2022-04-01 01:40:58.000000 UTC,2022-04-01 03:16:29.000000 UTC,72790,Baixo,Av. luís de vasconcelos - alt. rua teixeira de freitas - centro,-22.9136247,-43.1752754,Bolsão d'água em via
+2022-04-09 03:13:28.000000 UTC,2022-04-09 04:16:36.000000 UTC,73204,Baixo,Praça da república - alt. rua vinte de abril - centro,-22.9064863,-43.1871262,Bolsão d'água em via
+2022-04-14 19:39:42.000000 UTC,2022-04-14 22:34:54.000000 UTC,73340,Baixo,"Av. mem de sá, alt. r. frei caneca - centro",-22.9107613,-43.1927107,Bolsão d'água em via
+2022-04-01 05:31:16.000000 UTC,2022-04-01 06:30:22.000000 UTC,72804,Baixo,R. marquês de são vicente - gávea,-22.9783392,-43.2337317,Bolsão d'água em via
+2022-04-30 05:05:58.000000 UTC,2022-04-30 11:46:27.000000 UTC,73778,Baixo,Av. brasil - alt. trevo das margaridas - irajá  sent. centro,-22.8204814,-43.3204012,Bolsão d'água em via
+2022-04-30 15:33:10.000000 UTC,2022-04-30 16:22:25.000000 UTC,73855,Baixo,Av. brasil - alt. trevo das margaridas - irajá  sent. centro,-22.8204814,-43.3204012,Bolsão d'água em via
+2022-04-29 23:33:15.000000 UTC,2022-04-30 00:03:22.000000 UTC,73762,Baixo,R. vilela tavares - alt. rua dias da cruz  - méier,-22.9088667,-43.2868047,Bolsão d'água em via
+2022-04-01 17:42:27.000000 UTC,2022-04-01 21:00:47.000000 UTC,72848,Baixo,"Rua dr. satamini, alt. rua campos sales - tijuca",-22.9184247,-43.2173237,Bolsão d'água em via
+2022-04-09 06:09:25.000000 UTC,2022-04-09 11:02:52.000000 UTC,73209,Baixo,R. carmela dutra - tijuca,-22.9230741,-43.2265981,Bolsão d'água em via
+2022-04-01 18:02:37.000000 UTC,2022-04-01 19:19:36.000000 UTC,72858,Baixo,"Rua pereira nunes, alt. rua barão de mesquita - tijuca",-22.9238982,-43.236432,Bolsão d'água em via
+2022-04-01 19:50:33.000000 UTC,2022-04-02 00:18:11.000000 UTC,72875,Baixo,R. dr. satamini - alt. r. prof. gabizo - tijuca,-22.9187534,-43.2181674,Bolsão d'água em via
+2022-04-01 06:22:27.000000 UTC,2022-04-01 07:33:16.000000 UTC,72807,Baixo,R. dona delfina  - tijuca,-22.9296651,-43.2407796,Bolsão d'água em via
+2022-04-01 18:04:27.000000 UTC,2022-04-01 19:43:53.000000 UTC,72859,Baixo,"Av. maracnã, alt. r. dep. soares filho - tijuca",-22.918323,-43.2319645,Bolsão d'água em via
+2022-04-01 08:15:21.000000 UTC,2022-04-01 10:54:31.000000 UTC,72814,Baixo,R. vicente licínio - alt. r. campos sales - tijuca,-22.915786926262651,-43.218426507409667,Bolsão d'água em via
+2022-04-14 20:33:24.000000 UTC,2022-04-14 22:35:12.000000 UTC,73350,Baixo,"R. haddock lobo, alt. r. eng. adel - tijuca",-22.921571,-43.2160071,Bolsão d'água em via
+2022-04-01 17:54:21.000000 UTC,2022-04-01 19:46:49.000000 UTC,72852,Baixo,"Rua conde de bonfim, alt. rua uruguai - tijuca",-22.9326318,-43.2410897,Bolsão d'água em via
+2022-04-30 08:45:04.000000 UTC,2022-04-30 10:16:49.000000 UTC,73813,Baixo,R. uruguai -  alt. r. ladislau neto,-22.9234028,-43.2452728,Bolsão d'água em via
+2022-04-14 21:50:39.000000 UTC,2022-04-14 22:19:38.000000 UTC,73360,Baixo,"R. dr. satamini, alt. r. heitor beltrão - tijuca",-22.9184846,-43.217888,Bolsão d'água em via
+2022-04-01 17:50:55.000000 UTC,2022-04-01 21:02:10.000000 UTC,72850,Baixo,"Rua conde de bonfim, alt. alm. cochrane  - tijuca",-22.9237915,-43.2285353,Bolsão d'água em via
+2022-04-01 17:42:19.000000 UTC,2022-04-01 19:20:32.000000 UTC,72847,Baixo,Rua haddock lobo - alt. r. eng. adel - tijuca,-22.9203696,-43.2166298,Bolsão d'água em via
+2022-04-09 02:33:15.000000 UTC,2022-04-09 03:36:51.000000 UTC,73201,Baixo,R. do catete - alt. rua pedro américo - glória,-22.9242631,-43.1767665,Bolsão d'água em via
+2022-04-14 04:28:39.000000 UTC,2022-04-14 05:13:37.000000 UTC,73311,Baixo, r. vinícius de morais -al. av. epitácio pessoa -  ipanema ,-22.9832664,-43.2027898,Bolsão d'água em via
+2022-04-03 06:30:39.000000 UTC,2022-04-03 08:54:28.000000 UTC,72996,Baixo,"Av. epitácio pessoa, alt. viaduto augusto frederico schmidt - lagoa - sent. leblon",-22.9782382,-43.1995018,Bolsão d'água em via
+2022-04-09 02:26:51.000000 UTC,2022-04-09 03:39:41.000000 UTC,73199,Baixo,Av. epitácio pessoa - alt. r. vinícius de moraes - ipanema ,-22.9832664,-43.2027898,Bolsão d'água em via
+2022-04-06 01:42:16.000000 UTC,2022-04-06 02:23:52.000000 UTC,73098,Baixo,R. vinícius de moraes - alt. av. epitácio pessoa- ipanema,-22.9832664,-43.2027898,Bolsão d'água em via
+2022-04-01 16:28:10.000000 UTC,2022-04-02 01:52:35.000000 UTC,72832,Baixo,"Av. epitácio pessoa, alt. r. vinícius de moraes - ipanema",-22.979848856102464,-43.202446477246085,Bolsão d'água em via
+2022-04-02 14:45:11.000000 UTC,2022-04-02 16:08:03.000000 UTC,72973,Baixo,R. goiás - piedade,-22.8892726,-43.3105029,Bolsão d'água em via
+2022-04-02 13:35:03.000000 UTC,2022-04-02 14:33:21.000000 UTC,72969,Baixo,Av. dom hélder câmara - alt. r. manoel da nóbrega  - piedade,-22.8851211,-43.3105953,Bolsão d'água em via
+2022-04-29 23:57:58.000000 UTC,2022-04-30 01:08:57.000000 UTC,73767,Baixo,R. vinte e quatro de maio - alt. rua silva freire ( buraco do padre ) - sampaio,-22.9021825,-43.2619311,Bolsão d'água em via
+2022-04-29 23:48:03.000000 UTC,2022-04-30 00:05:33.000000 UTC,73764,Baixo,R. teodoro da silva - alt. rua barão de são francisco - andaraí,-22.9184206,-43.2500594,Bolsão d'água em via
+2022-04-09 02:20:24.000000 UTC,2022-04-09 03:07:46.000000 UTC,73197,Baixo,R. teodoro da silva - alt. rua alexandre calaza - andaraí,-22.9184206,-43.2500594,Bolsão d'água em via
+2022-04-01 17:03:24.000000 UTC,2022-04-01 20:21:37.000000 UTC,72843,Baixo,Praia de botafogo - alt. r. visconde de ouro preto - botafogo,-22.9454948,-43.1821807,Bolsão d'água em via
+2022-04-01 16:38:49.000000 UTC,2022-04-01 19:12:59.000000 UTC,72837,Baixo,Praia de botafogo - alt. r. alfredo gomes - botafogo,-22.9478171,-43.1827017,Bolsão d'água em via
+2022-04-14 20:30:18.000000 UTC,2022-04-14 22:35:05.000000 UTC,73348,Baixo,"Rua muniz barreto, alt. r. marques de olinda - botafogo",-22.9437967,-43.1839729,Bolsão d'água em via
+2022-04-01 22:24:26.000000 UTC,2022-04-02 00:55:53.000000 UTC,72902,Baixo,R. marquês de olinda - alt. rua muniz barreto - botafogo,-22.9437967,-43.1839729,Bolsão d'água em via
+2022-04-01 16:55:32.000000 UTC,2022-04-01 21:51:11.000000 UTC,72840,Baixo,Rua voluntários da pátria - alt. rua dona mariana - botafogo,-22.9532597,-43.1884877,Bolsão d'água em via
+2022-04-01 16:34:24.000000 UTC,2022-04-01 23:26:18.000000 UTC,72834,Baixo,"R. são clemente, 398 - botafogo",-22.9511043,-43.1949598,Bolsão d'água em via
+2022-04-01 03:57:49.000000 UTC,2022-04-01 05:57:03.000000 UTC,72800,Baixo,Praia de botafogo - alt. n° 340 - botafogo,-22.9456367,-43.1831476,Bolsão d'água em via
+2022-04-14 20:31:09.000000 UTC,2022-04-14 21:21:33.000000 UTC,73349,Baixo,"R. são clemente, 226 - botafogo",-22.9493961,-43.1900215,Bolsão d'água em via
+2022-04-01 16:58:25.000000 UTC,2022-04-01 19:15:34.000000 UTC,72841,Baixo,Praia de botafogo - alt. r. são clemente - botafogo - sent. copacabana,-22.9454948,-43.1821807,Bolsão d'água em via
+2022-04-14 19:50:15.000000 UTC,2022-04-14 21:47:00.000000 UTC,73341,Baixo,"Rua da reverência, alt. ciep - curicica",-22.9574839,-43.3906536,Bolsão d'água em via
+2022-04-01 19:27:44.000000 UTC,2022-04-02 08:59:18.000000 UTC,72870,Baixo,Rua da ventura - n° 173 - curicica,-22.9557361,-43.3917917,Bolsão d'água em via
+2022-04-01 16:32:09.000000 UTC,2022-04-01 19:11:03.000000 UTC,72833,Baixo,Rua humaitá - alt. r. macedo sobrinho - humaitá,-22.9576862576538,-43.199086012966923,Bolsão d'água em via
+2022-04-01 22:56:33.000000 UTC,2022-04-02 02:03:24.000000 UTC,72907,Baixo,"Av. brasil, alt. realengo - ambos os sentidos",-22.8631729,-43.4389105,Bolsão d'água em via
+2022-04-02 07:58:31.000000 UTC,2022-04-04 11:51:28.000000 UTC,72940,Baixo,"Estr. do piaí, 2940 - sepetiba",-22.9780912,-43.677654700000012,Bolsão d'água em via
+2022-04-30 05:40:21.000000 UTC,2022-04-30 09:16:29.000000 UTC,73780,Baixo,Av. ernani cardoso - alt. rua padre telemaco  - cascadura,-22.8824192,-43.3354398,Bolsão d'água em via
+2022-04-01 00:00:38.000000 UTC,2022-04-01 00:44:03.000000 UTC,72785,Baixo,Av. dom hélder câmara - alt. n° 9653 - cascadura - sent. abolição,-22.8836347,-43.3203723,Bolsão d'água em via
+2022-04-02 15:08:47.000000 UTC,2022-04-02 15:56:52.000000 UTC,72975,Baixo,Rua sidonio paes - cascadura,-22.8784665,-43.3255317,Bolsão d'água em via
+2022-04-30 05:00:32.000000 UTC,2022-04-30 11:42:45.000000 UTC,73777,Baixo,Av. cesário de melo - alt. r. moranga - inhoaiba - sent. paciencia.,-22.9130779,-43.5837004,Bolsão d'água em via
+2022-04-01 22:36:44.000000 UTC,2022-04-02 00:54:21.000000 UTC,72905,Baixo,Av. cesário de melo - alt. rua morango - inhoaíba,-22.9144723,-43.6009664,Bolsão d'água em via
+2022-04-30 00:55:07.000000 UTC,2022-04-30 03:09:59.000000 UTC,73771,Baixo,Av. cesário de melo - alt. cemitério de campo grande - inhoaíba,-22.9121472,-43.5930144,Bolsão d'água em via
+2022-04-30 06:29:53.000000 UTC,2022-04-30 12:49:39.000000 UTC,73782,Baixo,Av. cesário de melo - alt rua aurélio de figueiredo,-22.9143229,-43.6019568,Bolsão d'água em via
+2022-04-30 07:02:38.000000 UTC,2022-04-30 11:39:36.000000 UTC,73787,Baixo,Av. cesário de melo - alt. estação brt julia miguel,-22.9145304,-43.6007721,Bolsão d'água em via
+2022-04-30 08:52:16.000000 UTC,2022-04-30 13:16:27.000000 UTC,73816,Baixo,Estr. do campinho - alt. av. brasil,-22.8901842,-43.5954023,Bolsão d'água em via
+2022-04-14 02:23:41.000000 UTC,2022-04-14 03:49:34.000000 UTC,73307,Baixo,Av. cesário de melo - alt. rua morango - inhoaíba - sent. santa cruz.,-22.9144847,-43.6030859,Bolsão d'água em via
+2022-04-30 06:45:33.000000 UTC,2022-04-30 09:13:27.000000 UTC,73783,Baixo,Av. cesário de melo - alt. estrada do monteiro.,-22.9143229,-43.6019568,Bolsão d'água em via
+2022-04-30 06:59:09.000000 UTC,2022-04-30 11:40:25.000000 UTC,73786,Baixo,Av. cesário de melo - alt. estação brt são paulo - inhoaíba,-22.9143665,-43.6024444,Bolsão d'água em via
+2022-04-01 21:45:56.000000 UTC,2022-04-02 00:35:02.000000 UTC,72895,Baixo,"R. augusto alves moreira, 1400 - inhoaíba",-22.9143564,-43.6024511,Bolsão d'água em via
+2022-04-14 19:13:35.000000 UTC,2022-04-15 01:00:52.000000 UTC,73339,Baixo,"Av. edgard romero, alt. r. conselheiro galvão - madureira - sent. vaz lobo",-22.8668979,-43.3345276,Bolsão d'água em via
+2022-04-30 08:16:53.000000 UTC,2022-04-30 09:40:15.000000 UTC,73806,Baixo,Rua maria josé - madureira,-22.8801599,-43.3467858,Bolsão d'água em via
+2022-04-01 09:22:56.000000 UTC,2022-04-01 11:32:49.000000 UTC,72817,Baixo,Praça das mães - madureira,-22.8725334,-43.336363899999988,Bolsão d'água em via
+2022-04-09 03:30:00.000000 UTC,2022-04-09 03:34:10.000000 UTC,73205,Baixo,R. conselheiro olegário - maracanã,-22.9134083,-43.2334695,Bolsão d'água em via
+2022-04-14 20:48:58.000000 UTC,2022-04-14 21:47:17.000000 UTC,73353,Baixo,"R. ibituruna, alt. morais e silva 12 - maracanã",-22.9120148,-43.2219162,Bolsão d'água em via
+2022-04-01 20:02:41.000000 UTC,2022-04-01 21:55:27.000000 UTC,72877,Baixo,"Rua prof. eurico rabelo, em toda extensão - maracanã",-22.9139582,-43.2311104,Bolsão d'água em via
+2022-04-01 18:00:32.000000 UTC,2022-04-01 20:55:59.000000 UTC,72856,Baixo,"Av. maracanã, alt. rua mata machado - maracanã",-22.9127002,-43.226397899999988,Bolsão d'água em via
+2022-04-30 08:40:58.000000 UTC,2022-04-30 15:17:28.000000 UTC,73812,Baixo,Rua ilha fiscal - bancários,-22.7887836,-43.1832662,Bolsão d'água em via
+2022-04-30 09:17:43.000000 UTC,2022-04-30 11:39:02.000000 UTC,73825,Baixo,R. adail - bonsucesso,-22.8603842,-43.2549155,Bolsão d'água em via
+2022-04-30 09:09:45.000000 UTC,2022-04-30 11:15:42.000000 UTC,73823,Baixo,"R. barros barreto, 59 - bonsucesso",-22.8592177,-43.2546823,Bolsão d'água em via
+2022-04-30 09:14:10.000000 UTC,2022-04-30 12:46:12.000000 UTC,73824,Baixo,Av. teixeira de castro - teixeira de castro,-22.8552504,-43.252104,Bolsão d'água em via
+2022-04-01 00:05:28.000000 UTC,2022-04-01 01:50:27.000000 UTC,72787,Baixo,Av. itaóca - alt. escola municipal afonso varzea - bonsucesso,-22.8688193,-43.2674209,Bolsão d'água em via
+2022-04-30 09:00:49.000000 UTC,2022-04-30 10:06:50.000000 UTC,73820,Baixo,R. herculano penaalt. pam de cavalcante - cavalcante,-22.8729964,-43.3132995,Bolsão d'água em via
+2022-04-01 16:44:46.000000 UTC,2022-04-02 00:52:44.000000 UTC,72838,Baixo,R. tonelero - alt. r. siqueira campos - copacabana,-22.967151435849921,-43.186203059663391,Bolsão d'água em via
+2022-04-09 02:42:10.000000 UTC,2022-04-09 03:12:24.000000 UTC,73203,Baixo,R. tonelero - alt. rua siqueira campos - copacabana,-22.9666427,-43.1852321,Bolsão d'água em via
+2022-04-14 21:00:48.000000 UTC,2022-04-14 21:24:54.000000 UTC,73357,Baixo,"Rua siqueira campos, alt. r. tonelero - copacabana",-22.9664282,-43.1870582,Bolsão d'água em via
+2022-04-02 07:10:34.000000 UTC,2022-04-02 15:37:38.000000 UTC,72937,Baixo,Estrada da barra da tijuca -  golf club - itanhangá,-22.9959852,-43.3042892,Bolsão d'água em via
+2022-04-01 18:05:25.000000 UTC,2022-04-02 17:28:35.000000 UTC,72860,Baixo,R. dom rosalvo costa rêgo - alt. r. eng. fonseca costa - itanhangá,-22.9923315,-43.3027801,Bolsão d'água em via
+2022-04-01 03:30:37.000000 UTC,2022-04-04 16:31:53.000000 UTC,72797,Baixo,Av. engenheiro souza filho - muzema,-22.9786046,-43.3336748,Bolsão d'água em via
+2022-04-01 23:29:32.000000 UTC,2022-04-02 02:26:39.000000 UTC,72910,Baixo,Largo do 48 - muzema- itanhangá,-22.9848702,-43.3306457,Bolsão d'água em via
+2022-04-11 12:08:59.000000 UTC,2022-04-13 19:12:56.000000 UTC,73246,Baixo,"Av. eng. souza filho, 555 - itanhangá - sent. barra",-22.9889688,-43.3232225,Bolsão d'água em via
+2022-04-15 00:12:47.000000 UTC,2022-04-15 13:52:11.000000 UTC,73372,Baixo,Av. engenheiro souza filho - muzema - em ambos os sentidos,-22.978626,-43.3336711,Bolsão d'água em via
+2022-04-02 16:16:23.000000 UTC,2022-04-02 16:17:03.000000 UTC,72977,Baixo,"Estr. de itajuru, 744 - itanhangá",-22.9898268,-43.2979168,Bolsão d'água em via
+2022-04-09 04:03:54.000000 UTC,2022-04-09 06:13:10.000000 UTC,73207,Baixo,Av. brasil - alt. passarela 06 - manguinhos - sent. z. oeste.,-22.8790547,-43.2401616,Bolsão d'água em via
+2022-04-30 07:09:59.000000 UTC,2022-04-30 13:08:42.000000 UTC,73789,Baixo,Av. cesário de melo - alt. nº 9930 - paciência,-22.915713,-43.625483,Bolsão d'água em via
+2022-04-02 08:56:15.000000 UTC,2022-04-02 16:40:32.000000 UTC,72951,Baixo,"Estr. da pedra, alt. brt santa veridiana - santa cruz - ambos os sentidos",-22.94048,-43.66514,Bolsão d'água em via
+2022-04-02 14:25:50.000000 UTC,2022-04-03 08:25:48.000000 UTC,72971,Baixo,R. nelson xavier - santa cruz,-22.9068175,-43.67232,Bolsão d'água em via
+2022-04-01 18:44:08.000000 UTC,2022-04-01 21:54:11.000000 UTC,72867,Baixo,"Av. pres. vargas, alt. cidade novas, sent. bicalho - cidade nova",-22.9098965,-43.207238,Bolsão d'água em via
+2022-04-09 02:36:00.000000 UTC,2022-04-09 08:19:54.000000 UTC,73202,Baixo,Av. presidente vargas alt. cass - cidade nova - sent. av. francisco bicalho.,-22.9097464,-43.2065385,Bolsão d'água em via
+2022-04-30 08:09:54.000000 UTC,2022-04-30 12:01:43.000000 UTC,73805,Baixo,R. joão vicente - alt. rio luz - mal. hermes,-22.8592294,-43.3744956,Bolsão d'água em via
+2022-04-30 07:22:53.000000 UTC,2022-04-30 12:03:13.000000 UTC,73794,Baixo,R. cândido benício - alt. estação brt  capitão menezes,-22.8931085,-43.3482981,Bolsão d'água em via
+2022-04-30 08:20:05.000000 UTC,2022-04-30 12:02:14.000000 UTC,73807,Baixo,Travessa antonina - alt. rua marangá - praça seca,-22.8995967,-43.3456894,Bolsão d'água em via
+2022-04-30 08:03:37.000000 UTC,2022-04-30 12:02:26.000000 UTC,73802,Baixo,R. cândido benício  - alt nº 1551 - praça seca,-22.8956806,-43.3502491,Bolsão d'água em via
+2022-04-30 08:22:28.000000 UTC,2022-04-30 12:01:39.000000 UTC,73808,Baixo,Rua pinto teles -  praça seca,-22.8869734,-43.3499161,Bolsão d'água em via
+2022-04-30 07:16:54.000000 UTC,2022-04-30 11:39:59.000000 UTC,73792,Baixo,Rua cándido benicio -alt. estação brt ipase - praça seca,-22.9046653,-43.3567672,Bolsão d'água em via
+2022-04-30 07:15:22.000000 UTC,2022-04-30 10:22:03.000000 UTC,73791,Baixo,R. cândido benício - alt. n° 766 - praça seca,-22.8893068,-43.3466538,Bolsão d'água em via
+2022-04-30 08:08:21.000000 UTC,2022-04-30 12:02:45.000000 UTC,73803,Baixo,R. dr. bernardino - alt. 40 - praça seca,-22.8954933,-43.3497188,Bolsão d'água em via
+2022-04-09 02:08:20.000000 UTC,2022-04-09 03:10:40.000000 UTC,73194,Baixo,R. visc. de santa isabel - alt. rua alexandre calaza  - vila isabel,-22.9170305,-43.2606692,Bolsão d'água em via
+2022-04-09 02:17:54.000000 UTC,2022-04-09 03:08:49.000000 UTC,73196,Baixo,R. visc. de santa isabel - alt. rua barão de são francisco - vila isabel,-22.9170305,-43.2606692,Bolsão d'água em via
+2022-04-30 00:13:27.000000 UTC,2022-04-30 02:19:41.000000 UTC,73770,Baixo,R. visc. de santa izabel - alt. rua barão de são francisco - vila isabel,-22.9171489,-43.260678,Bolsão d'água em via
+2022-04-09 02:15:09.000000 UTC,2022-04-09 03:09:45.000000 UTC,73195,Baixo,R. visc. de santa isabel - alt. rua barão do bom retiro - vila isabel,-22.9170305,-43.2606692,Bolsão d'água em via
+2022-04-01 21:12:25.000000 UTC,2022-04-01 21:42:02.000000 UTC,72890,Baixo,Av. cesário de melo - frente cemitério de campo grande - campo grande,-22.9067806,-43.5735353,Bolsão d'água em via
+2022-04-30 07:55:15.000000 UTC,2022-04-30 11:36:31.000000 UTC,73801,Baixo,"R. gramado, - alt. nº1045 - campo grande",-22.9044667,-43.569788,Bolsão d'água em via
+2022-04-30 07:06:32.000000 UTC,2022-04-30 11:42:27.000000 UTC,73788,Baixo,Av. cesário de melo -alt. estação brt prefeito alim pedro - campo grande,-22.9076961,-43.5640913,Bolsão d'água em via
+2022-04-30 06:55:44.000000 UTC,2022-04-30 11:42:04.000000 UTC,73785,Baixo,R. gramado - alt. n° 1045 - campo grande,-22.9044667,-43.569788,Bolsão d'água em via
+2022-04-14 19:55:46.000000 UTC,2022-04-14 21:37:37.000000 UTC,73342,Baixo,"Rua antônio cordeiro, 126 - jacarepaguá",-22.941567,-43.33833,Bolsão d'água em via
+2022-04-01 22:43:07.000000 UTC,2022-04-02 06:43:10.000000 UTC,72906,Baixo,R. antônio cordeiro - alt. n° 201 - jacarepaguá,-22.9419537,-43.3378228,Bolsão d'água em via
+2022-04-01 23:31:29.000000 UTC,2022-04-02 18:35:40.000000 UTC,72912,Baixo,Estr. de jacarepaguá - frente água viva - jacarepaguá,-22.9633255,-43.3350005,Bolsão d'água em via
+2022-04-15 07:15:03.000000 UTC,2022-04-15 10:14:27.000000 UTC,73382,Baixo,"Av. ayrton senna, 3437 - jacarepaguá - sent. orla",-22.9803001,-43.3667214,Bolsão d'água em via
+2022-04-06 03:32:58.000000 UTC,2022-04-06 11:02:28.000000 UTC,73101,Baixo,R. gen. olímpio mourão filho - são conrado,-22.992905,-43.2540285,Bolsão d'água em via
+2022-04-01 15:32:40.000000 UTC,2022-04-01 23:23:48.000000 UTC,72826,Baixo,Autoestrada eng. fernando mac dowell - são conrado,-22.9972625,-43.262872,Bolsão d'água em via
+2022-04-01 17:31:58.000000 UTC,2022-04-01 19:19:28.000000 UTC,72846,Baixo,"Estrada da gávea, alt da rocinha - sent. são conrado - são conrado",-22.9974857,-43.264641300000008,Bolsão d'água em via
+2022-04-01 15:57:30.000000 UTC,2022-04-01 20:52:34.000000 UTC,72828,Baixo,Estr. fernando macdowell - alt. saída túnel zuzu angel - são conrado - sent. barra,-22.992511990224184,-43.251832027694711,Bolsão d'água em via
+2022-04-01 15:37:39.000000 UTC,2022-04-01 16:35:38.000000 UTC,72827,Baixo,Estr. da gávea - alt. rocinha - sent. são conrado,-22.992486744141228,-43.253671009262078,Bolsão d'água em via
+2022-04-30 10:10:54.000000 UTC,2022-04-30 11:55:09.000000 UTC,73831,Baixo,Estr. são pedro de alcântara - alt. estação brt vila militar,-22.8641047,-43.4054105,Bolsão d'água em via
+2022-04-30 05:49:28.000000 UTC,2022-04-30 09:15:25.000000 UTC,73781,Baixo,Av. brasil - alt. rua filomena nunes - penha - sent. centro.,-22.8248404,-43.2768624,Bolsão d'água em via
+2022-04-02 01:04:09.000000 UTC,2022-04-02 01:05:49.000000 UTC,72918,Baixo,"Estr. do catonho, 977 - jardim sulacap",-22.898978,-43.3891283,Bolsão d'água em via
+2022-04-15 06:44:56.000000 UTC,2022-04-15 16:07:15.000000 UTC,73381,Baixo,"Av. albérico diniz, 1273 - jardim sulacap - sent. realengo",-22.8875941,-43.3889252,Bolsão d'água em via
+2022-04-02 10:04:33.000000 UTC,2022-04-04 11:55:36.000000 UTC,72960,Baixo,Rua josé duarte - alt. r. paulo roberto matheus - vargem pequena,-22.9871331,-43.4681097,Bolsão d'água em via
+2022-04-30 08:50:52.000000 UTC,2022-04-30 11:12:49.000000 UTC,73815,Baixo,Rua bulhões marcial - vigário geral,-22.802333,-43.3059526,Bolsão d'água em via
+2022-04-01 21:16:11.000000 UTC,2022-04-01 21:40:43.000000 UTC,72891,Baixo,Avenida jambeiro - vila valqueire,-22.8818049,-43.3709069,Bolsão d'água em via
+2022-04-30 10:54:45.000000 UTC,2022-04-30 11:28:47.000000 UTC,73838,Baixo,R. dos jasmins - alt. 41 - vila valqueire,-22.8793123,-43.3659942,Bolsão d'água em via
+2022-04-14 20:21:55.000000 UTC,2022-04-14 21:11:49.000000 UTC,73346,Baixo,"Rua das camélias, alt. r. das dálias - vila valqueire",-22.8806759,-43.3667272,Bolsão d'água em via
+2022-04-14 20:24:57.000000 UTC,2022-04-14 22:51:58.000000 UTC,73347,Baixo,"Rua das tulípas, alt. praça saiqui - vila valqueire",-22.8848879,-43.3653486,Bolsão d'água em via
+2022-04-14 21:53:11.000000 UTC,2022-04-14 22:52:09.000000 UTC,73361,Baixo,"Rua quiririm, alt. r. luiz beltrão - vila valqueire",-22.8847887,-43.3564477,Bolsão d'água em via
+2022-04-01 21:08:22.000000 UTC,2022-04-01 21:42:38.000000 UTC,72888,Baixo,Praça valqueire - vila valqueire,-22.8780114,-43.3631093,Bolsão d'água em via
+2022-04-01 21:40:54.000000 UTC,2022-04-02 09:39:47.000000 UTC,72894,Baixo,R. das dálias - vila valqueire,-22.8803901,-43.3655751,Bolsão d'água em via
+2022-04-30 06:51:20.000000 UTC,2022-04-30 12:03:40.000000 UTC,73784,Baixo,Av. jambeiro - vila valqueire,-22.8820656,-43.3710414,Bolsão d'água em via
+2022-04-02 03:38:43.000000 UTC,2022-04-02 13:01:56.000000 UTC,72929,Baixo,Av. armando lombardi - alt. estação brt jardim oceãnico - barra da tijuca,-23.0066805,-43.3109026,Bolsão d'água em via
+2022-04-01 17:28:37.000000 UTC,2022-04-01 20:23:25.000000 UTC,72845,Baixo,"Av. das américas, alt. downtown - sent. zona sul  - barra da tijuca",-23.0050483,-43.3210901,Bolsão d'água em via
+2022-04-15 08:05:42.000000 UTC,2022-04-15 09:59:56.000000 UTC,73383,Baixo,Av. ayrton senna - alt. cond. alfabarra - barra - sent. orla,-22.9860018,-43.3654065,Bolsão d'água em via
+2022-04-09 01:54:00.000000 UTC,2022-04-09 04:17:27.000000 UTC,73192,Baixo,Av. armando lombardi - alt. barra point - barra da tijuca - sent. recreio,-23.0068307,-43.3107119,Bolsão d'água em via
+2022-04-01 03:04:19.000000 UTC,2022-04-01 03:18:03.000000 UTC,72796,Baixo,R. pedro lago - alt. av armando lombardi - barra da tijuca,-23.0083231,-43.3094964,Bolsão d'água em via
+2022-04-01 16:46:25.000000 UTC,2022-04-01 20:58:17.000000 UTC,72839,Baixo,"Av. armando lombardi, alt. barra point - barra da tijuca",-23.0071335,-43.3085453,Bolsão d'água em via
+2022-04-01 17:09:40.000000 UTC,2022-04-01 19:17:21.000000 UTC,72844,Baixo,"Av. min. ivan lins, 600 - barra da tijuca - sent. são conrado",-23.012147097779181,-43.2994790984253,Bolsão d'água em via
+2022-04-01 21:19:10.000000 UTC,2022-04-01 23:48:42.000000 UTC,72892,Baixo,Ponte santos dumont - barra da tijuca - ambos sentidos,-22.9703193,-43.3618861,Bolsão d'água em via
+2022-04-02 16:26:59.000000 UTC,2022-04-02 17:24:06.000000 UTC,72978,Baixo,Av. ayrton senna - alt. shopping uptown - barra - ambos os sentidos,-22.9645642,-43.3547203,Bolsão d'água em via
+2022-04-02 08:15:42.000000 UTC,2022-04-02 09:55:42.000000 UTC,72942,Baixo,"Av. armando lombardi, 205 - barra da tijuca",-23.0078572,-43.3070394,Bolsão d'água em via
+2022-04-02 11:06:59.000000 UTC,2022-04-02 18:30:23.000000 UTC,72965,Baixo,"Estr. roberto burle marx, 2117 - barra guaratiba",-23.024634,-43.549589999999988,Bolsão d'água em via
+2022-04-30 09:55:22.000000 UTC,2022-04-30 13:02:37.000000 UTC,73828,Baixo,Av. brasil - alt. parada de lucas - sent. centro ,-22.8143679,-43.2972745,Bolsão d'água em via
+2022-04-01 21:04:50.000000 UTC,2022-04-02 02:28:05.000000 UTC,72886,Baixo,R. getúlio - alt. rua salvador pires - todos os santos,-22.893094,-43.2788958,Bolsão d'água em via
+2022-04-01 16:04:35.000000 UTC,2022-04-01 19:23:16.000000 UTC,72830,Baixo,Rua jardim botânico - alt. rua pacheco leão - jardim botanico,-22.9664071352087,-43.2194058253174,Bolsão d'água em via
+2022-04-01 19:34:55.000000 UTC,2022-04-02 06:54:02.000000 UTC,72872,Baixo,"R. jardim botânico, alt. prof. saldanha - jardim botânico",-22.9603817,-43.2050687,Bolsão d'água em via
+2022-04-01 19:23:23.000000 UTC,2022-04-01 23:53:24.000000 UTC,72869,Baixo,"Rua jardim botânico, altura parque laje - jardim botânico",-22.9642239,-43.2174748,Bolsão d'água em via
+2022-04-30 09:06:36.000000 UTC,2022-04-30 13:01:56.000000 UTC,73822,Baixo,R. irapuru - sen. vasconcelos,-22.8907962,-43.5182268,Bolsão d'água em via
+2022-04-30 09:42:34.000000 UTC,2022-04-30 11:28:02.000000 UTC,73827,Baixo,Rua general bruce - são cristóvão,-22.895311747730208,-43.222122369311528,Bolsão d'água em via
+2022-04-09 04:01:16.000000 UTC,2022-04-09 06:13:37.000000 UTC,73206,Baixo,Av. brasil - alt. passarela 05 - são cristóvão - sent. z. oeste,-22.8886008,-43.2232064,Bolsão d'água em via
+2022-04-14 20:55:12.000000 UTC,2022-04-14 22:40:54.000000 UTC,73354,Baixo,"R. do matoso, alt.  travessa dr. araújo - praca da bandeira",-22.91402,-43.2128488,Bolsão d'água em via
+2022-04-01 17:58:45.000000 UTC,2022-04-01 21:52:04.000000 UTC,72855,Baixo,R. mariz e barros - alt. r. felisberto de menezes - praca da bandeira,-22.9125986,-43.2160861,Bolsão d'água em via
+2022-04-30 09:03:32.000000 UTC,2022-04-30 11:31:53.000000 UTC,73821,Baixo,Rua cupertino - quintino bocaiuva,-22.8856988,-43.3213681,Bolsão d'água em via
+2022-04-02 15:08:17.000000 UTC,2022-04-02 16:07:57.000000 UTC,72974,Baixo,R. cupertino - cascadura,-22.8863349,-43.3219651,Bolsão d'água em via
+2022-04-30 08:55:46.000000 UTC,2022-04-30 09:48:26.000000 UTC,73818,Baixo,R. clarimundo de melo -  alt. r. franco vaz - quintino bocaiuva,-22.8899409,-43.3235492,Bolsão d'água em via
+2022-04-30 00:08:37.000000 UTC,2022-04-30 00:19:41.000000 UTC,73768,Baixo,R. são francisco xavier - alt. av. prof° manuel de abreu - são francisco xavier,-22.9043747,-43.2436871,Bolsão d'água em via
+2022-04-01 22:02:16.000000 UTC,2022-04-02 01:08:52.000000 UTC,72898,Baixo,Av. das américas - alt. estação brt dom bosco - recreio dos bandeirantes - ambos setidos,-23.0182116,-43.5090057,Bolsão d'água em via
+2022-04-14 07:53:50.000000 UTC,2022-04-14 11:00:47.000000 UTC,73317,Baixo,Av. salvador allende - alt. av. das américas - recreio - sent. transolímpica,-23.0063033,-43.436979,Bolsão d'água em via
+2022-04-01 23:11:45.000000 UTC,2022-04-02 08:18:59.000000 UTC,72909,Baixo,Estr. do bananal - alt. condomínio eldorado - freguesia de jacarepaguá,-22.9410997,-43.332213,Bolsão d'água em via
+2022-04-01 00:03:47.000000 UTC,2022-04-01 00:26:10.000000 UTC,72786,Baixo,Estr. do bananal - alt. n° 1305 - freguesia de jacarepaguá,-22.945205,-43.330296399999987,Bolsão d'água em via
+2022-04-14 20:38:18.000000 UTC,2022-04-14 22:44:29.000000 UTC,73351,Baixo,"Av. ayrton senna, alt. acesso ponte santos dumont - jacarepaguá - sent. linha amarela",-22.9358647,-43.3471181,Bolsão d'água em via
+2022-04-14 20:55:49.000000 UTC,2022-04-14 23:25:00.000000 UTC,73355,Baixo,"Av. dr. agenor de almeida loyola, 900 - freguesia (ilha do governador)",-22.7891224,-43.1778842,Bolsão d'água em via
+2022-04-30 10:23:41.000000 UTC,2022-04-30 16:13:52.000000 UTC,73834,Baixo,Rio acari,-22.8245173,-43.3497019,Alagamento
+2022-04-30 07:50:56.000000 UTC,2022-05-01 03:24:54.000000 UTC,73800,Baixo,Praça roberto carlos - s/n  - acari,-22.8228393,-43.3417452,Alagamento
+2022-04-30 07:28:28.000000 UTC,2022-04-30 13:00:36.000000 UTC,73796,Baixo,Rua maturéia - alt. rua ibiporã - campo grande,-22.8917648,-43.605421199999988,Alagamento
+2022-04-30 11:57:12.000000 UTC,2022-04-30 15:14:50.000000 UTC,73843,Baixo,R. mercúrio - pavuna,-22.8053885,-43.3561198,Alagamento
+2022-04-30 10:00:24.000000 UTC,2022-04-30 11:33:13.000000 UTC,73829,Baixo,Estr. de maracajás - alt. nº  973 - galeão - ilha do governador,-22.8174737,-43.2284566,Alagamento
+2022-04-03 12:41:41.000000 UTC,2022-04-03 17:40:05.000000 UTC,73008,Baixo,Av. das nações unidas - alt. edifício argentina - botafogo,-22.9430626,-43.180151599999988,Alagamento
+2022-04-30 12:07:03.000000 UTC,2022-04-30 13:41:25.000000 UTC,73845,Baixo,R. viúva cláudio - alt. nº 79 - jacaré,-22.887329,-43.2525851,Alagamento
+2022-04-30 07:47:25.000000 UTC,2022-05-02 19:22:32.000000 UTC,73799,Baixo,Av. chrisóstomo pimentel de oliveira - alt. da via light - anchieta,-22.8161347,-43.3872639,Alagamento
+2022-04-01 20:06:16.000000 UTC,2022-04-02 02:22:43.000000 UTC,72878,Baixo,R. tomás édison - anchieta,-22.822715,-43.3960099,Alagamento
+2022-04-30 12:20:02.000000 UTC,2022-04-30 13:07:06.000000 UTC,73847,Baixo,"Rua orélia - guadalupe, ",-22.8457187,-43.3768595,Alagamento
+2022-04-01 20:39:06.000000 UTC,2022-04-02 04:05:53.000000 UTC,72882,Baixo," av. dom joão vi - alt. estação  brt pingo d'água, 185 - guaratiba - ambos sentidos",-22.9649,-43.647279999999988,Alagamento
+2022-04-29 23:44:05.000000 UTC,2022-04-30 09:57:21.000000 UTC,73763,Baixo,Av. min. edgard romero - alt. rua conselheiro galvão  - madureira,-22.8661268,-43.3343465,Alagamento
+2022-04-01 18:11:18.000000 UTC,2022-04-01 23:25:06.000000 UTC,72861,Baixo,R. morais e silva - maracanã,-22.9143473,-43.2237356,Alagamento
+2022-04-01 21:06:57.000000 UTC,2022-04-02 06:42:47.000000 UTC,72887,Baixo,Rua edgard werneck - alt. n° 1211 - pechincha,-22.9456388,-43.3578723,Alagamento
+2022-04-30 08:25:27.000000 UTC,2022-04-30 13:26:05.000000 UTC,73809,Baixo,Av. pastor martin luther king júnior - hospital  ronaldo gazzola - coelho neto,-22.825929,-43.3490125,Alagamento
+2022-04-30 12:33:38.000000 UTC,2022-05-01 03:25:26.000000 UTC,73848,Baixo,Av. pref. sá lessa - alt. nº 209 - acari,-22.8247519,-43.3528917,Alagamento
+2022-04-30 11:53:15.000000 UTC,2022-04-30 12:59:10.000000 UTC,73842,Baixo,R. gravatá - alt. 364 - mal. hermes,-22.8678564,-43.3727237,Alagamento
+2022-04-01 20:25:00.000000 UTC,2022-04-02 02:23:14.000000 UTC,72879,Baixo,Estr. do mendanha - alt. n° 10021 - campo grande,-22.8391913,-43.5590831,Alagamento
+2022-04-01 20:36:53.000000 UTC,2022-04-02 02:23:22.000000 UTC,72881,Baixo,Estrada do tingui  - campo grande,-22.8806441,-43.585432,Alagamento
+2022-04-30 11:01:31.000000 UTC,2022-04-30 12:55:18.000000 UTC,73839,Baixo,Estrada do mendanha - alt. fabrica da guaracamp - campo grande,-22.865366,-43.5504557,Alagamento
+2022-04-01 20:42:32.000000 UTC,2022-04-02 01:06:46.000000 UTC,72883,Baixo,Estrada do mendanha - alt. west shopping- campo grande,-22.865366,-43.5504557,Alagamento
+2022-04-01 19:47:21.000000 UTC,2022-04-01 21:37:46.000000 UTC,72874,Baixo,Estr. dos bandeirantes - alt. n° 30000 - vargem grande,-23.0108117,-43.5182271,Alagamento
+2022-04-01 21:10:50.000000 UTC,2022-04-01 21:41:39.000000 UTC,72889,Baixo,R. das margaridas - vila valqueire,-22.8824979,-43.364265,Alagamento
+2022-04-30 16:09:02.000000 UTC,2022-05-01 02:53:09.000000 UTC,73859,Baixo,Rua sussekind de mendonça - pavuna,-22.8112664,-43.3391191,Alagamento
+2022-04-30 10:37:54.000000 UTC,2022-05-02 08:41:26.000000 UTC,73837,Baixo,Av. ildefonso falcão - parque colúmbia - jardim america,-22.8156904,-43.3361159,Alagamento
+2022-04-30 08:48:56.000000 UTC,2022-04-30 10:16:55.000000 UTC,73814,Baixo,R. pio dutra - freguesia (ilha do governador),-22.7927046,-43.1743914,Alagamento
+2022-04-01 18:02:23.000000 UTC,2022-04-02 02:22:54.000000 UTC,72857,Baixo,"Estr. do pontal, 1951 - recreio  ",0.0,0.0,Alagamento
+2022-04-06 03:49:38.000000 UTC,2022-04-06 07:17:40.000000 UTC,73102,Baixo,Av. armando lombardi - alt. estação brt jardim oceânico - barra da tijuca - sent. av. das américas,-23.0066958,-43.310663,Bolsão d'água em via
+2022-04-02 03:30:39.000000 UTC,2022-04-02 05:36:53.000000 UTC,72927,Baixo,Av. armando lombardi - alt. barra point - barra da tijuca - sent. recreio,-23.0066958,-43.310663,Bolsão d'água em via
+2022-04-01 04:51:47.000000 UTC,2022-04-01 05:58:19.000000 UTC,72802,Baixo,Av. armando lombardi - alt. estação brt jardim oceanico - barra da tijuca - sent. são conrado.,-23.0066958,-43.310663,Bolsão d'água em via
+2022-04-14 03:25:23.000000 UTC,2022-04-14 05:52:41.000000 UTC,73308,Baixo,Av. armando lombardi - alt. estação brt jardim oceanico  - barra da tijuca - sent. recreio.,-23.0066958,-43.310663,Bolsão d'água em via
+2022-04-06 01:11:59.000000 UTC,2022-04-06 04:57:41.000000 UTC,73097,Baixo,Av. armando lombardi - alt. estação brt jardim oceânico - barra da tijuca - sent. são conrado,-23.0066958,-43.310663,Bolsão d'água em via
+2022-04-02 03:33:10.000000 UTC,2022-04-02 13:02:06.000000 UTC,72928,Baixo,Av. armando lombardi - alt. estação brt jardim oceãnico - barra da tijuca - sent. recreio,-23.0066958,-43.310663,Bolsão d'água em via
+2022-04-01 21:02:36.000000 UTC,2022-04-02 01:26:50.000000 UTC,72885,Baixo,Av. ayrton senna - alt. senac - barra da tijuca - ambos sentidos,-22.9829359,-43.365378,Bolsão d'água em via
+2022-04-14 03:42:22.000000 UTC,2022-04-14 05:15:13.000000 UTC,73309,Baixo,Av. ayrton senna - alt. ponte santos dumont - barra da tijuca - sent. orla ,-22.9829359,-43.365378,Bolsão d'água em via
+2022-04-09 02:22:31.000000 UTC,2022-04-09 03:05:16.000000 UTC,73198,Baixo,Boulevard 28 de setembro - alt. rua felipe camarão - vila isabel,-22.9152067,-43.2425792,Bolsão d'água em via
+2022-04-30 00:11:24.000000 UTC,2022-04-30 00:51:48.000000 UTC,73769,Baixo,Boulevard 28 de setembro - alt. rua felipe camarão - vila isabel,-22.9152067,-43.2425792,Bolsão d'água em via
+2022-04-29 23:50:59.000000 UTC,2022-04-30 00:06:17.000000 UTC,73765,Baixo,Boulevard 28 de setembro - alt. praça barão de drumond - vila isabel,-22.9152067,-43.2425792,Bolsão d'água em via
+2022-04-29 23:54:02.000000 UTC,2022-04-30 00:47:33.000000 UTC,73766,Baixo,Boulevard 28 de setembro - alt. rua felipe camarão - vila isabel,-22.9152067,-43.2425792,Bolsão d'água em via
+2022-04-30 10:32:30.000000 UTC,2022-04-30 13:01:36.000000 UTC,73835,Baixo,"Av. brasil,  alt. ceasa - irajá - ambos os sentidos",-22.82304,-43.3279105,Bolsão d'água em via
+2022-04-02 06:03:47.000000 UTC,2022-04-02 08:32:11.000000 UTC,72934,Baixo,Avenida borges de medeiros - alt. parque dos patins  - lagoa - sent. gávea.,-22.9728162,-43.2176378,Bolsão d'água em via
+2022-04-01 21:58:10.000000 UTC,2022-04-02 00:35:13.000000 UTC,72896,Baixo,"Av. borges de medeiros, alt. r. gen. tasso fragoso - lagoa",-22.9728162,-43.2176378,Bolsão d'água em via
+2022-04-01 22:00:41.000000 UTC,2022-04-02 00:34:49.000000 UTC,72897,Baixo,"Avenida borges de medeiros, alt. av. lineu de paula machado - lagoa",-22.9728162,-43.2176378,Bolsão d'água em via
+2022-04-01 16:07:30.000000 UTC,2022-04-01 23:22:32.000000 UTC,72831,Medio,R. jardim botânico - alt. parque lage - lagoa,-22.961156684104651,-43.211170831213387,Bolsão d'água em via
+2022-04-01 16:37:26.000000 UTC,2022-04-02 01:01:14.000000 UTC,72835,Medio,"R. são clemente, 226 - botafogo",-22.9493961,-43.1900215,Bolsão d'água em via
+2022-04-01 18:16:13.000000 UTC,2022-04-01 21:06:28.000000 UTC,72862,Medio,Av. maracanã - alt. r. prof. euríco rabêlo - maracanã,-22.9152552,-43.2288072,Bolsão d'água em via
+2022-04-02 13:52:13.000000 UTC,2022-04-02 14:31:37.000000 UTC,72970,Medio,Av. dom hélder câmara - alt. rua da abolição - abolição,-22.8852722,-43.2992598,Bolsão d'água em via
+2022-04-01 22:35:05.000000 UTC,2022-04-02 13:12:53.000000 UTC,72904,Medio,R. ituverava - anil,-22.9434223,-43.3322216,Alagamento
+2022-04-02 01:50:41.000000 UTC,2022-04-02 19:06:16.000000 UTC,72922,Medio,Praça roberto carlos - acari,-22.8229385,-43.341516299999988,Alagamento
+2022-04-02 00:59:07.000000 UTC,2022-04-02 19:06:36.000000 UTC,72917,Medio,"Av. chrisóstomo pimentel de oliveira, 2338 - pavuna",-22.8140523,-43.3780854,Alagamento
+2022-04-02 00:51:12.000000 UTC,2022-04-02 06:12:45.000000 UTC,72916,Medio,Praça jauru - taquara,-22.916395,-43.3780622,Alagamento
+2022-04-01 17:55:48.000000 UTC,2022-04-01 19:17:32.000000 UTC,72853,Medio,R. uruguai - alt. av. maracanã - andaraí ,-22.9307058,-43.2423929,Alagamento
+2022-04-01 23:29:51.000000 UTC,2022-04-02 18:34:30.000000 UTC,72911,Medio,R. vila aurora - curicica,-22.9424686,-43.3784716,Alagamento
+2022-04-02 00:41:51.000000 UTC,2022-04-02 10:47:44.000000 UTC,72915,Medio,R. mandaguari - curicica,-22.9425011,-43.3795551,Alagamento
+2022-04-01 18:52:44.000000 UTC,2022-04-03 07:14:36.000000 UTC,72868,Medio,Estr. do rio morto - vargem grande,-22.9904993,-43.4923466,Alagamento
+2022-04-02 09:38:15.000000 UTC,2022-04-03 07:15:29.000000 UTC,72955,Medio,"Estr. dos bandeirantes, 21136 - vargem pequena",-22.9865388,-43.4770042,Alagamento
+2022-04-02 10:28:36.000000 UTC,2022-04-04 17:33:46.000000 UTC,72964,Medio,Av. miguel antônio fernandes - alt. cfz zico - recreio,-23.0093046,-43.4783456,Alagamento
+2022-04-01 22:11:19.000000 UTC,2022-04-04 18:48:23.000000 UTC,72901,Medio,Av. borges de medeiros - alt.  parque dos patins - lagoa - sent. rebouças,-22.9728162,-43.2176378,Bolsão d'água em via
+2022-05-05 16:28:39.000000 UTC,2022-05-06 06:59:28.000000 UTC,74008,Baixo,Praça general tibúrcio - urca,-22.9552043,-43.1663915,Bolsão d'água em via
+2022-05-12 08:10:49.000000 UTC,2022-05-12 09:01:38.000000 UTC,74272,Baixo,"Av. epitácio pessoa, alt. r. vinícius de moraes - ipanema",-22.9743299,-43.206438899999988,Bolsão d'água em via
+2022-05-12 06:53:58.000000 UTC,2022-05-12 09:59:32.000000 UTC,74263,Baixo,Linha vermelha - alt. km 13 - sent. centro,-22.8386243,-43.2421897,Bolsão d'água em via
+2022-05-04 20:42:08.000000 UTC,2022-05-04 22:03:04.000000 UTC,73974,Baixo,"Rua pedro américo, alt. r. do catete - catete - sent. glória",-22.9242256,-43.1815321,Bolsão d'água em via
+2022-05-16 15:45:06.000000 UTC,2022-05-16 17:22:22.000000 UTC,74555,Baixo,"Rua do catete, alt. r. silveira martins - catete",-22.9308225,-43.1773649,Bolsão d'água em via
+2022-05-04 20:27:07.000000 UTC,2022-05-04 22:03:26.000000 UTC,73972,Baixo,"Rua do catete, alt. r. silveira martins - catete",-22.9308225,-43.1773649,Bolsão d'água em via
+2022-05-16 17:44:17.000000 UTC,2022-05-16 18:07:54.000000 UTC,74570,Baixo,Estrada do monteiro - alt. estr. da cambota - campo grande,-22.9068467,-43.1728965,Bolsão d'água em via
+2022-05-16 19:44:22.000000 UTC,2022-05-16 20:43:32.000000 UTC,74576,Baixo,"Rua república do líbano, alt. ciee - centro",-22.9070771,-43.1858493,Bolsão d'água em via
+2022-05-04 21:23:54.000000 UTC,2022-05-05 00:49:06.000000 UTC,73977,Baixo,"Rua josé vicente, alt. r. barão de mesquita - grajaú",-22.9241098,-43.2548538,Bolsão d'água em via
+2022-05-12 07:45:52.000000 UTC,2022-05-12 08:43:20.000000 UTC,74269,Baixo,Av. brasil - alt. irajá - sent. z.oeste,-22.8263973,-43.3366913,Bolsão d'água em via
+2022-05-12 07:26:18.000000 UTC,2022-05-12 08:52:03.000000 UTC,74266,Baixo,Av. brasil - alt. trevo das margaridas - irajá  sent. centro,-22.8204814,-43.3204012,Bolsão d'água em via
+2022-05-12 07:21:26.000000 UTC,2022-05-12 08:51:40.000000 UTC,74265,Baixo,Av. chrisóstomo pimentel de oliveira - alt. vianense- pavuna,-22.8164293,-43.384932,Bolsão d'água em via
+2022-05-12 07:29:27.000000 UTC,2022-05-12 08:51:24.000000 UTC,74267,Baixo,R. comendador guerra - pavuna,-22.8084589,-43.369306599999987,Bolsão d'água em via
+2022-05-16 15:36:25.000000 UTC,2022-05-16 17:07:53.000000 UTC,74554,Baixo,R. haddock lobo - alt. r. engenheiro abel - tijuca,-22.9189372,-43.213431,Bolsão d'água em via
+2022-05-05 13:18:03.000000 UTC,2022-05-05 18:36:11.000000 UTC,74001,Baixo,R. pereira lopes - alt. nº 99 - benfica,-22.8941323,-43.237633,Bolsão d'água em via
+2022-05-04 22:37:16.000000 UTC,2022-05-04 23:55:04.000000 UTC,73980,Baixo,"Rua teixeira de freitas ,altura da pça paris - glória",-22.9148131,-43.1752379,Bolsão d'água em via
+2022-05-04 16:33:05.000000 UTC,2022-05-04 17:17:27.000000 UTC,73962,Baixo,Avenida epitácio pessoa - alt. r. vinicius de morais,-22.9806684,-43.211237399999987,Bolsão d'água em via
+2022-05-04 20:59:51.000000 UTC,2022-05-05 01:21:42.000000 UTC,73976,Baixo,"Rua cachambi, 452 - cachambi",-22.8868199,-43.2764567,Bolsão d'água em via
+2022-05-05 07:21:15.000000 UTC,2022-05-05 08:20:01.000000 UTC,73985,Baixo,R. estácio de sá - alt. nº 167 - estácio,-22.9150366,-43.2067777,Bolsão d'água em via
+2022-05-16 15:47:41.000000 UTC,2022-05-16 17:07:17.000000 UTC,74556,Baixo,Rua estácio de sá - estácio - sent. tijuca,-22.9141913,-43.20503,Bolsão d'água em via
+2022-05-04 21:51:56.000000 UTC,2022-05-04 23:00:33.000000 UTC,73979,Baixo,"Rua morais e silva, 51 - maracanã",-22.9127302,-43.2220629,Bolsão d'água em via
+2022-05-16 15:58:10.000000 UTC,2022-05-16 19:18:59.000000 UTC,74557,Baixo,Rua ibituruna - alt. r. moraes e silva,-22.9130099,-43.2205729,Bolsão d'água em via
+2022-05-16 15:19:01.000000 UTC,2022-05-16 17:03:18.000000 UTC,74552,Baixo,R. felipe cardoso - alt. av. eng° gastão rangel - santa cruz - sent. guaratiba,-22.9277194,-43.6772512,Bolsão d'água em via
+2022-05-16 14:42:46.000000 UTC,2022-05-16 14:59:29.000000 UTC,74551,Baixo,R. felipe cardoso - alt. av. eng° gastão rangel - santa cruz - sent. guaratiba,-22.9186291,-43.682294,Bolsão d'água em via
+2022-05-04 20:52:46.000000 UTC,2022-05-04 21:24:07.000000 UTC,73975,Baixo,"Rua alm. joão cândido brasil, alt. r. santa luíza - maracanã",-22.9183822,-43.2360533,Bolsão d'água em via
+2022-05-16 19:53:49.000000 UTC,2022-05-16 23:22:15.000000 UTC,74577,Baixo,"Estr. do catonho, alt. coliseum eventos - jardim sulacap - sent. av. albérico diniz",-22.8946744,-43.3969854,Bolsão d'água em via
+2022-05-16 20:09:30.000000 UTC,2022-05-16 21:48:48.000000 UTC,74579,Baixo,Rua francisco eugênio - são cristóvão,-22.9074254,-43.2168083,Bolsão d'água em via
+2022-05-04 21:42:52.000000 UTC,2022-05-04 23:02:24.000000 UTC,73978,Baixo,"Rua bela, alt. r. general bruce - são cristóvão",-22.8902205,-43.2233244,Bolsão d'água em via
+2022-05-16 16:20:10.000000 UTC,2022-05-16 20:00:01.000000 UTC,74561,Baixo,R. francisco eugênio - são cristóvão,-22.9073908,-43.2163756,Bolsão d'água em via
+2022-05-16 17:18:05.000000 UTC,2022-05-16 18:22:41.000000 UTC,74568,Baixo,Av. osvaldo aranha - alt. posto br - praca da bandeira - sent. meier,-22.9103675,-43.215538,Bolsão d'água em via
+2022-05-20 06:53:31.000000 UTC,2022-05-21 18:33:21.000000 UTC,74770,Baixo,Av. engenheiro souza filho - alt. muzema,-22.9786046,-43.3336748,Alagamento
+2022-05-04 20:34:09.000000 UTC,2022-05-04 21:26:12.000000 UTC,73973,Baixo,Rua são cristóvão - alt. campo de são cristóvão ,-22.9013134,-43.2169224,Alagamento
+2022-05-16 15:30:06.000000 UTC,2022-05-16 15:52:53.000000 UTC,74553,Baixo,"Estr. grajaú/jpa - alt. km 0,5 - grajaú - sent. jpa",-22.9193077,-43.2843732,Bolsão d'água em via
+2022-07-14 04:02:07.000000 UTC,2022-07-14 08:35:50.000000 UTC,77822,Baixo,Rua jardim botânico - alt. parque laje - lagoa,-22.960998623445956,-43.210248151312257,Bolsão d'água em via
+2022-07-14 03:44:16.000000 UTC,2022-07-14 10:13:57.000000 UTC,77819,Baixo,Av. epitácio pessoa - alt. rua vitor maúrtua - lagoa,-22.9651011,-43.2030953,Bolsão d'água em via
+2022-07-14 00:48:55.000000 UTC,2022-07-14 01:44:11.000000 UTC,77809,Baixo,Av. alexandre ferreira - alt. rua prof° abelardo lobo - lagoa,-22.9621198,-43.2077576,Bolsão d'água em via
+2022-07-14 03:37:28.000000 UTC,2022-07-14 05:07:09.000000 UTC,77818,Baixo,"Av. epitácio pessoa, alt. r. vinícius de moraes - ipanema",-22.9742628,-43.2064953,Bolsão d'água em via
+2022-07-14 00:09:41.000000 UTC,2022-07-14 05:11:07.000000 UTC,77805,Baixo,Av. borges de medeiros - alt. rua oliveira da rocha  - lagoa - sent. gávea.,-22.9643554,-43.2148472,Bolsão d'água em via
+2022-07-14 01:12:56.000000 UTC,2022-07-14 01:42:22.000000 UTC,77812,Baixo,Av. borges de medeiros - alt. rua josé joaquim seabra - lagoa,-22.9639769,-43.2166092,Bolsão d'água em via
+2022-07-14 07:33:07.000000 UTC,2022-07-14 11:32:05.000000 UTC,77835,Baixo,Av. epitácio pessoa - alt. parque da catacumba - lagoa - sent. tn. rebouças,-22.972480909248581,-43.203151242636089,Bolsão d'água em via
+2022-07-14 09:29:11.000000 UTC,2022-07-14 11:32:07.000000 UTC,77848,Baixo,Av. borges de medeiros - alt. av. epitácio pessoa - sent. túnel rebouças,-22.96154456763206,-43.204730755371095,Bolsão d'água em via
+2022-07-14 08:20:19.000000 UTC,2022-07-14 09:49:55.000000 UTC,77843,Baixo,R. saturnino de brito - alt. av. borges de medeiros - lagoa ,-22.9660698,-43.2175059,Bolsão d'água em via
+2022-07-14 01:01:27.000000 UTC,2022-07-14 01:43:12.000000 UTC,77810,Baixo,Rua humaitá - alt. r. fonte da saudade - lagoa,-22.9637,-43.2027975,Bolsão d'água em via
+2022-07-14 07:24:23.000000 UTC,2022-07-14 09:19:54.000000 UTC,77833,Baixo,R. fonte da saudade - alt. pça. quintino bocaiuva - lagoa,-22.961279721438618,-43.203076449737559,Bolsão d'água em via
+2022-07-14 07:53:18.000000 UTC,2022-07-14 09:43:37.000000 UTC,77838,Baixo,Estr. fernando macdowell - alt. voo livre - são conrado - sent. barra,-22.9996402540861,-43.272253345043936,Bolsão d'água em via
+2022-07-14 01:09:49.000000 UTC,2022-07-14 02:44:58.000000 UTC,77811,Baixo,Av. borges de medeiros - alt. r. gilberto cardoso - leblon,-22.9793367,-43.2203395,Bolsão d'água em via
+2022-07-14 04:33:23.000000 UTC,2022-07-14 05:50:04.000000 UTC,77824,Baixo,R. haddock lobo - rua engenheiro abel - tijuca,-22.9189372,-43.213431,Bolsão d'água em via
+2022-07-14 02:55:15.000000 UTC,2022-07-14 07:37:09.000000 UTC,77817,Baixo,Rua pedro américo - alt. r. do catete - glória,-22.9238003,-43.177063,Bolsão d'água em via
+2022-07-14 02:51:29.000000 UTC,2022-07-14 07:37:07.000000 UTC,77816,Baixo,R. do catete - alt  rua silveira martins - glória,-22.9269656,-43.1766115,Bolsão d'água em via
+2022-07-14 07:22:24.000000 UTC,2022-07-14 09:49:53.000000 UTC,77832,Baixo,"Av. epitácio pessoa, alt. r. vinícius de moraes - ipanema",-22.9795584,-43.202560100000007,Bolsão d'água em via
+2022-07-14 08:00:52.000000 UTC,2022-07-14 10:04:43.000000 UTC,77840,Baixo,Av. epitácio pessoa - alt. campo de beisebol - lagoa - sent. copacabana,-22.9776541,-43.1998093,Bolsão d'água em via
+2022-07-14 03:51:04.000000 UTC,2022-07-14 09:36:47.000000 UTC,77820,Baixo,R. muniz barreto - alt. rua marques de olinda - botafogo,-22.9454349,-43.1840946,Bolsão d'água em via
+2022-07-14 04:23:32.000000 UTC,2022-07-14 07:38:08.000000 UTC,77823,Baixo,R. muniz barreto - alt. rua visconde de ouro preto - botafogo,-22.9454349,-43.1840946,Bolsão d'água em via
+2022-07-14 00:21:55.000000 UTC,2022-07-14 09:34:58.000000 UTC,77807,Baixo,R. são clemente - alt. n° 226- botafogo,-22.9497298,-43.1897674,Bolsão d'água em via
+2022-07-14 11:41:00.000000 UTC,2022-07-14 15:30:37.000000 UTC,77852,Baixo,Rua são clemente - alt. r. sorocaba - botafogo,-22.951015309146243,-43.191693345507822,Bolsão d'água em via
+2022-07-14 12:22:32.000000 UTC,2022-07-14 12:24:04.000000 UTC,77853,Baixo,Rua sâo clemente - alt. rua das palmeiras - botafogo,-22.950378300997659,-43.191996082417283,Bolsão d'água em via
+2022-07-14 07:12:44.000000 UTC,2022-07-15 16:45:01.000000 UTC,77831,Medio,"Av. eng. souza filho, 555 - itanhangá",-22.966701,-43.33551,Bolsão d'água em via
+2022-07-29 15:50:10.000000 UTC,2022-07-29 17:58:02.000000 UTC,78612,Baixo,Av. cesário de melo - alt. brt curral falso - santa cruz,-22.9197453,-43.6564221,Bolsão d'água em via
+2022-07-29 16:19:56.000000 UTC,2022-07-29 17:18:05.000000 UTC,78613,Baixo,Rua candido benício - alt. brt ipase - praça seca ,-22.904698,-43.3570479,Bolsão d'água em via
+2022-07-14 06:22:44.000000 UTC,2022-07-14 09:43:35.000000 UTC,77827,Baixo,Auto estrada fernando mac dowell - alt.  rocinha - sent. barra,-22.99925,-43.26911,Bolsão d'água em via
+2022-07-14 07:49:45.000000 UTC,2022-07-14 09:40:06.000000 UTC,77837,Baixo,"Av. niemeyer, 318 - são conrado",-22.9974271,-43.2392784,Bolsão d'água em via
+2022-07-14 08:14:58.000000 UTC,2022-07-14 11:00:20.000000 UTC,77842,Baixo,Av. heróis do gueto de varsóvia - alt. vilage mall - barra da tijuca,-22.997450378660041,-43.3484619677063,Bolsão d'água em via
+2022-07-14 07:26:35.000000 UTC,2022-07-14 10:21:23.000000 UTC,77834,Medio,Mergulhão billy blanco (mergulhão y) - barra da tijuca,-22.997100711752211,-43.365870006530763,Bolsão d'água em via
+2022-07-14 00:42:57.000000 UTC,2022-07-14 02:47:35.000000 UTC,77808,Baixo,R. jardim botânico - alt. n° 50 - jardim botânico,-22.9642239,-43.2174748,Bolsão d'água em via
+2022-07-14 00:03:50.000000 UTC,2022-07-14 02:46:29.000000 UTC,77804,Baixo,Jardim botânico - alt. rua pacheco leão - jardim botânico,-22.9665488,-43.2194341,Bolsão d'água em via
+2022-07-14 03:58:19.000000 UTC,2022-07-14 11:32:02.000000 UTC,77821,Baixo,Rua prof° saldanha - alt. praça  general alcio souto - jardim botânico,-22.9605261,-43.2049399,Bolsão d'água em via
+2022-07-14 13:48:51.000000 UTC,2022-07-14 19:23:40.000000 UTC,77857,Baixo,Estr. benvindo de novaes - 1374 - recreio,-23.0026913,-43.4549546,Bolsão d'água em via
+2022-07-29 16:28:24.000000 UTC,2022-07-29 17:18:07.000000 UTC,78614,Baixo,Linha vermelha - km 7 - sent. baixada,-22.8278692,-43.2503136,Bolsão d'água em via

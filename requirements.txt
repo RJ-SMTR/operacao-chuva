@@ -1,0 +1,6 @@
+streamlit
+streamlit-folium
+shapely
+folium
+geopandas
+jupyterlab
