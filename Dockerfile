@@ -17,8 +17,6 @@ RUN mkdir -p /root/.basedosdados/templates && \
 
 COPY . .
 
-RUN cp ./rj-smtr-operacao-chuva-key.json /root/.basedosdados/credentials/staging.json
-
 RUN pip3 install -r requirements.txt
 
 EXPOSE 8502
