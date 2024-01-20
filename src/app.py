@@ -83,7 +83,7 @@ def main():
 
     ## Camada Níveis de Alagamento
 
-    with ZipFile("../src/data/gtfs_2024-01-15_2024-01-31.zip") as myzip:
+    with ZipFile("src/data/gtfs_2024-01-15_2024-01-31.zip") as myzip:
 
         # TODO: add filters by servico & consorcio
         
@@ -147,7 +147,7 @@ def main():
     )
     shapes['shape_id'] = shapes.shape_id.astype(str)
 
-    ocorrencias = pd.read_csv("../src/data/ocorrencias_alagamento_2022-01-01_2024-01-18.csv")
+    ocorrencias = pd.read_csv("src/data/ocorrencias_alagamento_2022-01-01_2024-01-18.csv")
 
     t = ocorrencias.groupby(["latitude", "longitude"]).gravidade.count().reset_index()
 
