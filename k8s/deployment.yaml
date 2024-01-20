@@ -16,7 +16,7 @@ spec:
       containers:
       - name: operacao-chuva
         image: gcr.io/$PROJECT_ID/$IMAGE_OPERACAO_CHUVA:$GITHUB_SHA
-        command: ['sh', '-c', 'cp /mnt/* /root/.basedosdados/credentials/']
+        # command: ['sh', '-c', 'cp /mnt/* /root/.basedosdados/credentials/']
         volumeMounts:
           - name: staging-config
             mountPath: /mnt/staging.json
