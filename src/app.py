@@ -70,7 +70,7 @@ def load_gps(datahora, data_versao_gtfs):
       END
         AS indicador_veiculo_parado
       FROM
-        `rj-smtr.br_rj_riodejaneiro_veiculos.gps_sppo`
+        `rj-smtr-dev.br_rj_riodejaneiro_veiculos.gps_sppo_15_minutos`
       WHERE
         DATA = "{datahora.date()}"
         AND timestamp_gps BETWEEN "{datahora - timedelta(hours=1)}"
@@ -283,7 +283,7 @@ def main():
 
     # Carrega dados da operação
     data_versao_gtfs = "2023-12-21" # TODO: atualizar para jan/24
-    datahora = datetime(2024, 1, 14, 1, 00, 00)
+    datahora = datetime.now()
 
     # print(">>> AQUI 1:", datetime.now())
     df = load_gps(datahora=datahora, data_versao_gtfs=data_versao_gtfs)
