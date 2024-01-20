@@ -19,7 +19,7 @@ bd.config.billing_project_id = "rj-smtr-dev"
 def load_shapes():
     # print(">>> AQUI DENTRO SHAPES:", datetime.now())
     # Carrega dados de rotas (shapes)
-    with ZipFile("../src/data/gtfs_2024-01-15_2024-01-31.zip") as myzip:
+    with ZipFile("src/data/gtfs_2024-01-15_2024-01-31.zip") as myzip:
     
         shapes = pd.read_csv(myzip.open("shapes.txt"), dtype={
                     'shape_id': 'str', 
@@ -261,7 +261,7 @@ def load_gps(datahora, data_versao_gtfs):
     
     """
     
-    return bd.read_sql(q)
+    return bd.read_sql(q, from_file=True)
     
 
 def main():
