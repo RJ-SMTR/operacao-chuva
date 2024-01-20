@@ -13,7 +13,7 @@ RUN mkdir -p /root/.basedosdados/templates && \
     mkdir -p /root/.basedosdados/credentials/ \
     mkdir /tmp/bases
 
-
+RUN chmod +x script.sh
 
 COPY . .
 
@@ -23,4 +23,4 @@ EXPOSE 8502
 
 HEALTHCHECK CMD curl --fail http://localhost:8501/_stcore/health
 
-ENTRYPOINT ["streamlit", "run", "src/app.py", "--server.port=80", "--server.address=0.0.0.0"]
+ENTRYPOINT ["./script.sh"]
