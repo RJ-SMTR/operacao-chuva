@@ -1,4 +1,4 @@
-# Monitoramento em tempo real do sistema municipal de transportes
+# Monitoramento do impacto de chuvas na operação de transportes
 
 Ferramenta de apoio ao acompanhamento da operação de serviços de
 transporte municipal em dias de chuva.
