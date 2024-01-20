@@ -13,9 +13,10 @@ RUN mkdir -p /root/.basedosdados/templates && \
     mkdir -p /root/.basedosdados/credentials/ \
     mkdir /tmp/bases
 
-RUN chmod +x script.sh
 
 COPY . .
+
+RUN chmod +x script.sh
 
 RUN pip3 install -r requirements.txt
 
