@@ -16,15 +16,16 @@ spec:
       containers:
       - name: operacao-chuva
         image: gcr.io/$PROJECT_ID/$IMAGE_OPERACAO_CHUVA:$GITHUB_SHA
+        command: ['sh', '-c', 'cp /scripts/* /root/.basedosdados/credentials/']
         volumeMounts:
           - name: staging-config
-            # mountPath: /mnt/staging.json
-            mountPath: /root/.basedosdados/credentials/staging.json
+            mountPath: /mnt/staging.json
+            # mountPath: /root/.basedosdados/credentials/staging.json
             subPath: staging.json
             readOnly: false
           - name: prod-config
-            # mountPath: /mnt/prod.json
-            mountPath: /root/.basedosdados/credentials/prod.json
+            mountPath: /mnt/prod.json
+            # mountPath: /root/.basedosdados/credentials/prod.json
             subPath: prod.json
             readOnly: false
         env:
