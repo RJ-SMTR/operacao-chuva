@@ -282,7 +282,7 @@ def main():
     """)
 
     # Carrega dados da operação
-    data_versao_gtfs = "2023-12-21" # TODO: atualizar para jan/24
+    data_versao_gtfs = "2024-01-02" # TODO: atualizar para jan/24
     datahora = datetime(2024, 1, 14, 1, 00, 00)
 
     # print(">>> AQUI 1:", datetime.now())
