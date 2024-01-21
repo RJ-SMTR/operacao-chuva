@@ -283,7 +283,15 @@ def main():
 
     # Carrega dados da operação
     data_versao_gtfs = "2023-12-21" # TODO: atualizar para jan/24
-    datahora = datetime.now()
+    datahora_atual = datetime.now().replace(second=0, microsecond=0)
+    minutos_arredondados = datahora_atual.minute - (datahora_atual.minute % 15)
+    datahora_arredondada = datahora_atual.replace(
+        minute=minutos_arredondados, second=0, microsecond=0
+    )
+    if datahora_arredondada > datahora_atual - timedelta(minutes=6):
+        datahora = datahora_arredondada - timedelta(minutes=15)
+    else:
+        datahora = datahora_arredondada
 
     # print(">>> AQUI 1:", datetime.now())
     df = load_gps(datahora=datahora, data_versao_gtfs=data_versao_gtfs)
