@@ -282,7 +282,7 @@ def main():
     """)
 
     # Carrega dados da operação
-    data_versao_gtfs = "2023-12-21" # TODO: atualizar para jan/24
+    data_versao_gtfs = "2024-01-02" # TODO: atualizar para jan/24
     datahora_atual = datetime.now().replace(second=0, microsecond=0)
     minutos_arredondados = datahora_atual.minute - (datahora_atual.minute % 15)
     datahora_arredondada = datahora_atual.replace(
