@@ -440,6 +440,6 @@ def main():
     folium.LayerControl().add_to(m)
 
     # print(">>> AQUI 10:", datetime.now())
-    map_data = st_folium(m, key="mapa", height=600, width=1200)
+    # map_data = st_folium(m, key="mapa", height=600, width=1200)
 
 main()
