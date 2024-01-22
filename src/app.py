@@ -258,6 +258,14 @@ def load_gps(datahora, data_versao_gtfs):
       ST_INTERSECTS(ST_GEOGPOINT(longitude, latitude), tile) = TRUE
     
     """
+    print(f"""
+Received variables:
+    datahora: {datahora}
+    data_versao_gtfs: {data_versao_gtfs}
+
+Will run query:
+{q}
+""")
     
     return bd.read_sql(q, from_file=True)
     
