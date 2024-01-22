@@ -12,6 +12,7 @@ from streamlit_folium import st_folium
 from zipfile import ZipFile
 
 bd.config.billing_project_id = "rj-smtr-dev"
+gpd.options.use_pygeos = True
 
 # st.image("./data/logo/logo.png", width=300)
 
@@ -53,7 +54,7 @@ def load_shapes():
 def load_gps(datahora, data_versao_gtfs):
     # print(">>> AQUI DENTRO GPS:", datetime.now())
     # Carrega dados da operação
-    q = f"""
+    gps = f"""
     -- 1. Puxa dados de posição de GPS dos ônibus e flag indicativa de parada
     with gps AS (
       SELECT
@@ -61,6 +62,7 @@ def load_gps(datahora, data_versao_gtfs):
         id_veiculo,
         latitude,
         longitude,
+        ST_GEOGPOINT(longitude, latitude) posicao_veiculo,
         timestamp_gps,
         CASE
           WHEN status = "Parado garagem" THEN 0
@@ -133,6 +135,7 @@ def load_gps(datahora, data_versao_gtfs):
           g.timestamp_gps,
           g.latitude,
           g.longitude,
+          g.posicao_veiculo,
           sum(indicador_veiculo_fora_rota) OVER (
             PARTITION BY servico, id_veiculo
             ORDER BY timestamp_gps
@@ -165,10 +168,19 @@ def load_gps(datahora, data_versao_gtfs):
           ) = 60 AS indicador_veiculo_parado_1_hora
         from gps_rota g
         WHERE timestamp_gps between "{(datahora - timedelta(minutes=15))}" and "{datahora}"
-    ),
+    )
+    SELECT 
+      *
+    FROM gps_acumulado
+    """
+    return bd.read_sql(gps, from_file=True)
+
+@st.cache_data
+def load_tiles(datahora):
     
+    geo_tiles = f"""
     -- 5. Puxa camada de hexagonos que cobrem a cidade
-      geometria AS (
+    with geometria AS (
       SELECT
         * EXCEPT(geometry),
         ST_GEOGFROMTEXT(geometry) AS tile
@@ -229,45 +241,15 @@ def load_gps(datahora, data_versao_gtfs):
         (estacao)
       )
     
-      -- 7. Junta informações de posicao dos veiculos e precipitacao por tile
-    SELECT
-      gps.servico,
-      gps.id_veiculo,
-      gps.timestamp_gps,
-      gps.latitude,
-      gps.longitude,
-      geo.tile,
-      geo.tile_id,
-      gps.indicador_veiculo_fora_rota_10_min,
-      gps.indicador_veiculo_fora_rota_30_min,
-      gps.indicador_veiculo_fora_rota_1_hora,
-      gps.indicador_veiculo_parado_10_min,
-      gps.indicador_veiculo_parado_30_min,
-      gps.indicador_veiculo_parado_1_hora,
-      geo.acumulado_chuva_15_min,
-      geo.acumulado_chuva_1_h,
-      geo.acumulado_chuva_4_h,
-      geo.acumulado_chuva_24_h,
-      geo.estacao as estacao_pluviometro,
-      geo.posicao_estacao,
-      geo.horario as horario_leitura_estacao
-    FROM gps_acumulado gps
-    LEFT JOIN
-      geo_precipitacao_acumulada geo
-    ON
-      ST_INTERSECTS(ST_GEOGPOINT(longitude, latitude), tile) = TRUE
-    
+    SELECT 
+      * EXCEPT(estacao, horario),
+      estacao as estacao_pluviometro,
+      horario as horario_leitura_estacao
+    FROM
+      geo_precipitacao_acumulada
     """
-    print(f"""
-Received variables:
-    datahora: {datahora}
-    data_versao_gtfs: {data_versao_gtfs}
-
-Will run query:
-{q}
-""")
     
-    return bd.read_sql(q, from_file=True)
+    return bd.read_sql(geo_tiles, from_file=True)
     
 
 def main():
@@ -299,9 +281,29 @@ def main():
     else:
         datahora = datahora_arredondada
 
-    # print(">>> AQUI 1:", datetime.now())
-    df = load_gps(datahora=datahora, data_versao_gtfs=data_versao_gtfs)
-    
+    print(">>> Loading gps:", datetime.now())
+    df_gps = load_gps(datahora=datahora, data_versao_gtfs=data_versao_gtfs)
+    df_gps.posicao_veiculo = df_gps.posicao_veiculo.astype(str).apply(loads)
+    df_gps_geo = gpd.GeoDataFrame(
+        data=df_gps,
+        geometry=df_gps.posicao_veiculo,
+        crs=4326
+        )
+    print(f'Built gps geo!\nColumns:{df_gps_geo.columns}\nSize:{len(df_gps_geo)}')
+    print('Loading tiles')
+    df_tiles=load_tiles(datahora=datahora)
+    df_tiles.tile = df_tiles.tile.astype(str).apply(loads)
+    df_tiles_geo = gpd.GeoDataFrame(
+        data=df_tiles,
+        geometry=df_tiles.tile,
+        crs=4326
+        )
+    print(f'Built tiles geo!\nColumns:{df_tiles_geo.columns}\nSize:{len(df_tiles_geo)}')
+    df = df_gps_geo.sjoin(df_tiles_geo, how='left', predicate='intersects')
+    df.tile = df.tile.astype(str)
+    df.posicao_veiculo = df.posicao_veiculo.astype(str)
+    print(f'Joined gps and tiles, got data:\n{df.head(10)}\n df size is {len(df)}')
+    print(f"df columns are:\n{df.columns}")
     # print(">>> AQUI 2:", datetime.now())
     # Calcula os indicadores de cada tile
     df_tile_indicators = (
@@ -324,13 +326,13 @@ def main():
         ).reset_index()
     )
     
-    # print(">>> AQUI 3:", datetime.now())
+    print(">>> AQUI 3:", datetime.now())
     # Filtra a última medida da estacao
     df_tile_indicators = df_tile_indicators.loc[df_tile_indicators.groupby(["tile_id"]).horario_leitura_estacao.idxmax()]
     df_tile_indicators["horario_leitura_estacao"] = df_tile_indicators.horario_leitura_estacao.astype(str)
     df_tile_indicators.geometry = df_tile_indicators['tile'].dropna().astype(str).apply(loads)
     
-    # print(">>> AQUI 4:", datetime.now())
+    print(">>> AQUI 4:", datetime.now())
     df_geo = gpd.GeoDataFrame(
         data=df_tile_indicators,
         geometry=df_tile_indicators.geometry,
@@ -341,7 +343,7 @@ def main():
     st.button("Atualizar dados")
     m = folium.Map(location=[-22.917690, -43.413861], zoom_start=11)
     
-    # print(">>> AQUI 5:", datetime.now())
+    print(">>> AQUI 5:", datetime.now())
     # Adiciona dados de indice de chuva dos tiles
     colormap = cm.LinearColormap(
         ["green", "yellow", "red"], 
@@ -352,7 +354,7 @@ def main():
     colormap.add_to(m)
     colorscale_dict = df_geo.set_index("tile_id")["acumulado_chuva_1_h"]
     
-    # print(">>> AQUI 6:", datetime.now())
+    print(">>> AQUI 6:", datetime.now())
     popup = folium.GeoJsonPopup(
         fields=[
             "horario_leitura_estacao", 
@@ -395,9 +397,11 @@ def main():
         popup=popup
     ).add_to(m)
     
-    # print(">>> AQUI 7:", datetime.now())
+    print(">>> AQUI 7:", datetime.now())
+    print(len(df_geo))
     # Adiciona icones de qtd de veiculos parados/fora da rota    
     for i in range(0, len(df_geo)):
+        # print(i)
         if (df_geo.iloc[i].indicador_veiculo_parado_10_min > 0) and (df_geo.iloc[i].indicador_veiculo_fora_rota_10_min > 0):
             folium.Marker(
                 location=[df_geo.iloc[i].geometry.centroid.y, df_geo.iloc[i].geometry.centroid.x], 
@@ -434,10 +438,10 @@ def main():
                  )
             ).add_to(m)
 
-    # print(">>> AQUI 8:", datetime.now())
+    print(">>> AQUI 8:", datetime.now())
     shapes = load_shapes()
 
-    # print(">>> AQUI 9:", datetime.now())
+    print(">>> AQUI 9:", datetime.now())
     # Adiciona rotas ao mapa
     folium.GeoJson(shapes['geometry'], color='gray', weight=1.5, opacity=.8).add_to(m)
 
@@ -445,7 +449,7 @@ def main():
     folium.TileLayer('cartodbpositron').add_to(m)
     folium.LayerControl().add_to(m)
 
-    # print(">>> AQUI 10:", datetime.now())
-    # map_data = st_folium(m, key="mapa", height=600, width=1200)
+    print(">>> AQUI 10:", datetime.now())
+    map_data = st_folium(m, key="mapa", height=600, width=1200)
 
 main()

@@ -3,5 +3,5 @@ streamlit-folium
 shapely
 folium
 geopandas
-jupyterlab
 basedosdados
+pygeos
