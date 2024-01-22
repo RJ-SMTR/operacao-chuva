@@ -164,6 +164,7 @@ def load_gps(datahora, data_versao_gtfs):
             ROWS BETWEEN 60 PRECEDING AND CURRENT ROW
           ) = 60 AS indicador_veiculo_parado_1_hora
         from gps_rota g
+        WHERE timestamp_gps between "{(datahora - timedelta(minutes=15))}" and "{datahora}"
     ),
     
     -- 5. Puxa camada de hexagonos que cobrem a cidade
@@ -250,14 +251,11 @@ def load_gps(datahora, data_versao_gtfs):
       geo.estacao as estacao_pluviometro,
       geo.posicao_estacao,
       geo.horario as horario_leitura_estacao
-    FROM (
-        select * from gps_acumulado 
-        WHERE timestamp_gps between "{(datahora - timedelta(minutes=15))}" and "{datahora}"
-    ) gps
+    FROM gps_acumulado gps
     LEFT JOIN
       geo_precipitacao_acumulada geo
     ON
-      ST_WITHIN(ST_GEOGPOINT(longitude, latitude), tile) = TRUE
+      ST_INTERSECTS(ST_GEOGPOINT(longitude, latitude), tile) = TRUE
     
     """
     
