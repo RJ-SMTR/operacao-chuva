@@ -333,7 +333,7 @@ def main():
     df_tile_indicators = df_tile_indicators.loc[df_tile_indicators.groupby(["tile_id"]).horario_leitura_estacao.idxmax()]
     # df_tile_indicators["horario_leitura_estacao"] = df_tile_indicators.horario_leitura_estacao.astype(str)
     df_tile_indicators["horario_leitura_estacao"] = df_tile_indicators.horario_leitura_estacao.dt.total_seconds().apply(lambda s: f'{s // 3600:02.0f}:{(s % 3600) // 60:02.0f}')
-    df_tile_indicators.geometry = df_tile_indicators['tile'].dropna().astype(str).apply(loads)
+    df_tile_indicators['geometry'] = df_tile_indicators['tile'].dropna().astype(str).apply(loads)
     
     print(">>> AQUI 4:", datetime.now())
     df_geo = gpd.GeoDataFrame(
