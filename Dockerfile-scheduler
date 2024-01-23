@@ -2,7 +2,10 @@ FROM python:3.10-slim
 
 WORKDIR /app
 COPY . .
-RUN pip install --no-cache-dir -r requirements.txt
-
+RUN pip install -r requirements.txt
+RUN mkdir -p /root/.basedosdados/templates && \
+    mkdir -p /root/.basedosdados/credentials/ \
+    mkdir /tmp/bases
 WORKDIR /app/src
-CMD ["celery", "-A", "tasks", "beat", "-l", "debug"]
+RUN chmod +x scheduler.sh
+ENTRYPOINT ["./scheduler.sh"]

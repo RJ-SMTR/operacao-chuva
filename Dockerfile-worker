@@ -3,6 +3,9 @@ FROM python:3.10-slim
 WORKDIR /app
 COPY . .
 RUN pip install -r requirements.txt
-
+RUN mkdir -p /root/.basedosdados/templates && \
+    mkdir -p /root/.basedosdados/credentials/ \
+    mkdir /tmp/bases
 WORKDIR /app/src
-CMD ["celery", "-A", "tasks", "worker", "-l", "debug"]
+RUN chmod +x worker.sh
+ENTRYPOINT ["./worker.sh"]
