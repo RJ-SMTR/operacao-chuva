@@ -1,18 +1,18 @@
-import basedosdados as bd
 import branca.colormap as cm
 from datetime import datetime, timedelta
 import folium
 import folium.plugins as plugins
 import geopandas as gpd
 import pandas as pd
+import streamlit as st
+
 from shapely.wkt import loads
 from shapely.geometry import LineString
-import streamlit as st
 from streamlit_folium import st_folium
 from zipfile import ZipFile
+from google.cloud import bigquery
 
-bd.config.billing_project_id = "rj-smtr-dev"
-gpd.options.use_pygeos = True
+client = bigquery.Client(project='rj-smtr-dev')
 
 # st.image("./data/logo/logo.png", width=300)
 
@@ -173,7 +173,7 @@ def load_gps(datahora, data_versao_gtfs):
       *
     FROM gps_acumulado
     """
-    return bd.read_sql(gps, from_file=True)
+    return client.query(gps).to_dataframe()
 
 @st.cache_data
 def load_tiles(datahora):
@@ -249,7 +249,7 @@ def load_tiles(datahora):
       geo_precipitacao_acumulada
     """
     
-    return bd.read_sql(geo_tiles, from_file=True)
+    return client.query(geo_tiles).to_dataframe()
     
 
 def main():
@@ -293,6 +293,7 @@ def main():
     print('Loading tiles')
     df_tiles=load_tiles(datahora=datahora)
     df_tiles.tile = df_tiles.tile.astype(str).apply(loads)
+    df_tiles.horario_leitura_estacao = df_tiles.horario_leitura_estacao.astype("timedelta64")
     df_tiles_geo = gpd.GeoDataFrame(
         data=df_tiles,
         geometry=df_tiles.tile,
@@ -329,7 +330,8 @@ def main():
     print(">>> AQUI 3:", datetime.now())
     # Filtra a última medida da estacao
     df_tile_indicators = df_tile_indicators.loc[df_tile_indicators.groupby(["tile_id"]).horario_leitura_estacao.idxmax()]
-    df_tile_indicators["horario_leitura_estacao"] = df_tile_indicators.horario_leitura_estacao.astype(str)
+    # df_tile_indicators["horario_leitura_estacao"] = df_tile_indicators.horario_leitura_estacao.astype(str)
+    df_tile_indicators["horario_leitura_estacao"] = df_tile_indicators.horario_leitura_estacao.dt.total_seconds().apply(lambda s: f'{s // 3600:02.0f}:{(s % 3600) // 60:02.0f}')
     df_tile_indicators.geometry = df_tile_indicators['tile'].dropna().astype(str).apply(loads)
     
     print(">>> AQUI 4:", datetime.now())
@@ -452,4 +454,5 @@ def main():
     print(">>> AQUI 10:", datetime.now())
     map_data = st_folium(m, key="mapa", height=600, width=1200)
 
-main()
+if __name__ == '__main__':
+  main()

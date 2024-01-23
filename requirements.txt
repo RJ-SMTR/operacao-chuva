@@ -3,5 +3,5 @@ streamlit-folium
 shapely
 folium
 geopandas
-basedosdados
-pygeos
+google-cloud-bigquery
+db-dtypes
