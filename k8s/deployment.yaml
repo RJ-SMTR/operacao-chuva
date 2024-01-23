@@ -64,6 +64,11 @@ spec:
               secretKeyRef:
                 name: envs
                 key: CACHE_OPERACAO_CHUVA
+          - name: REDIS_CELERY
+            valueFrom:
+              secretKeyRef:
+                name: envs
+                key: REDIS_CELERY
       volumes:
         - name: staging-config
           configMap:
@@ -125,6 +130,11 @@ spec:
               secretKeyRef:
                 name: envs
                 key: CACHE_OPERACAO_CHUVA
+          - name: REDIS_CELERY
+            valueFrom:
+              secretKeyRef:
+                name: envs
+                key: REDIS_CELERY
       restartPolicy: Always
 ---
 apiVersion: apps/v1
@@ -180,6 +190,11 @@ spec:
               secretKeyRef:
                 name: envs
                 key: CACHE_OPERACAO_CHUVA
+          - name: REDIS_CELERY
+            valueFrom:
+              secretKeyRef:
+                name: envs
+                key: REDIS_CELERY
       restartPolicy: Always
 ---
 # Service
