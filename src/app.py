@@ -293,7 +293,7 @@ def main():
     print('Loading tiles')
     df_tiles=load_tiles(datahora=datahora)
     df_tiles.tile = df_tiles.tile.astype(str).apply(loads)
-    df_tiles.horario_leitura_estacao = df_tiles.horario_leitura_estacao.astype("timedelta64")
+    # df_tiles.horario_leitura_estacao = df_tiles.horario_leitura_estacao
     df_tiles_geo = gpd.GeoDataFrame(
         data=df_tiles,
         geometry=df_tiles.tile,
