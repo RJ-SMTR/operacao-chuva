@@ -276,12 +276,12 @@ def main():
     datahora_arredondada = datahora_atual.replace(
         minute=minutos_arredondados, second=0, microsecond=0
     )
-    datahora_atual -= timedelta(hours=3)
+
     if datahora_arredondada > datahora_atual - timedelta(minutes=6):
         datahora = datahora_arredondada - timedelta(minutes=15)
     else:
         datahora = datahora_arredondada
-
+    datahora -= timedelta(hours=3)
     print(">>> Loading gps:", datetime.now())
     df_gps = load_gps(datahora=datahora, data_versao_gtfs=data_versao_gtfs)
     df_gps.posicao_veiculo = df_gps.posicao_veiculo.astype(str).apply(loads)
