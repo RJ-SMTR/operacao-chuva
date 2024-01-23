@@ -9,7 +9,7 @@ import os
 from shapely.geometry import LineString
 from streamlit_folium import folium_static
 from zipfile import ZipFile
-from src.redis_sr import RedisSR
+from redis_sr import RedisSR
 
 def load_shapes():
     # Carrega dados de rotas (shapes)
