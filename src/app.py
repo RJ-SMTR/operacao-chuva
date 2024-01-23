@@ -276,6 +276,7 @@ def main():
     datahora_arredondada = datahora_atual.replace(
         minute=minutos_arredondados, second=0, microsecond=0
     )
+    datahora_atual -= timedelta(3)
     if datahora_arredondada > datahora_atual - timedelta(minutes=6):
         datahora = datahora_arredondada - timedelta(minutes=15)
     else:
