@@ -5,7 +5,7 @@ from google.cloud import bigquery
 from shapely.wkt import loads
 from celery import Celery
 from datetime import datetime, timedelta
-from src.redis_sr import RedisSR
+from redis_sr import RedisSR
 
 app = Celery('main', broker=os.getenv('REDIS_CELERY'))
 app.conf.timezone = 'UTC'
