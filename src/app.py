@@ -60,7 +60,7 @@ def main():
     da área).
     """)
 
-    redis = RedisSR.from_url(os.getenv('OPERACAO_CHUVA_CACHE'))
+    redis = RedisSR.from_url(os.getenv('CACHE_OPERACAO_CHUVA'))
     df_geo = redis.get('data')
 
     # Instancia o mapa

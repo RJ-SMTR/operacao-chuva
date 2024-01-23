@@ -288,6 +288,6 @@ def main():
         crs=4326
     ).drop(columns=["tile"])
     
-    redis = RedisSR.from_url(os.getenv('OPERACAO_CHUVA_CACHE'))
+    redis = RedisSR.from_url(os.getenv('CACHE_OPERACAO_CHUVA'))
     redis.set('data', df_geo)
     redis.set('last_update', datetime.now() - timedelta(hours=3))
