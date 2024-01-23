@@ -10,6 +10,8 @@ env:
   GKE_CLUSTER: ${{ secrets.GKE_CLUSTER }}
   GKE_ZONE: ${{ secrets.GKE_ZONE }}   # Add your cluster zone here.
   IMAGE_OPERACAO_CHUVA: operacao-chuva
+  IMAGE_WORKER: celery-worker
+  IMAGE_SCHEDULER: celery-scheduler
 
 jobs:
   setup-build-publish-deploy:
@@ -52,6 +54,31 @@ jobs:
     - name: Publish
       run: |-
         docker push "gcr.io/$PROJECT_ID/$IMAGE_OPERACAO_CHUVA:$GITHUB_SHA"
+
+    # Build the Docker image
+    - name: Build
+      run: |-
+        docker build \
+          --tag "gcr.io/$PROJECT_ID/$IMAGE_WORKER:$GITHUB_SHA" \
+          -f Dockerfile-worker \
+
+    # Push the Docker image to Google Container Registry
+    - name: Publish
+      run: |-
+        docker push "gcr.io/$PROJECT_ID/$IMAGE_WORKER:$GITHUB_SHA"
+
+    # Build the Docker image
+    - name: Build
+      run: |-
+        docker build \
+          --tag "gcr.io/$PROJECT_ID/$IMAGE_SCHEDULER:$GITHUB_SHA" \
+          -f Dockerfile-scheduler \
+          .
+
+    # Push the Docker image to Google Container Registry
+    - name: Publish
+      run: |-
+        docker push "gcr.io/$PROJECT_ID/$IMAGE_SCHEDULER:$GITHUB_SHA"
 
     # Set up kustomize
     - name: Set up Kustomize
