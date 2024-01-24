@@ -1,7 +1,8 @@
 import os
 import geopandas as gpd
-from google.cloud import bigquery
+import traceback
 
+from google.cloud import bigquery
 from shapely.wkt import loads
 from celery import Celery
 from datetime import datetime, timedelta
@@ -215,79 +216,94 @@ def load_tiles(datahora):
 
 @app.task
 def main():
-        # Carrega dados da operação
-    data_versao_gtfs = "2024-01-02" # TODO: atualizar para jan/24
-    datahora_atual = datetime.now().replace(second=0, microsecond=0)
-    minutos_arredondados = datahora_atual.minute - (datahora_atual.minute % 15)
-    datahora_arredondada = datahora_atual.replace(
-        minute=minutos_arredondados, second=0, microsecond=0
-    )
+    try:
+      # Carrega dados da operação
+      data_versao_gtfs = "2024-01-02" # TODO: atualizar para jan/24
+      datahora_atual = datetime.now().replace(second=0, microsecond=0)
+      minutos_arredondados = datahora_atual.minute - (datahora_atual.minute % 15)
+      datahora_arredondada = datahora_atual.replace(
+          minute=minutos_arredondados, second=0, microsecond=0
+      )
 
-    if datahora_arredondada > datahora_atual - timedelta(minutes=6):
-        datahora = datahora_arredondada - timedelta(minutes=15)
-    else:
-        datahora = datahora_arredondada
-    
-    datahora -= timedelta(hours=3)
+      if datahora_arredondada > datahora_atual - timedelta(minutes=6):
+          datahora = datahora_arredondada - timedelta(minutes=15)
+      else:
+          datahora = datahora_arredondada
+      
+      datahora -= timedelta(hours=3)
 
-    print(">>> Loading gps:", datetime.now())
-    df_gps = load_gps(datahora=datahora, data_versao_gtfs=data_versao_gtfs)
-    df_gps.posicao_veiculo = df_gps.posicao_veiculo.astype(str).apply(loads)
-    df_gps_geo = gpd.GeoDataFrame(
-        data=df_gps,
-        geometry=df_gps.posicao_veiculo,
-        crs=4326
-        )
-    print(f'Built gps geo!\nColumns:{df_gps_geo.columns}\nSize:{len(df_gps_geo)}')
-    print('Loading tiles')
-    df_tiles=load_tiles(datahora=datahora)
-    df_tiles.tile = df_tiles.tile.astype(str).apply(loads)
-    df_tiles.horario_leitura_estacao = df_tiles.horario_leitura_estacao.astype("timedelta64[ns]")
-    df_tiles_geo = gpd.GeoDataFrame(
-        data=df_tiles,
-        geometry=df_tiles.tile,
-        crs=4326
-        )
-    print(f'Built tiles geo!\nColumns:{df_tiles_geo.columns}\nSize:{len(df_tiles_geo)}')
-    df = df_gps_geo.sjoin(df_tiles_geo, how='left', predicate='intersects')
-    df.tile = df.tile.astype(str)
-    df.posicao_veiculo = df.posicao_veiculo.astype(str)
-    print(f'Joined gps and tiles, got data:\n{df.head(10)}\n df size is {len(df)}')
-    print(f"df columns are:\n{df.columns}")
+      print(">>> Loading gps:", datetime.now())
+      df_gps = load_gps(datahora=datahora, data_versao_gtfs=data_versao_gtfs)
+      df_gps.posicao_veiculo = df_gps.posicao_veiculo.astype(str).apply(loads)
+      df_gps_geo = gpd.GeoDataFrame(
+          data=df_gps,
+          geometry=df_gps.posicao_veiculo,
+          crs=4326
+          )
+      print(f'Built gps geo!\nColumns:{df_gps_geo.columns}\nSize:{len(df_gps_geo)}')
+      print('Loading tiles')
+      df_tiles=load_tiles(datahora=datahora)
+      df_tiles.tile = df_tiles.tile.astype(str).apply(loads)
+      df_tiles.horario_leitura_estacao = df_tiles.horario_leitura_estacao.astype("timedelta64[ns]")
+      df_tiles_geo = gpd.GeoDataFrame(
+          data=df_tiles,
+          geometry=df_tiles.tile,
+          crs=4326
+          )
+      print(f'Built tiles geo!\nColumns:{df_tiles_geo.columns}\nSize:{len(df_tiles_geo)}')
+      df = df_gps_geo.sjoin(df_tiles_geo, how='left', predicate='intersects')
+      df.tile = df.tile.astype(str)
+      df.posicao_veiculo = df.posicao_veiculo.astype(str)
+      print(f'Joined gps and tiles, got data:\n{df.head(10)}\n df size is {len(df)}')
+      print(f"df columns are:\n{df.columns}")
 
-    # Calcula os indicadores de cada tile
-    df_tile_indicators = (
-        df
-        .loc[df.groupby(["tile_id", "servico", "id_veiculo"]).timestamp_gps.idxmax()]
-        .groupby(["tile_id", "tile", "horario_leitura_estacao"]).agg(
-            {
-                "acumulado_chuva_15_min": "max",
-                "acumulado_chuva_1_h": "max",
-                "acumulado_chuva_4_h": "max",
-                "id_veiculo": "count",
-                "servico": lambda x: ", ".join(list(set(x))),
-                "indicador_veiculo_parado_10_min": "sum",
-                "indicador_veiculo_fora_rota_10_min": "sum",
-                "indicador_veiculo_parado_30_min": "sum",
-                "indicador_veiculo_fora_rota_30_min": "sum",
-                "indicador_veiculo_parado_1_hora": "sum",
-                "indicador_veiculo_fora_rota_1_hora": "sum",
-            }
-        ).reset_index()
-    )
+      # Calcula os indicadores de cada tile
+      df_tile_indicators = (
+          df
+          .loc[df.groupby(["tile_id", "servico", "id_veiculo"]).timestamp_gps.idxmax()]
+          .groupby(["tile_id", "tile", "horario_leitura_estacao"]).agg(
+              {
+                  "acumulado_chuva_15_min": "max",
+                  "acumulado_chuva_1_h": "max",
+                  "acumulado_chuva_4_h": "max",
+                  "id_veiculo": "count",
+                  "servico": lambda x: ", ".join(list(set(x))),
+                  "indicador_veiculo_parado_10_min": "sum",
+                  "indicador_veiculo_fora_rota_10_min": "sum",
+                  "indicador_veiculo_parado_30_min": "sum",
+                  "indicador_veiculo_fora_rota_30_min": "sum",
+                  "indicador_veiculo_parado_1_hora": "sum",
+                  "indicador_veiculo_fora_rota_1_hora": "sum",
+              }
+          ).reset_index()
+      )
+      
+      # Filtra a última medida da estacao
+      df_tile_indicators = df_tile_indicators.loc[df_tile_indicators.groupby(["tile_id"]).horario_leitura_estacao.idxmax()]
+      # df_tile_indicators["horario_leitura_estacao"] = df_tile_indicators.horario_leitura_estacao.astype(str)
+      df_tile_indicators["horario_leitura_estacao"] = df_tile_indicators.horario_leitura_estacao.dt.total_seconds().apply(lambda s: f'{s // 3600:02.0f}:{(s % 3600) // 60:02.0f}')
+      df_tile_indicators['geometry'] = df_tile_indicators['tile'].dropna().astype(str).apply(loads)
+      
+      df_geo = gpd.GeoDataFrame(
+          data=df_tile_indicators,
+          geometry=df_tile_indicators.geometry,
+          crs=4326
+      ).drop(columns=["tile"])
+      
+      redis = RedisSR.from_url(os.getenv('CACHE_OPERACAO_CHUVA'))
+
+      if len(df_geo) == 0:
+          redis.set('last_empty_data', datetime.now() - timedelta(hours=3))
+
+      else:      
+        redis.set('data', df_geo)
+        redis.set('last_update', datetime.now() - timedelta(hours=3))
     
-    # Filtra a última medida da estacao
-    df_tile_indicators = df_tile_indicators.loc[df_tile_indicators.groupby(["tile_id"]).horario_leitura_estacao.idxmax()]
-    # df_tile_indicators["horario_leitura_estacao"] = df_tile_indicators.horario_leitura_estacao.astype(str)
-    df_tile_indicators["horario_leitura_estacao"] = df_tile_indicators.horario_leitura_estacao.dt.total_seconds().apply(lambda s: f'{s // 3600:02.0f}:{(s % 3600) // 60:02.0f}')
-    df_tile_indicators['geometry'] = df_tile_indicators['tile'].dropna().astype(str).apply(loads)
-    
-    df_geo = gpd.GeoDataFrame(
-        data=df_tile_indicators,
-        geometry=df_tile_indicators.geometry,
-        crs=4326
-    ).drop(columns=["tile"])
-    
-    redis = RedisSR.from_url(os.getenv('CACHE_OPERACAO_CHUVA'))
-    redis.set('data', df_geo)
-    redis.set('last_update', datetime.now() - timedelta(hours=3))
+
+    except Exception:
+        
+        now = str(datetime.now() - timedelta(hours=3))
+        stack_trace = traceback.format_exc()
+        last_crash = {now: stack_trace}
+
+        redis.set('last_crash', last_crash)
