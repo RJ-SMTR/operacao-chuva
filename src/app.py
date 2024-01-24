@@ -5,6 +5,7 @@ import geopandas as gpd
 import pandas as pd
 import streamlit as st
 import os
+import time
 
 from shapely.geometry import LineString
 from streamlit_folium import folium_static
@@ -12,21 +13,17 @@ from zipfile import ZipFile
 from redis_sr import RedisSR
 
 def load_shapes():
-    # Carrega dados de rotas (shapes)
-    with ZipFile("src/data/gtfs_2024-01-15_2024-01-31.zip") as myzip:
-    
-        shapes = pd.read_csv(myzip.open("shapes.txt"), dtype={
+    # Carrega dados de rotas (shapes)        
+    shapes = pd.read_csv("src/data/shapes.txt", dtype={
                     'shape_id': 'str', 
                     'shape_pt_lat': 'float', 
                     'shape_pt_lon': 'float',  
                     'shape_pt_sequence': 'Int64', 
                     'shape_dist_traveled': 'float',
                 })
-    
-        shapes = gpd.GeoDataFrame(shapes,
+    shapes = gpd.GeoDataFrame(shapes,
             geometry=gpd.points_from_xy(shapes.shape_pt_lon, shapes.shape_pt_lat)
         ).set_crs(epsg=4326)
-    
     shapes.sort_values(['shape_id','shape_pt_sequence'], inplace=True)
     shapes = (
         shapes[["shape_id", "shape_pt_lat", "shape_pt_lon"]]
@@ -44,7 +41,7 @@ def load_shapes():
     return shapes
 
 def main():
-    
+    t0= time.time()
     st.set_page_config(layout="wide", page_title="Monitoramento de chuvas no sistema de transportes")
     st.markdown("# Monitoramento de chuvas no sistema de transportes")
     st.markdown(
@@ -60,11 +57,19 @@ def main():
     da área).
     """)
 
+    st.button("Atualizar dados")
+    t1= time.time()
+
+    print('elements render:', t1 - t0)
     redis = RedisSR.from_url(os.getenv('CACHE_OPERACAO_CHUVA'))
     df_geo = redis.get('data')
-
+    # df_geo = gpd.read_file('dataframe.geojson')
+    t2= time.time()
+    print('gpd mount:', t2 - t1)
     # Instancia o mapa
-    st.button("Atualizar dados")
+    shapes = load_shapes()
+    t3= time.time()
+    print('shapes mount:', t3 - t2)
     m = folium.Map(location=[-22.917690, -43.413861], zoom_start=11)
     
 
@@ -76,7 +81,7 @@ def main():
         caption="Acumulado de chuva na última hora (mm)"
     )
     colormap.add_to(m)
-    colorscale_dict = df_geo.set_index("tile_id")["acumulado_chuva_1_h"]
+    colorscale_dict = df_geo.set_index("tile_id")["acumulado_chuva_1_h"].sort_values()
     
 
     popup = folium.GeoJsonPopup(
@@ -122,7 +127,7 @@ def main():
     ).add_to(m)
     
     # Adiciona icones de qtd de veiculos parados/fora da rota    
-    
+    t6= time.time()
     for i in range(0, len(df_geo)):
         if (df_geo.iloc[i].indicador_veiculo_parado_10_min > 0) and (df_geo.iloc[i].indicador_veiculo_fora_rota_10_min > 0):
             folium.Marker(
@@ -159,18 +164,21 @@ def main():
                      background_color="#5cdafa"
                  )
             ).add_to(m)
-
-    shapes = load_shapes()
-
+    
+    t7= time.time()
+    print('for loop:', t7 - t6)
     # Adiciona rotas ao mapa
     folium.GeoJson(shapes['geometry'], color='gray', weight=1.5, opacity=.8).add_to(m)
 
     # Ajusta camadas
     folium.TileLayer('cartodbpositron').add_to(m)
     folium.LayerControl().add_to(m)
-
-    map_data = folium_static(m, height=600, width=1200)
+    t4= time.time()
+    print('map mount:', t4 - t3)
     
+    map_data = folium_static(m, height=600, width=1200)
+    t5= time.time()
+    print('map render:', t5 - t4)
 
 if __name__ == '__main__':
   main()
