@@ -293,11 +293,11 @@ def main():
       redis = RedisSR.from_url(os.getenv('CACHE_OPERACAO_CHUVA'))
 
       if len(df_geo) == 0:
-          redis.set('last_empty_data', datetime.now() - timedelta(hours=3))
+          redis.set('last_empty_data', str(datetime.now() - timedelta(hours=3)))
 
       else:      
         redis.set('data', df_geo)
-        redis.set('last_update', datetime.now() - timedelta(hours=3))
+        redis.set('last_update', str(datetime.now() - timedelta(hours=3)))
     
 
     except Exception:
