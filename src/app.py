@@ -5,43 +5,50 @@ import geopandas as gpd
 import pandas as pd
 import streamlit as st
 import os
-import time
+from datetime import datetime
+from pytz import timezone
 
 from shapely.geometry import LineString
 from streamlit_folium import folium_static
 from zipfile import ZipFile
 from redis_sr import RedisSR
 
-def load_shapes():
-    # Carrega dados de rotas (shapes)        
-    shapes = pd.read_csv("src/data/shapes.txt", dtype={
-                    'shape_id': 'str', 
-                    'shape_pt_lat': 'float', 
-                    'shape_pt_lon': 'float',  
-                    'shape_pt_sequence': 'Int64', 
-                    'shape_dist_traveled': 'float',
-                })
-    shapes = gpd.GeoDataFrame(shapes,
-            geometry=gpd.points_from_xy(shapes.shape_pt_lon, shapes.shape_pt_lat)
-        ).set_crs(epsg=4326)
-    shapes.sort_values(['shape_id','shape_pt_sequence'], inplace=True)
-    shapes = (
-        shapes[["shape_id", "shape_pt_lat", "shape_pt_lon"]]
-        .groupby("shape_id")
-        .agg(list)
-        .apply(lambda x: LineString(zip(x[1], x[0])), axis=1)
-    )
+# V1: loading shapes in every update was very slow
+# New shapes should be parsed beforehand to geojson format with
+# the function below
+# def load_shapes():
+    # # Carrega dados de rotas (shapes)        
+    # shapes = pd.read_csv("src/data/shapes.txt", dtype={
+    #                 'shape_id': 'str', 
+    #                 'shape_pt_lat': 'float', 
+    #                 'shape_pt_lon': 'float',  
+    #                 'shape_pt_sequence': 'Int64', 
+    #                 'shape_dist_traveled': 'float',
+    #             })
+    # shapes = gpd.GeoDataFrame(shapes,
+    #         geometry=gpd.points_from_xy(shapes.shape_pt_lon, shapes.shape_pt_lat)
+    #     ).set_crs(epsg=4326)
+    # shapes.sort_values(['shape_id','shape_pt_sequence'], inplace=True)
+    # shapes = (
+    #     shapes[["shape_id", "shape_pt_lat", "shape_pt_lon"]]
+    #     .groupby("shape_id")
+    #     .agg(list)
+    #     .apply(lambda x: LineString(zip(x[1], x[0])), axis=1)
+    # )
     
-    shapes = gpd.GeoDataFrame(
-        data=shapes.index,
-        geometry = shapes.values,
-        crs=4326
-    )
-    shapes['shape_id'] = shapes.shape_id.astype(str)
-    return shapes
+    # shapes = gpd.GeoDataFrame(
+    #     data=shapes.index,
+    #     geometry = shapes.values,
+    #     crs=4326
+    # )
+    # shapes['shape_id'] = shapes.shape_id.astype(str)
+    # shapes.to_json()
+    # return shapes
 
-def main():
-    t0= time.time()
+def load_shapes():
+    return gpd.read_file('src/data/shapes.geojson')
+
+def set_page_config():
     st.set_page_config(layout="wide", page_title="Monitoramento de chuvas no sistema de transportes")
     st.markdown("# Monitoramento de chuvas no sistema de transportes")
     st.markdown(
@@ -56,20 +63,17 @@ def main():
     precipitação (mm) na última 1 hora** (segundo a estação mais próxima
     da área).
     """)
+    redis = RedisSR.from_url(os.getenv('CACHE_OPERACAO_CHUVA'))
+    last_update = redis.get('last_success_render')
+    st.markdown(f"Última atualização: {last_update}")
 
     st.button("Atualizar dados")
-    t1= time.time()
 
-    print('elements render:', t1 - t0)
-    redis = RedisSR.from_url(os.getenv('CACHE_OPERACAO_CHUVA'))
-    df_geo = redis.get('data')
+def render_map_data(data=None):
+    df_geo = data
     # df_geo = gpd.read_file('dataframe.geojson')
-    t2= time.time()
-    print('gpd mount:', t2 - t1)
     # Instancia o mapa
     shapes = load_shapes()
-    t3= time.time()
-    print('shapes mount:', t3 - t2)
     m = folium.Map(location=[-22.917690, -43.413861], zoom_start=11)
     
 
@@ -127,58 +131,66 @@ def main():
     ).add_to(m)
     
     # Adiciona icones de qtd de veiculos parados/fora da rota    
-    t6= time.time()
     for i in range(0, len(df_geo)):
         if (df_geo.iloc[i].indicador_veiculo_parado_10_min > 0) and (df_geo.iloc[i].indicador_veiculo_fora_rota_10_min > 0):
             folium.Marker(
                 location=[df_geo.iloc[i].geometry.centroid.y, df_geo.iloc[i].geometry.centroid.x], 
                 icon=plugins.BeautifyIcon(
-                     icon="arrow-down", 
-                     icon_shape="marker",
-                     number=(df_geo.iloc[i].indicador_veiculo_parado_10_min + df_geo.iloc[i].indicador_veiculo_fora_rota_10_min).astype(str),
-                     border_color="#0381a1",
-                     background_color="#0381a1"
-                 )
+                    icon="arrow-down", 
+                    icon_shape="marker",
+                    number=(df_geo.iloc[i].indicador_veiculo_parado_10_min + df_geo.iloc[i].indicador_veiculo_fora_rota_10_min).astype(str),
+                    border_color="#0381a1",
+                    background_color="#0381a1"
+                )
             ).add_to(m)
             
         elif df_geo.iloc[i].indicador_veiculo_parado_10_min > 0:
             folium.Marker(
                 location=[df_geo.iloc[i].geometry.centroid.y, df_geo.iloc[i].geometry.centroid.x], 
                 icon=plugins.BeautifyIcon(
-                     icon="arrow-down", 
-                     icon_shape="marker",
-                     number=df_geo.iloc[i].indicador_veiculo_parado_10_min.astype(str),
-                     border_color="#5cdafa",
-                     background_color="#5cdafa"
-                 )
+                    icon="arrow-down", 
+                    icon_shape="marker",
+                    number=df_geo.iloc[i].indicador_veiculo_parado_10_min.astype(str),
+                    border_color="#5cdafa",
+                    background_color="#5cdafa"
+                )
             ).add_to(m)
     
         elif df_geo.iloc[i].indicador_veiculo_fora_rota_10_min > 0:
             folium.Marker(
                 location=[df_geo.iloc[i].geometry.centroid.y, df_geo.iloc[i].geometry.centroid.x], 
                 icon=plugins.BeautifyIcon(
-                     icon="arrow-down", 
-                     icon_shape="marker",
-                     number=df_geo.iloc[i].indicador_veiculo_fora_rota_10_min.astype(str),
-                     border_color="#5cdafa",
-                     background_color="#5cdafa"
-                 )
+                    icon="arrow-down", 
+                    icon_shape="marker",
+                    number=df_geo.iloc[i].indicador_veiculo_fora_rota_10_min.astype(str),
+                    border_color="#5cdafa",
+                    background_color="#5cdafa"
+                )
             ).add_to(m)
-    
-    t7= time.time()
-    print('for loop:', t7 - t6)
+
     # Adiciona rotas ao mapa
     folium.GeoJson(shapes['geometry'], color='gray', weight=1.5, opacity=.8).add_to(m)
 
     # Ajusta camadas
     folium.TileLayer('cartodbpositron').add_to(m)
     folium.LayerControl().add_to(m)
-    t4= time.time()
-    print('map mount:', t4 - t3)
-    
     map_data = folium_static(m, height=600, width=1200)
-    t5= time.time()
-    print('map render:', t5 - t4)
+
+def main():
+    set_page_config()
+    redis = RedisSR.from_url(os.getenv('CACHE_OPERACAO_CHUVA'))
+    try:
+        last_update = redis.get('last_update')
+        data = redis.get('data')
+        print(data)
+        render_map_data(data=data)
+        redis.set('last_success_data', data)
+        redis.set(
+            'last_success_render', 
+            last_update)
+    except:
+        data = redis.get('last_success_data')
+        render_map_data(data=data)
 
 if __name__ == '__main__':
-  main()
+    main()

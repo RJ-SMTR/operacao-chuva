@@ -214,6 +214,16 @@ def load_tiles(datahora):
     client = bigquery.Client(project='rj-smtr-dev')   
     return client.query(geo_tiles).to_dataframe()
 
+def get_gps_data_last_update():
+    query = """
+    SELECT 
+      MAX(timestamp_gps)
+    FROM 
+      `rj-smtr-dev.br_rj_riodejaneiro_veiculos.gps_sppo_15_minutos`
+  """
+    client = bigquery.Client(project='rj-smtr-dev')
+    return client.query(query=query).to_dataframe().iloc[0,0]
+
 @app.task
 def main():
     try:
@@ -234,6 +244,7 @@ def main():
 
       print(">>> Loading gps:", datetime.now())
       df_gps = load_gps(datahora=datahora, data_versao_gtfs=data_versao_gtfs)
+      gps_data_last_update = get_gps_data_last_update()
       df_gps.posicao_veiculo = df_gps.posicao_veiculo.astype(str).apply(loads)
       df_gps_geo = gpd.GeoDataFrame(
           data=df_gps,
@@ -297,7 +308,7 @@ def main():
 
       else:      
         redis.set('data', df_geo)
-        redis.set('last_update', str(datetime.now() - timedelta(hours=3)))
+        redis.set('last_update', gps_data_last_update.strftime("%d/%m%/%Y %H:%M"))
     
 
     except Exception:
