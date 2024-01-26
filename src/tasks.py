@@ -308,7 +308,7 @@ def main():
 
       else:      
         redis.set('data', df_geo)
-        redis.set('last_update', gps_data_last_update.strftime("%d/%m%/%Y %H:%M"))
+        redis.set('last_update', gps_data_last_update.strftime("%d/%m/%Y %H:%M"))
     
 
     except Exception:
