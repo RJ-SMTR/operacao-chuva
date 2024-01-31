@@ -96,8 +96,10 @@ def render_map_data(data=None):
             "servico",
             "indicador_veiculo_parado_10_min",
             "indicador_veiculo_parado_30_min",
+            "indicador_veiculo_parado_1_hora",
             "indicador_veiculo_fora_rota_10_min",
             "indicador_veiculo_fora_rota_30_min",
+            "indicador_veiculo_fora_rota_1_hora",
             "tile_id"
         ],
         aliases=[
@@ -105,10 +107,12 @@ def render_map_data(data=None):
             "🌧️ Acumulado 15min:",
             "🌧️ Acumulado 1h:",
             "🚍 Serviços em operação: ",
-            "🛑 Veículos parados 10min:",
-            "🛑 Veículos parados 30min:",
-            "⤴️ Veículos desviados 10min:",
-            "⤴️ Veículos desviados 30min:",
+            "🛑 Veículos parados 10 min:",
+            "🛑 Veículos parados 30 min:",
+            "🛑 Veículos parados 1 hora:",
+            "⤴️ Veículos desviados 10 min:",
+            "⤴️ Veículos desviados 30 min:",
+            "⤴️ Veículos desviados 1 hora:",
             "📍 ID do polígono: "
         ],
         localize=True,
@@ -132,39 +136,39 @@ def render_map_data(data=None):
     
     # Adiciona icones de qtd de veiculos parados/fora da rota    
     for i in range(0, len(df_geo)):
-        if (df_geo.iloc[i].indicador_veiculo_parado_10_min > 0) and (df_geo.iloc[i].indicador_veiculo_fora_rota_10_min > 0):
+        
+        pin_count = (
+            df_geo.iloc[i].indicador_veiculo_parado_10_min + 
+            df_geo.iloc[i].indicador_veiculo_parado_30_min +
+            df_geo.iloc[i].indicador_veiculo_parado_60_min +
+            df_geo.iloc[i].indicador_veiculo_fora_rota_10_min + 
+            df_geo.iloc[i].indicador_veiculo_fora_rota_30_min +
+            df_geo.iloc[i].indicador_veiculo_fora_rota_60_min
+        )
+
+        pin = False
+
+        if pin_count > 10:
+            pin = True
+            pin_color = "#5cdafa"
+        
+        elif pin_count > 5:
+            pin = True
+            pin_color = "#1f97b5"
+        
+        if pin_count > 0:
+            pin = True
+            pin_color = "#085d73"
+
+        if pin == True:
             folium.Marker(
                 location=[df_geo.iloc[i].geometry.centroid.y, df_geo.iloc[i].geometry.centroid.x], 
                 icon=plugins.BeautifyIcon(
                     icon="arrow-down", 
                     icon_shape="marker",
-                    number=(df_geo.iloc[i].indicador_veiculo_parado_10_min + df_geo.iloc[i].indicador_veiculo_fora_rota_10_min).astype(str),
-                    border_color="#0381a1",
-                    background_color="#0381a1"
-                )
-            ).add_to(m)
-            
-        elif df_geo.iloc[i].indicador_veiculo_parado_10_min > 0:
-            folium.Marker(
-                location=[df_geo.iloc[i].geometry.centroid.y, df_geo.iloc[i].geometry.centroid.x], 
-                icon=plugins.BeautifyIcon(
-                    icon="arrow-down", 
-                    icon_shape="marker",
-                    number=df_geo.iloc[i].indicador_veiculo_parado_10_min.astype(str),
-                    border_color="#5cdafa",
-                    background_color="#5cdafa"
-                )
-            ).add_to(m)
-    
-        elif df_geo.iloc[i].indicador_veiculo_fora_rota_10_min > 0:
-            folium.Marker(
-                location=[df_geo.iloc[i].geometry.centroid.y, df_geo.iloc[i].geometry.centroid.x], 
-                icon=plugins.BeautifyIcon(
-                    icon="arrow-down", 
-                    icon_shape="marker",
-                    number=df_geo.iloc[i].indicador_veiculo_fora_rota_10_min.astype(str),
-                    border_color="#5cdafa",
-                    background_color="#5cdafa"
+                    number=str(pin_count),
+                    border_color=pin_color,
+                    background_color=pin_color
                 )
             ).add_to(m)
 
