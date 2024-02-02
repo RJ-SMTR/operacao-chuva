@@ -1,0 +1,265 @@
+# Deployment
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: operacao-chuva
+  namespace: operacao-chuva-staging
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: operacao-chuva
+  template:
+    metadata:
+      labels:
+        app: operacao-chuva
+    spec:
+      containers:
+        - name: operacao-chuva
+          image: gcr.io/$PROJECT_ID/$IMAGE_OPERACAO_CHUVA:$GITHUB_SHA
+          # command: ['cp', '/mnt/*', '/root/.basedosdados/credentials/']
+          volumeMounts:
+            - name: staging-config
+              mountPath: /mnt/staging.json
+              # mountPath: /root/.basedosdados/credentials/staging.json
+              subPath: staging.json
+              readOnly: false
+            - name: prod-config
+              mountPath: /mnt/prod.json
+              # mountPath: /root/.basedosdados/credentials/prod.json
+              subPath: prod.json
+              readOnly: false
+          env:
+            - name: BASEDOSDADOS_CONFIG
+              valueFrom:
+                secretKeyRef:
+                  name: envs
+                  key: BASEDOSDADOS_CONFIG
+            - name: BASEDOSDADOS_CREDENTIALS_PROD
+              valueFrom:
+                secretKeyRef:
+                  name: envs
+                  key: BASEDOSDADOS_CREDENTIALS_PROD
+            - name: BASEDOSDADOS_CREDENTIALS_STAGING
+              valueFrom:
+                secretKeyRef:
+                  name: envs
+                  key: BASEDOSDADOS_CREDENTIALS_STAGING
+            - name: GOOGLE_APPLICATION_CREDENTIALS
+              valueFrom:
+                secretKeyRef:
+                  name: envs
+                  key: GOOGLE_APPLICATION_CREDENTIALS
+            - name: CRED_PROD
+              valueFrom:
+                secretKeyRef:
+                  name: envs
+                  key: CRED_PROD
+            - name: CRED_STAG
+              valueFrom:
+                secretKeyRef:
+                  name: envs
+                  key: CRED_STAG
+            - name: CACHE_OPERACAO_CHUVA
+              valueFrom:
+                secretKeyRef:
+                  name: envs
+                  key: CACHE_OPERACAO_CHUVA
+            - name: REDIS_CELERY
+              valueFrom:
+                secretKeyRef:
+                  name: envs
+                  key: REDIS_CELERY
+      volumes:
+        - name: staging-config
+          configMap:
+            name: cred-staging
+        - name: prod-config
+          configMap:
+            name: cred-prod
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: celery-worker
+  namespace: operacao-chuva-staging
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: celery-worker
+  template:
+    metadata:
+      labels:
+        app: celery-worker
+    spec:
+      containers:
+        - name: celery-worker
+          image: gcr.io/$PROJECT_ID/$IMAGE_WORKER:$GITHUB_SHA
+          env:
+            - name: BASEDOSDADOS_CONFIG
+              valueFrom:
+                secretKeyRef:
+                  name: envs
+                  key: BASEDOSDADOS_CONFIG
+            - name: BASEDOSDADOS_CREDENTIALS_PROD
+              valueFrom:
+                secretKeyRef:
+                  name: envs
+                  key: BASEDOSDADOS_CREDENTIALS_PROD
+            - name: BASEDOSDADOS_CREDENTIALS_STAGING
+              valueFrom:
+                secretKeyRef:
+                  name: envs
+                  key: BASEDOSDADOS_CREDENTIALS_STAGING
+            - name: GOOGLE_APPLICATION_CREDENTIALS
+              valueFrom:
+                secretKeyRef:
+                  name: envs
+                  key: GOOGLE_APPLICATION_CREDENTIALS
+            - name: CRED_PROD
+              valueFrom:
+                secretKeyRef:
+                  name: envs
+                  key: CRED_PROD
+            - name: CRED_STAG
+              valueFrom:
+                secretKeyRef:
+                  name: envs
+                  key: CRED_STAG
+            - name: CACHE_OPERACAO_CHUVA
+              valueFrom:
+                secretKeyRef:
+                  name: envs
+                  key: CACHE_OPERACAO_CHUVA
+            - name: REDIS_CELERY
+              valueFrom:
+                secretKeyRef:
+                  name: envs
+                  key: REDIS_CELERY
+      restartPolicy: Always
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: celery-scheduler
+  namespace: operacao-chuva-staging
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: celery-scheduler
+  template:
+    metadata:
+      labels:
+        app: celery-scheduler
+    spec:
+      containers:
+        - name: celery-scheduler
+          image: gcr.io/$PROJECT_ID/$IMAGE_SCHEDULER:$GITHUB_SHA
+          env:
+            - name: BASEDOSDADOS_CONFIG
+              valueFrom:
+                secretKeyRef:
+                  name: envs
+                  key: BASEDOSDADOS_CONFIG
+            - name: BASEDOSDADOS_CREDENTIALS_PROD
+              valueFrom:
+                secretKeyRef:
+                  name: envs
+                  key: BASEDOSDADOS_CREDENTIALS_PROD
+            - name: BASEDOSDADOS_CREDENTIALS_STAGING
+              valueFrom:
+                secretKeyRef:
+                  name: envs
+                  key: BASEDOSDADOS_CREDENTIALS_STAGING
+            - name: GOOGLE_APPLICATION_CREDENTIALS
+              valueFrom:
+                secretKeyRef:
+                  name: envs
+                  key: GOOGLE_APPLICATION_CREDENTIALS
+            - name: CRED_PROD
+              valueFrom:
+                secretKeyRef:
+                  name: envs
+                  key: CRED_PROD
+            - name: CRED_STAG
+              valueFrom:
+                secretKeyRef:
+                  name: envs
+                  key: CRED_STAG
+            - name: CACHE_OPERACAO_CHUVA
+              valueFrom:
+                secretKeyRef:
+                  name: envs
+                  key: CACHE_OPERACAO_CHUVA
+            - name: REDIS_CELERY
+              valueFrom:
+                secretKeyRef:
+                  name: envs
+                  key: REDIS_CELERY
+      restartPolicy: Always
+---
+# Service
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: operacao-chuva
+  name: operacao-chuva
+  namespace: operacao-chuva-staging
+
+spec:
+  ports:
+    - name: "80"
+      port: 80
+      targetPort: 80
+  selector:
+    app: operacao-chuva
+---
+# Ingress
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: operacao-chuva-ingress
+  namespace: operacao-chuva-staging
+
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    nginx.ingress.kubernetes.io/rewrite-target: /
+    cert-manager.io/issuer: "letsencrypt-production"
+    nginx.ingress.kubernetes.io/ssl-redirect: "true"
+    nginx.ingress.kubernetes.io/proxy-body-size: 200m
+spec:
+  tls:
+    - hosts:
+        - operacao-chuva-staging.mobilidade.rio
+      secretName: operacao-chuva-tls
+  rules:
+    - host: operacao-chuva-staging.mobilidade.rio
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: operacao-chuva
+                port:
+                  number: 80
+---
+# Issuer
+apiVersion: cert-manager.io/v1
+kind: Issuer
+metadata:
+  name: letsencrypt-staging
+  namespace: operacao-chuva-staging
+spec:
+  acme:
+    email: borismarinho.smtr@gmail.com
+    server: https://acme-v02.api.letsencrypt.org/directory
+    privateKeySecretRef:
+      name: letsencrypt-staging
+    solvers:
+      - http01:
+          ingress:
+            class: nginx
