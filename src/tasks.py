@@ -22,7 +22,7 @@ app.conf.timezone = 'UTC'
 @app.on_after_configure.connect
 def setup_periodic_tasks(sender, **kwargs):
     sender.add_periodic_task(60.0, main.s(), name='Update data every minute')
-    sender.add_periodic_task(60.0, main.s(), name='Update every minute')
+    sender.add_periodic_task(60.0, cache_mapa.s(), name='Update map every minute')
 
 # V1: loading shapes in every update was very slow
 # New shapes should be parsed beforehand to geojson format with
