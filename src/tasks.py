@@ -14,6 +14,7 @@ import branca.colormap as cm
 import folium
 import folium.plugins as plugins
 import geopandas as gpd
+import pytz
 
 
 app = Celery('main', broker=os.getenv('REDIS_CELERY'))
@@ -173,12 +174,13 @@ def create_map(data=None):
 
 @app.task
 def cache_mapa():
+  datahora = datetime.now(tz=pytz.timezone('America/Sao_Paulo')).replace(second=0, microsecond=0, tzinfo=None)
   redis = RedisSR.from_url(os.getenv('CACHE_OPERACAO_CHUVA'))
   try:
     data = redis.get('data')
     mapa = create_map(data=data)
     redis.set('last_map', mapa)
-    redis.set('last_map_timestamp', str(datetime.now() - timedelta(hours=3)))
+    redis.set('last_map_timestamp', str(datahora))
   except:
     pass
 
@@ -392,12 +394,27 @@ def get_gps_data_last_update():
     client = bigquery.Client(project='rj-smtr-dev')
     return client.query(query=query).to_dataframe().iloc[0,0]
 
+
+def get_rain_data_last_update(datahora):
+    query = f"""
+    SELECT
+      MAX(horario)
+    FROM
+      `datario.clima_pluviometro.taxa_precipitacao_alertario`
+    WHERE
+      data_particao = "{datahora.date()}"
+      AND horario between "{(datahora - timedelta(hours=1)).time()}" and "{datahora.time()}"
+    """
+    client = bigquery.Client(project='rj-smtr-dev')
+    return client.query(query=query).to_dataframe().iloc[0,0]
+
 @app.task
 def main():
     try:
+      redis = RedisSR.from_url(os.getenv('CACHE_OPERACAO_CHUVA'))
       # Carrega dados da operação
       data_versao_gtfs = "2024-01-02" # TODO: atualizar para jan/24
-      datahora_atual = datetime.now().replace(second=0, microsecond=0)
+      datahora_atual = datetime.now(tz=pytz.timezone('America/Sao_Paulo')).replace(second=0, microsecond=0, tzinfo=None)
       minutos_arredondados = datahora_atual.minute - (datahora_atual.minute % 15)
       datahora_arredondada = datahora_atual.replace(
           minute=minutos_arredondados, second=0, microsecond=0
@@ -408,7 +425,7 @@ def main():
       else:
           datahora = datahora_arredondada
       
-      datahora -= timedelta(hours=3)
+      # datahora -= timedelta(hours=3)
 
       print(">>> Loading gps:", datetime.now())
       df_gps = load_gps(datahora=datahora, data_versao_gtfs=data_versao_gtfs)
@@ -419,6 +436,9 @@ def main():
           geometry=df_gps.posicao_veiculo,
           crs=4326
           )
+      if len(df_gps) != 0:
+        redis.set('last_df_gps', df_gps)
+        redis.set('last_df_gps_timestamp', gps_data_last_update.strftime("%d/%m/%Y %H:%M"))
       print(f'Built gps geo!\nColumns:{df_gps_geo.columns}\nSize:{len(df_gps_geo)}')
       print('Loading tiles')
       df_tiles=load_tiles(datahora=datahora)
@@ -469,23 +489,27 @@ def main():
           crs=4326
       ).drop(columns=["tile"])
       
-      redis = RedisSR.from_url(os.getenv('CACHE_OPERACAO_CHUVA'))
+      
 
       if len(df_geo) == 0:
-          redis.set('last_empty_data', str(datetime.now() - timedelta(hours=3)))
+          redis.set('last_empty_data', str(datahora))
 
       else:      
         redis.set('data', df_geo)
         redis.set('last_update', gps_data_last_update.strftime("%d/%m/%Y %H:%M"))
+        redis.set('last_rain_update', datahora.strftime("%d/%m/%Y") + ' ' + str(get_rain_data_last_update(datahora)))
     
+      
+
+
 
     except Exception:
         
-        now = str(datetime.now() - timedelta(hours=3))
+        now = str(datahora)
         stack_trace = traceback.format_exc()
         last_crash = {now: stack_trace}
 
         redis.set('last_crash', last_crash)
 
 if __name__ == '__main__':
-  cache_mapa()
+  main()
