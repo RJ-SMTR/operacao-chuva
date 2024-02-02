@@ -18,17 +18,7 @@ spec:
         - name: operacao-chuva
           image: gcr.io/$PROJECT_ID/$IMAGE_OPERACAO_CHUVA:$GITHUB_SHA
           # command: ['cp', '/mnt/*', '/root/.basedosdados/credentials/']
-          volumeMounts:
-            - name: staging-config
-              mountPath: /mnt/staging.json
-              # mountPath: /root/.basedosdados/credentials/staging.json
-              subPath: staging.json
-              readOnly: false
-            - name: prod-config
-              mountPath: /mnt/prod.json
-              # mountPath: /root/.basedosdados/credentials/prod.json
-              subPath: prod.json
-              readOnly: false
+
           env:
             - name: BASEDOSDADOS_CONFIG
               valueFrom:
@@ -70,13 +60,7 @@ spec:
                 secretKeyRef:
                   name: envs
                   key: REDIS_CELERY
-      volumes:
-        - name: staging-config
-          configMap:
-            name: cred-staging
-        - name: prod-config
-          configMap:
-            name: cred-prod
+
 ---
 apiVersion: apps/v1
 kind: Deployment
