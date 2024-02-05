@@ -35,9 +35,24 @@ def render_map_data(mapa=None, df_gps=None):
       df_gps.indicador_veiculo_fora_rota_30_min +
       df_gps.indicador_veiculo_fora_rota_1_hora)
     
-    st.dataframe(df_gps.groupby(by=['servico'])[['total_veiculo_problema', 'indicador_veiculo_parado_10_min', 'indicador_veiculo_parado_30_min',
-                    'indicador_veiculo_parado_1_hora', 'indicador_veiculo_fora_rota_10_min', 'indicador_veiculo_fora_rota_30_min',
-                      'indicador_veiculo_fora_rota_1_hora']].sum().sort_values(by=['total_veiculo_problema'], ascending=False))
+    new_cols = {
+        'servico': '🚍 Serviço',
+        'total_veiculo_problema': 'Total Veículos Parados ou Desviados (até 1h)',
+        'indicador_veiculo_parado_10_min': '🛑 Veículos parados 10 min',
+        'indicador_veiculo_parado_30_min': '🛑 Veículos parados 30 min',
+        'indicador_veiculo_parado_1_hora': '🛑 Veículos parados 1 hora',
+        'indicador_veiculo_fora_rota_10_min': "⤴️ Veículos desviados 10 min:",
+        'indicador_veiculo_fora_rota_30_min': "⤴️ Veículos desviados 30 min:",
+        'indicador_veiculo_fora_rota_1_hora': "⤴️ Veículos desviados 1 hora:"
+    }
+
+    st.dataframe(
+        df_gps[list(new_cols)]
+        .rename(columns=new_cols)
+        .groupby(['🚍 Serviço'])
+        .sum([i for i in new_cols.values() if i != '🚍 Serviço'])
+        .sort_values(by=['Total Veículos Parados ou Desviados (até 1h)'], ascending=False)
+    )
 
 def main():
     set_page_config()
@@ -48,8 +63,7 @@ def main():
         mapa = redis.get('last_map')
         df_gps = redis.get('last_df_gps')
         render_map_data(mapa=mapa, df_gps=df_gps)
-        st.markdown(f"Última atualização GPS: {last_update}")          
-        st.markdown(f"Última atualização meteorológica: {last_update_rain}")  
+        st.markdown(f"Última atualização: {last_update} (GPS); {last_update_rain} (precipitação - Alerta Rio)")          
         redis.set('last_successful_map', mapa)
         redis.set(
             'last_successful_render', 
