@@ -12,7 +12,7 @@ def set_page_config():
     st.markdown(
         """Abaixo você pode monitorar as rotas de ônibus,
         volume de precipitação e possíveis pontos de
-        impacto na operação em áreas de aprox. 100m2.""")
+        impacto na operação em áreas de 100 mil m2 (aprox. um estádio do Maracanã).""")
         
     st.markdown("""
     > 📍 Ponteiros mostram o **Número de veículos parados ou fora de rota**
