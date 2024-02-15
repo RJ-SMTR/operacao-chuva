@@ -58,7 +58,7 @@ def setup_periodic_tasks(sender, **kwargs):
     # return shapes
 
 def load_shapes():
-    return gpd.read_file('src/data/shapes.geojson')
+    return gpd.read_file('data/shapes.geojson')
 
 def create_map(data=None):
   df_geo = data
