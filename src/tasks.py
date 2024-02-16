@@ -8,12 +8,12 @@ from redis_sr import RedisSR
 
 import os
 import geopandas as gpd
+import pandas as pd
 import traceback
 import folium
 import branca.colormap as cm
 import folium
 import folium.plugins as plugins
-import geopandas as gpd
 import pytz
 
 
@@ -84,7 +84,7 @@ def create_map(data=None):
           "horario_leitura_estacao", 
           "acumulado_chuva_15_min", 
           "acumulado_chuva_1_h", 
-          "servico",
+          "servicos",
           "indicador_veiculo_parado_10_min",
           "indicador_veiculo_parado_30_min",
           "indicador_veiculo_parado_1_hora",
@@ -457,28 +457,90 @@ def main():
       print(f"df columns are:\n{df.columns}")
 
       # Calcula os indicadores de cada tile
-      df_tile_indicators = (
-          df
-          .loc[df.groupby(["tile_id", "servico", "id_veiculo"]).timestamp_gps.idxmax()]
-          .groupby(["tile_id", "tile", "horario_leitura_estacao"]).agg(
-              {
-                  "acumulado_chuva_15_min": "max",
-                  "acumulado_chuva_1_h": "max",
-                  "acumulado_chuva_4_h": "max",
-                  "id_veiculo": "count",
-                  "servico": lambda x: ", ".join(list(set(x))),
-                  "indicador_veiculo_parado_10_min": "sum",
-                  "indicador_veiculo_fora_rota_10_min": "sum",
-                  "indicador_veiculo_parado_30_min": "sum",
-                  "indicador_veiculo_fora_rota_30_min": "sum",
-                  "indicador_veiculo_parado_1_hora": "sum",
-                  "indicador_veiculo_fora_rota_1_hora": "sum",
-              }
-          ).reset_index()
-      )
+      df_tile_indicators = df.loc[df.groupby(["tile_id", "servico", "id_veiculo"]).timestamp_gps.idxmax()].reset_index()
+      df_tile_indicators = df_tile_indicators.loc[df_tile_indicators.groupby(["tile_id", "servico", "id_veiculo"]).horario_leitura_estacao.idxmax()].reset_index()
+      df_tile_indicators = df_tile_indicators.groupby(["tile_id", "tile", "servico"]).agg(
+    {
+        "horario_leitura_estacao": "max",
+        "acumulado_chuva_15_min": "max",
+        "acumulado_chuva_1_h": "max",
+        "acumulado_chuva_4_h": "max",
+        "indicador_veiculo_parado_10_min": "sum",
+        "indicador_veiculo_fora_rota_10_min": "sum",
+        "indicador_veiculo_parado_30_min": "sum",
+        "indicador_veiculo_fora_rota_30_min": "sum",
+        "indicador_veiculo_parado_1_hora": "sum",
+        "indicador_veiculo_fora_rota_1_hora": "sum",
+    }
+        ).reset_index()
+      
+      df_tile_indicators['total_veiculo_problema'] = (
+      df_tile_indicators.indicador_veiculo_parado_10_min + 
+      df_tile_indicators.indicador_veiculo_parado_30_min +
+      df_tile_indicators.indicador_veiculo_parado_1_hora +
+      df_tile_indicators.indicador_veiculo_fora_rota_10_min + 
+      df_tile_indicators.indicador_veiculo_fora_rota_30_min +
+      df_tile_indicators.indicador_veiculo_fora_rota_1_hora)
+
+      servicos_dict = {}
+
+      for i, row in df_tile_indicators.iterrows():
+            if row['tile_id'] not in servicos_dict:
+                  servicos_dict[row['tile_id']] = []
+            servicos_dict[row['tile_id']].append((row['servico'], row['total_veiculo_problema']))
+
+      for tile_id in servicos_dict:
+            lista = servicos_dict[tile_id]
+            lista.sort(key=lambda x : x[1], reverse=True)
+            s = ''
+            for servico, total in lista:
+                  s += f'{servico}: {total}, '
+            servicos_dict[tile_id] = s
+
+
+      servicos_df = pd.DataFrame(servicos_dict.items(), columns=['tile_id', 'servicos'])
+      df_tile_indicators = df_tile_indicators.merge(servicos_df, how='inner', on='tile_id')
+      # display(servicos_df)
+      df_tile_indicators = df_tile_indicators.groupby(["tile_id", "tile"]).agg(
+      {
+      "servicos": "max", 
+      "horario_leitura_estacao": "max",
+      "acumulado_chuva_15_min": "max",
+      "acumulado_chuva_1_h": "max",
+      "acumulado_chuva_4_h": "max",
+      "indicador_veiculo_parado_10_min": "sum",
+      "indicador_veiculo_fora_rota_10_min": "sum",
+      "indicador_veiculo_parado_30_min": "sum",
+      "indicador_veiculo_fora_rota_30_min": "sum",
+      "indicador_veiculo_parado_1_hora": "sum",
+      "indicador_veiculo_fora_rota_1_hora": "sum",
+      }
+      ).reset_index()
+
+
+
+      # df_tile_indicators = (
+      #     df
+      #     .loc[df.groupby(["tile_id", "servico", "id_veiculo"]).timestamp_gps.idxmax()]
+      #     .groupby(["tile_id", "tile", "horario_leitura_estacao"]).agg(
+      #         {
+      #             "acumulado_chuva_15_min": "max",
+      #             "acumulado_chuva_1_h": "max",
+      #             "acumulado_chuva_4_h": "max",
+      #             "id_veiculo": "count",
+      #             "servico": lambda x: ", ".join(list(set(x))),
+      #             "indicador_veiculo_parado_10_min": "sum",
+      #             "indicador_veiculo_fora_rota_10_min": "sum",
+      #             "indicador_veiculo_parado_30_min": "sum",
+      #             "indicador_veiculo_fora_rota_30_min": "sum",
+      #             "indicador_veiculo_parado_1_hora": "sum",
+      #             "indicador_veiculo_fora_rota_1_hora": "sum",
+      #         }
+      #     ).reset_index()
+      # )
       
       # Filtra a última medida da estacao
-      df_tile_indicators = df_tile_indicators.loc[df_tile_indicators.groupby(["tile_id"]).horario_leitura_estacao.idxmax()]
+      # df_tile_indicators = df_tile_indicators.loc[df_tile_indicators.groupby(["tile_id"]).horario_leitura_estacao.idxmax()]
       # df_tile_indicators["horario_leitura_estacao"] = df_tile_indicators.horario_leitura_estacao.astype(str)
       df_tile_indicators["horario_leitura_estacao"] = df_tile_indicators.horario_leitura_estacao.dt.total_seconds().apply(lambda s: f'{s // 3600:02.0f}:{(s % 3600) // 60:02.0f}')
       df_tile_indicators['geometry'] = df_tile_indicators['tile'].dropna().astype(str).apply(loads)
@@ -513,3 +575,4 @@ def main():
 
 if __name__ == '__main__':
   main()
+  cache_mapa()
