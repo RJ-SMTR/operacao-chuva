@@ -384,14 +384,17 @@ def load_tiles(datahora):
     client = bigquery.Client(project='rj-smtr-dev')   
     return client.query(geo_tiles).to_dataframe()
 
-def get_gps_data_last_update():
-    query = """
+def get_gps_data_last_update(datahora):
+    query = f"""
     SELECT 
       MAX(timestamp_gps)
     FROM 
       `rj-smtr-dev.br_rj_riodejaneiro_veiculos.gps_sppo_15_minutos`
+    WHERE
+      data >= "{(datahora - timedelta(hours=24)).date()}"
   """
     client = bigquery.Client(project='rj-smtr-dev')
+
     return client.query(query=query).to_dataframe().iloc[0,0]
 
 
@@ -429,7 +432,7 @@ def main():
 
       print(">>> Loading gps:", datetime.now())
       df_gps = load_gps(datahora=datahora, data_versao_gtfs=data_versao_gtfs)
-      gps_data_last_update = get_gps_data_last_update()
+      gps_data_last_update = get_gps_data_last_update(datahora)
       df_gps.posicao_veiculo = df_gps.posicao_veiculo.astype(str).apply(loads)
       df_gps_geo = gpd.GeoDataFrame(
           data=df_gps,
@@ -560,18 +563,13 @@ def main():
         redis.set('data', df_geo)
         redis.set('last_update', gps_data_last_update.strftime("%d/%m/%Y %H:%M"))
         redis.set('last_rain_update', datahora.strftime("%d/%m/%Y") + ' ' + str(get_rain_data_last_update(datahora)))
-    
-      
 
+    except Exception as e:
+      now = str(datahora)
+      stack_trace = traceback.format_exc()
+      last_crash = {now: stack_trace}
 
-
-    except Exception:
-        
-        now = str(datahora)
-        stack_trace = traceback.format_exc()
-        last_crash = {now: stack_trace}
-
-        redis.set('last_crash', last_crash)
+      redis.set('last_crash', last_crash)
 
 if __name__ == '__main__':
   main()
