@@ -230,7 +230,7 @@ def load_gps(datahora, data_versao_gtfs):
         SELECT
           *
         FROM
-          `rj-smtr.br_rj_riodejaneiro_gtfs.shapes_geom`
+          `rj-smtr.gtfs.shapes_geom`
         WHERE
           data_versao = "{data_versao_gtfs}") t1
       INNER JOIN (
@@ -238,7 +238,7 @@ def load_gps(datahora, data_versao_gtfs):
           DISTINCT trip_short_name,
           shape_id
         FROM
-          `rj-smtr.br_rj_riodejaneiro_gtfs.trips`
+          `rj-smtr.gtfs.trips`
         WHERE
           data_versao = "{data_versao_gtfs}") t2
       USING
