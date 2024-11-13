@@ -1,21 +1,18 @@
-from datetime import datetime
-from google.cloud import bigquery
-from shapely.wkt import loads
-from celery import Celery
-from datetime import datetime, timedelta
-from redis_sr import RedisSR
-
-
 import os
-import geopandas as gpd
-import pandas as pd
 import traceback
-import folium
+from datetime import datetime, timedelta
+
 import branca.colormap as cm
 import folium
 import folium.plugins as plugins
+import geopandas as gpd
+import pandas as pd
 import pytz
+from celery import Celery
+from google.cloud import bigquery
+from shapely.wkt import loads
 
+from redis_sr import RedisSR
 
 app = Celery('main', broker=os.getenv('REDIS_CELERY'))
 app.conf.timezone = 'UTC'
@@ -205,7 +202,7 @@ def load_gps(datahora, data_versao_gtfs):
       END
         AS indicador_veiculo_parado
       FROM
-        `rj-smtr-dev.br_rj_riodejaneiro_veiculos.gps_sppo_15_minutos`
+        `rj-smtr.br_rj_riodejaneiro_veiculos.gps_sppo_15_minutos`
       WHERE
         DATA = "{datahora.date()}"
         AND timestamp_gps BETWEEN "{datahora - timedelta(hours=1)}"
@@ -389,7 +386,7 @@ def get_gps_data_last_update(datahora):
     SELECT 
       MAX(timestamp_gps)
     FROM 
-      `rj-smtr-dev.br_rj_riodejaneiro_veiculos.gps_sppo_15_minutos`
+      `rj-smtr.br_rj_riodejaneiro_veiculos.gps_sppo_15_minutos`
     WHERE
       data >= "{(datahora - timedelta(hours=24)).date()}"
   """
