@@ -415,6 +415,7 @@ def get_gps_data_last_update(datahora):
     return last_update
 
 
+
 def get_rain_data_last_update(datahora):
     query = f"""
       SELECT
@@ -528,6 +529,7 @@ def main():
             for servico, total in lista:
                 s += f"{servico}: {total}, "
             servicos_dict[tile_id] = s
+
 
         servicos_df = pd.DataFrame(
             servicos_dict.items(), columns=["tile_id", "servicos"]
