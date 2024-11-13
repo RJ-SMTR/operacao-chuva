@@ -232,7 +232,7 @@ def load_gps(datahora, data_versao_gtfs):
         FROM
           `rj-smtr.gtfs.shapes_geom`
         WHERE
-          data_versao = "{data_versao_gtfs}") t1
+          feed_start_date = "{data_versao_gtfs}") t1
       INNER JOIN (
         SELECT
           DISTINCT trip_short_name,
@@ -240,7 +240,7 @@ def load_gps(datahora, data_versao_gtfs):
         FROM
           `rj-smtr.gtfs.trips`
         WHERE
-          data_versao = "{data_versao_gtfs}") t2
+          feed_start_date = "{data_versao_gtfs}") t2
       USING
         (shape_id) ),
     
@@ -323,7 +323,13 @@ def load_tiles(datahora):
 
     geo_tiles = f"""
     -- 5. Puxa camada de hexagonos que cobrem a cidade
-    with geometria AS (
+    with
+    ultima_medicao_alertario AS (
+      SELECT
+        MAX (data_medicao) as ultima_data
+      FROM
+        `datario.clima_pluviometro.taxa_precipitacao_alertario_5min` ),
+    geometria AS (
       SELECT
         * EXCEPT(geometry),
         ST_GEOGFROMTEXT(geometry) AS tile
@@ -339,10 +345,10 @@ def load_tiles(datahora):
         SELECT
           *
         FROM
-          `datario.clima_pluviometro.taxa_precipitacao_alertario`
+          `datario.clima_pluviometro.taxa_precipitacao_alertario_5min`
         WHERE
           data_particao = "{datahora.date()}"
-          AND horario between "{(datahora - timedelta(hours=1)).time()}" and "{datahora.time()}" ) t
+          AND data_medicao BETWEEN DATETIME_SUB((select ultima_data from ultima_medicao_alertario), INTERVAL 15 MINUTE) AND (select ultima_data from ultima_medicao_alertario) ) t
       LEFT JOIN (
         SELECT
           *
@@ -385,9 +391,9 @@ def load_tiles(datahora):
       )
     
     SELECT 
-      * EXCEPT(estacao, horario),
+      * EXCEPT(estacao, data_medicao),
       estacao as estacao_pluviometro,
-      horario as horario_leitura_estacao
+      data_medicao as horario_leitura_estacao
     FROM
       geo_precipitacao_acumulada
     """
@@ -405,22 +411,20 @@ def get_gps_data_last_update(datahora):
       data >= "{(datahora - timedelta(hours=24)).date()}"
   """
     client = bigquery.Client(project="rj-smtr")
-
-    return client.query(query=query).to_dataframe().iloc[0, 0]
+    last_update = client.query(query=query).to_dataframe().iloc[0, 0]
+    return last_update
 
 
 def get_rain_data_last_update(datahora):
     query = f"""
-    SELECT
-      MAX(horario)
-    FROM
-      `datario.clima_pluviometro.taxa_precipitacao_alertario`
-    WHERE
-      data_particao = "{datahora.date()}"
-      AND horario between "{(datahora - timedelta(hours=1)).time()}" and "{datahora.time()}"
+      SELECT
+        MAX (data_medicao) as ultima_data
+      FROM
+        `datario.clima_pluviometro.taxa_precipitacao_alertario_5min`
     """
     client = bigquery.Client(project="rj-smtr")
-    return client.query(query=query).to_dataframe().iloc[0, 0]
+    last_update = client.query(query=query).to_dataframe().iloc[0, 0]
+    return last_update
 
 
 @app.task
@@ -460,9 +464,7 @@ def main():
         print("Loading tiles")
         df_tiles = load_tiles(datahora=datahora)
         df_tiles.tile = df_tiles.tile.astype(str).apply(loads)
-        df_tiles.horario_leitura_estacao = df_tiles.horario_leitura_estacao.astype(
-            "timedelta64[ns]"
-        )
+        df_tiles.horario_leitura_estacao = pd.to_datetime(df_tiles.horario_leitura_estacao)
         df_tiles_geo = gpd.GeoDataFrame(data=df_tiles, geometry=df_tiles.tile, crs=4326)
         print(
             f"Built tiles geo!\nColumns:{df_tiles_geo.columns}\nSize:{len(df_tiles_geo)}"
@@ -487,9 +489,9 @@ def main():
             .agg(
                 {
                     "horario_leitura_estacao": "max",
-                    "acumulado_chuva_15_min": "max",
-                    "acumulado_chuva_1_h": "max",
-                    "acumulado_chuva_4_h": "max",
+                    "acumulado_chuva_15min": "max",
+                    "acumulado_chuva_1h": "max",
+                    "acumulado_chuva_4h": "max",
                     "indicador_veiculo_parado_10_min": "sum",
                     "indicador_veiculo_fora_rota_10_min": "sum",
                     "indicador_veiculo_parado_30_min": "sum",
@@ -540,9 +542,9 @@ def main():
                 {
                     "servicos": "max",
                     "horario_leitura_estacao": "max",
-                    "acumulado_chuva_15_min": "max",
-                    "acumulado_chuva_1_h": "max",
-                    "acumulado_chuva_4_h": "max",
+                    "acumulado_chuva_15min": "max",
+                    "acumulado_chuva_1h": "max",
+                    "acumulado_chuva_4h": "max",
                     "indicador_veiculo_parado_10_min": "sum",
                     "indicador_veiculo_fora_rota_10_min": "sum",
                     "indicador_veiculo_parado_30_min": "sum",
@@ -577,11 +579,11 @@ def main():
         # Filtra a última medida da estacao
         # df_tile_indicators = df_tile_indicators.loc[df_tile_indicators.groupby(["tile_id"]).horario_leitura_estacao.idxmax()]
         # df_tile_indicators["horario_leitura_estacao"] = df_tile_indicators.horario_leitura_estacao.astype(str)
-        df_tile_indicators[
-            "horario_leitura_estacao"
-        ] = df_tile_indicators.horario_leitura_estacao.dt.total_seconds().apply(
-            lambda s: f"{s // 3600:02.0f}:{(s % 3600) // 60:02.0f}"
-        )
+        # df_tile_indicators[
+        #     "horario_leitura_estacao"
+        # ] = df_tile_indicators.horario_leitura_estacao.dt.total_seconds().apply(
+        #     lambda s: f"{s // 3600:02.0f}:{(s % 3600) // 60:02.0f}"
+        # )
         df_tile_indicators["geometry"] = (
             df_tile_indicators["tile"].dropna().astype(str).apply(loads)
         )
@@ -598,9 +600,7 @@ def main():
             redis.set("last_update", gps_data_last_update.strftime("%d/%m/%Y %H:%M"))
             redis.set(
                 "last_rain_update",
-                datahora.strftime("%d/%m/%Y")
-                + " "
-                + str(get_rain_data_last_update(datahora)),
+                get_rain_data_last_update(datahora).strftime("%d/%m/%Y %H:%M"),
             )
 
     except Exception as e:
